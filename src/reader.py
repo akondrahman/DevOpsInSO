@@ -5,7 +5,7 @@ reload(sys)
 sys.setdefaultencoding('utf-8')
 TAG = 'row'
 matchedCount = 0
-
+dirName='retrocomputing.stackexchange.com'
 # excerpted from http://baraujo.net/blog/?p=81
 # this link also helped: https://docs.python.org/2/library/xml.etree.elementtree.html
 
@@ -28,19 +28,26 @@ def fast_iter(context, func, *args, **kwargs):
 
 def process_element(elem, fout):
         global counter, matchedCount
-        #t.text = elem.find('Body').text
 
+        # get body
         body_unicoded_str  = get_unicode(elem.attrib['Body'], 'ascii')
+        # get title
+        if 'Title' in elem.attrib:
+          title_unicoded_str   = get_unicode(elem.attrib['Title'], 'ascii')
+        else:
+          title_unicoded_str   = ''
+        # get tags
         if 'Tags' in elem.attrib:
           tag_unicoded_str   = get_unicode(elem.attrib['Tags'], 'ascii')
         else:
           tag_unicoded_str   = 'NA'
+        # get posts
         postID = elem.attrib['Id']
         #print "Output->ID:{}, Body:{}".format( postID, body_unicoded_str )
-        if (utility.findStringInBody(body_unicoded_str)):
-          print "Found sth. at post ID=", postID
+        if (utility.findStringInPost(body_unicoded_str)) or (utility.findStringInPost(title_unicoded_str)):
+          #print "Found sth. at post ID=", postID
           matchedCount = matchedCount +  1
-          print "Tags:content->", tag_unicoded_str
+          #print "Tags:content->", tag_unicoded_str
           #print "So far {} posts matched ".format(matchedCount)
           print >>fout, tag_unicoded_str.replace('\n', ' ')
         #else:
@@ -49,7 +56,7 @@ def process_element(elem, fout):
         #print "So far {} lines processed".format(counter)
 
 def main():
-    dirName='retrocomputing.stackexchange.com'
+
     fileToRead = dirName + '/' + 'Posts.xml'
     matched_fileToOutput =   dirName +  '.matching_tags.txt'
     #non_matched_fileToOutput = dirName + '.non_matching_ids.txt'
