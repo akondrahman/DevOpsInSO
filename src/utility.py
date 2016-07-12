@@ -23,10 +23,10 @@ def findStringInBody(bodStringParam):
  'XML', 'Yaml', 'amazon web service', 'configuration', 'deploy', 'mruby',
  'openshift', 'playbook', 'powershell', 'shell', 'solo', 'vmware',
  'amazon', 'amazon web', 'jenkins', 'manifest', 'ibm bluemix', 'bluemix' ,
- 'chef recipe', 'recipe']
+ 'chef recipe', 'recipe', 'bamboo']
 
   formatted_body_str = bodStringParam.lower()
-  print "toatal keywords: ", len(elems)
+  #print "toatal keywords: ", len(elems)
   for elem in elems:
     elem_lower = elem.lower()
     if elem_lower in formatted_body_str:
