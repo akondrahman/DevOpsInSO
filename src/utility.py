@@ -1,7 +1,7 @@
 from contextlib import contextmanager
-import numpy as np
+import numpy as np, os
 
-def findStringInBody(bodStringParam):
+def findStringInPost(bodStringParam):
   flag_ = False
   #elems = ['gameshark', 'reconstruction', 'bitsavers']
   elems = ['AWS' , 'AWS CodeDeploy' , 'AWS OpsWorks' , 'Agile management' ,'Ansible',
@@ -72,3 +72,13 @@ def getTags(fileNameParam):
     list_ret = np.unique(tagList)
     print list_ret
     return list_ret
+def findStringInTag(tagP, strToSearchParam):
+   flagToRet = False
+   if tagP in strToSearchParam:
+     flagToRet = True
+   return flagToRet
+def dumpContentIntoFile(strP, fileP):
+  fileToWrite = open( fileP, 'w');
+  fileToWrite.write(strP );
+  fileToWrite.close()
+  return str(os.stat(fileP).st_size)
