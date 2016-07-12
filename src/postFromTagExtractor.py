@@ -70,6 +70,39 @@ def extractPostIDsFromTag(tagElement):
     return  matchedCount, matchedPosts
 
 
+def getPostDetail(elem, fout, postIDParam):
+  global  str_content
+  # get post ID
+  postID = elem.attrib['Id']
+  attribs=['PostTypeId', 'AcceptedAnswerId', 'CreationDate', 'Score', 'ViewCount',
+                 'AnswerCount', 'CommentCount', 'OwnerUserId', 'LastActivityDate', 'ParentId',
+                 'LastEditorUserId', 'LastEditDate']
+  if (postID==postIDParam):
+   str_content = str_content + ',' + str(postID)
+   for attrib_ in attribs:
+     if attrib_ in elem.attrib:
+       temp_ =   get_unicode(elem.attrib[attrib_], 'ascii')
+     else:
+       temp_ = ''
+     str_content = str_content + ',' + temp_
+
+
+
+def extractPostDetailsFrom(postID):
+    fileToRead = dirName + '/' + 'Posts.xml'
+    outputFile =   dirName +  'dummy.txt'
+    fin =  open(fileToRead, 'r')
+    fout = open(outputFile, 'w')
+
+
+    context = etree.iterparse(fin)
+    global  str_content
+    str_content = ''
+    fast_iter(context, getPostDetail, fout, postID)
+    return  str_content
+
+
+
 if __name__ == "__main__":
     allThePosts = []
     matched_tags_file =   dirName + '/' + 'final_tags.txt'
@@ -82,7 +115,17 @@ if __name__ == "__main__":
          verifyingCount = matchedPostTup[0]
          thePosts = matchedPostTup[1]
          matchedPostCount = len(thePosts)
-         print"Tag:{}, count:{}, veryfying count:{}".format(tagElem, matchedPostCount, verifyingCount)
+         #print"Tag:{}, count:{}, veryfying count:{}".format(tagElem, matchedPostCount, verifyingCount)
          for post in thePosts:
            allThePosts.append(post)
-    print "All posts: ", len(allThePosts)
+    #print "All posts: ", len(allThePosts)
+    # at this point all the post ID are ready; so lets get the details
+    # first we will get all the fields except for body and title
+    with utility.duration():
+      strToWrite = ',ID, PostTypeId , AcceptedAnswerId , CreationDate , Score , ViewCount ,AnswerCount , CommentCount , OwnerUserId , LastActivityDate , ParentId, LastEditorUserId , LastEditDate'
+      for indiPost in allThePosts:
+        temp_ID_content = extractPostDetailsFrom(indiPost)
+        #print "ID:{}, content:{}".format(indiPost, temp_ID_content)
+        strToWrite = strToWrite + '\n' + temp_ID_content
+    status_ = utility.dumpContentIntoFile(strToWrite, 'legit_posts_details.csv')
+    print "Dumped legit posts with details of {} bytes".format(status_)

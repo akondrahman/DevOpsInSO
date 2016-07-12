@@ -97,5 +97,5 @@ def getFormattedTags(fileNameParam):
               tagList.append(line)
     f_.close()
     list_ret = np.unique(tagList)
-    print list_ret
+    #print list_ret
     return list_ret
