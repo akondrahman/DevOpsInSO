@@ -6,7 +6,7 @@ sys.setdefaultencoding('utf-8')
 TAG = 'row'
 matchedCount = 0
 
-# excerpted from http://baraujo.net/blog/?p=81 
+# excerpted from http://baraujo.net/blog/?p=81
 # this link also helped: https://docs.python.org/2/library/xml.etree.elementtree.html
 
 def get_unicode(strOrUnicode, encoding='utf-8'):
@@ -26,7 +26,7 @@ def fast_iter(context, func, *args, **kwargs):
             del elem.getparent()[0]
     del context
 
-def process_element(elem, fout, fout_no_param):
+def process_element(elem, fout):
         global counter, matchedCount
         #t.text = elem.find('Body').text
 
@@ -34,7 +34,7 @@ def process_element(elem, fout, fout_no_param):
         if 'Tags' in elem.attrib:
           tag_unicoded_str   = get_unicode(elem.attrib['Tags'], 'ascii')
         else:
-          tag_unicoded_str   = 'NA'            
+          tag_unicoded_str   = 'NA'
         postID = elem.attrib['Id']
         #print "Output->ID:{}, Body:{}".format( postID, body_unicoded_str )
         if (utility.findStringInBody(body_unicoded_str)):
@@ -42,26 +42,26 @@ def process_element(elem, fout, fout_no_param):
           matchedCount = matchedCount +  1
           print "Tags:content->", tag_unicoded_str
           #print "So far {} posts matched ".format(matchedCount)
-          #print >>fout, postID.replace('\n', ' ')
+          print >>fout, tag_unicoded_str.replace('\n', ' ')
         #else:
-          #print >>fout_no_param, postID.replace('\n', ' ')            
+          #print >>fout_no_param, postID.replace('\n', ' ')
         counter += 1
         #print "So far {} lines processed".format(counter)
 
 def main():
-    dirName='meta.dba.stackexchange.com'
+    dirName='retrocomputing.stackexchange.com'
     fileToRead = dirName + '/' + 'Posts.xml'
-    matched_fileToOutput =   dirName +  '.matching_ids.txt'
-    non_matched_fileToOutput = dirName + '.non_matching_ids.txt'
+    matched_fileToOutput =   dirName +  '.matching_tags.txt'
+    #non_matched_fileToOutput = dirName + '.non_matching_ids.txt'
     fin =  open(fileToRead, 'r')
     # for the matching IDs
     fout = open(matched_fileToOutput, 'w')
-    # for the non-matching IDs 
-    fout_non_matching = open(non_matched_fileToOutput, 'w')    
+    # for the non-matching IDs
+    #fout_non_matching = open(non_matched_fileToOutput, 'w')
     context = etree.iterparse(fin)
     global counter, matchedCount
     counter, matchedCount = 0, 0
-    fast_iter(context, process_element, fout, fout_non_matching)
+    fast_iter(context, process_element, fout)
     print "Total {} matching posts found!".format(matchedCount)
     print "Total {} posts analyzed".format(counter)
 

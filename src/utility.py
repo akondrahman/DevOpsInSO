@@ -1,4 +1,5 @@
 from contextlib import contextmanager
+import numpy as np
 
 def findStringInBody(bodStringParam):
   flag_ = False
@@ -9,12 +10,12 @@ def findStringInBody(bodStringParam):
  'Boto', 'CFEngine', 'Capistrano', 'Cfg4j', 'Chef', 'Chef Solo', 'Chef recipes',
  'Chef spec', 'Cisco Unified Computing System', 'CliqR', 'Cloud',
  'Cloud Deployment Projects', 'Cloud formation', 'Cloud management',
- 'Cloudbank', 'Composable infrastructure', 'Configuration code', 'Containers',
+ 'Cloudbank', 'Composable infrastructure', 'Configuration code', 'Container',
  'Continuous Delivery', 'Continuous Deployment', 'Continuous testing',
  'Cookbook', 'DevOps', 'Docker', 'Fabric', 'HPE Discover', 'HPE Oneview',
  'HPE Synergy', 'Infrastructure', 'Infrastructure as code', 'Intoto',
  'JFrog Mission Control', 'JSON', 'Jiml', 'Job DSL', 'Job DSL Language',
- 'Job DSL Plugin', 'Kitchen', 'Knife', 'Kubernetes', 'Manifests', 'NS1',
+ 'Job DSL Plugin', 'Kitchen', 'Knife', 'Kubernetes', 'Manifest', 'NS1',
  'Octopus Deploy', 'OpsCode', 'OpsCode Chef', 'Orchestration', 'Otter', 'Packer',
  'Parameterized classes', 'PowerShell Desired State Configuration',
  'Programmable Infrastructure', 'Programmable infrastructure', 'Provisioning',
@@ -22,8 +23,8 @@ def findStringInBody(bodStringParam):
  'Snowflake deployment', 'Terraform', 'VMWare NSX', 'VMWare Photon', 'Vagrant',
  'XML', 'Yaml', 'amazon web service', 'configuration', 'deploy', 'mruby',
  'openshift', 'playbook', 'powershell', 'shell', 'solo', 'vmware',
- 'amazon', 'amazon web', 'jenkins', 'manifest', 'ibm bluemix', 'bluemix' ,
- 'chef recipe', 'recipe', 'bamboo']
+ 'amazon web services', 'jenkins', 'manifest', 'ibm bluemix', 'bluemix' ,
+ 'recipe', 'recipe', 'bamboo']
 
   formatted_body_str = bodStringParam.lower()
   #print "toatal keywords: ", len(elems)
@@ -56,3 +57,18 @@ def readCSVForKeywords(fileNameParam):
              if elems != '':
                kwList.append(elems)
   return kwList
+
+def getTags(fileNameParam):
+    tagList = []
+    f_ = open(fileNameParam)
+    for line in iter(f_):
+       if line!='NA':
+           extracted_tags=line.split('>')
+           for tag in extracted_tags:
+               if '<' in tag:
+                 formatted_tag = tag.split('<')[1]
+                 tagList.append(formatted_tag)
+    f_.close()
+    list_ret = np.unique(tagList)
+    print list_ret
+    return list_ret
