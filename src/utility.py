@@ -70,7 +70,7 @@ def getTags(fileNameParam):
                  tagList.append(formatted_tag)
     f_.close()
     list_ret = np.unique(tagList)
-    print list_ret
+    #print list_ret
     return list_ret
 def findStringInTag(tagP, strToSearchParam):
    flagToRet = False
@@ -82,3 +82,20 @@ def dumpContentIntoFile(strP, fileP):
   fileToWrite.write(strP );
   fileToWrite.close()
   return str(os.stat(fileP).st_size)
+
+
+
+
+
+def getFormattedTags(fileNameParam):
+    tagList = []
+    f_ = open(fileNameParam)
+    for line in iter(f_):
+       if line!='':
+          if '\n' in line:
+              line = line.strip('\n')
+              tagList.append(line)
+    f_.close()
+    list_ret = np.unique(tagList)
+    print list_ret
+    return list_ret
