@@ -1,0 +1,35 @@
+[Phase-1]$ python reader.py
+Total 7389766 matching posts found!
+Total 31017889 posts analyzed
+
+----------------------------------------------------------------------------------------------------
+# Runtime: 4744.131 secs
+
+
+
+[Phase-2]$ python reader.py
+Total 5233936 matching posts found!
+Total 31017889 posts analyzed
+
+----------------------------------------------------------------------------------------------------
+# Runtime: 3535.416 secs
+
+
+
+
+[Phase-3]$ python reader.py
+Total 1248286 matching posts found!
+Total 31017889 posts analyzed
+
+----------------------------------------------------------------------------------------------------
+# Runtime: 2854.157 secs
+
+
+
+
+[Phase-3]$ python reader.py
+Total 1063406 matching posts found!
+Total 31017889 posts analyzed
+
+----------------------------------------------------------------------------------------------------
+# Runtime: 2326.524 secs
