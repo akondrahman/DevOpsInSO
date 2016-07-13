@@ -5,7 +5,7 @@ reload(sys)
 sys.setdefaultencoding('utf-8')
 TAG = 'row'
 
-dirName='retrocomputing.stackexchange.com'
+dirName='stackoverflow.com-Posts'
 
 # excerpted from http://baraujo.net/blog/?p=81
 # this link also helped: https://docs.python.org/2/library/xml.etree.elementtree.html

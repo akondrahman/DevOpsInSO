@@ -5,7 +5,7 @@ reload(sys)
 sys.setdefaultencoding('utf-8')
 TAG = 'row'
 matchedCount = 0
-dirName='retrocomputing.stackexchange.com'
+dirName='stackoverflow.com-Posts'
 
 # excerpted from http://baraujo.net/blog/?p=81
 # this link also helped: https://docs.python.org/2/library/xml.etree.elementtree.html
@@ -88,7 +88,7 @@ if __name__ == "__main__":
     for k_, v_ in dictToStore.items():
        #print "Tag->{}, Count->{}".format(k_, v_)
        #v_[0] for number of posts that match the tag
-       #v_[1] for number of posts that match the tag and has at least one of the keywords  
+       #v_[1] for number of posts that match the tag and has at least one of the keywords
        strTooutput = strTooutput + k_ + ',' + str(v_[0]) + ',' + str(v_[1]) + '\n'
     dump_stat = utility.dumpContentIntoFile(strTooutput, 'tag-stat.csv')
     print "Dumped a file with {} bytes".format(dump_stat)
