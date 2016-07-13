@@ -70,7 +70,7 @@ def getTags(fileNameParam):
                  tagList.append(formatted_tag)
     f_.close()
     list_ret = np.unique(tagList)
-    #print list_ret
+    print "Total tags:", len(list_ret)
     return list_ret
 def findStringInTag(tagP, strToSearchParam):
    flagToRet = False
@@ -97,5 +97,5 @@ def getFormattedTags(fileNameParam):
               tagList.append(line)
     f_.close()
     list_ret = np.unique(tagList)
-    #print list_ret
+    print "Total formatted tags:", len(list_ret)
     return list_ret
