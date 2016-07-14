@@ -79,8 +79,8 @@ def main(tagElement):
 if __name__ == "__main__":
     dictToStore={}
     strTooutput=''
-    matched_tags_file =   dirName +  '.matching_tags.txt'
-    allTheTags= utility.getTags(matched_tags_file)
+    matched_tags_file =   'allTagsOfInterest.txt'
+    allTheTags= utility.getTagsFromFormattedFile(matched_tags_file)
     for tagElem in allTheTags:
       with utility.duration():
          matchedPostsCnt =  main(tagElem)
