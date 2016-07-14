@@ -79,7 +79,11 @@ def main(tagElement):
 if __name__ == "__main__":
     dictToStore={}
     strTooutput=''
-    matched_tags_file =   'allTagsOfInterest.txt'
+    dirNameForBatches='batches/rhel/'
+    inputBatch = 'batch_x29'
+    print "The file is called:", inputBatch
+    matched_tags_file =  dirNameForBatches + inputBatch
+    outputFile =  matched_tags_file + '_tag-stat.csv'
     allTheTags= utility.getTagsFromFormattedFile(matched_tags_file)
     for tagElem in allTheTags:
       with utility.duration():
@@ -90,5 +94,5 @@ if __name__ == "__main__":
        #v_[0] for number of posts that match the tag
        #v_[1] for number of posts that match the tag and has at least one of the keywords
        strTooutput = strTooutput + k_ + ',' + str(v_[0]) + ',' + str(v_[1]) + '\n'
-    dump_stat = utility.dumpContentIntoFile(strTooutput, 'tag-stat.csv')
+    dump_stat = utility.dumpContentIntoFile(strTooutput, outputFile)
     print "Dumped a file with {} bytes".format(dump_stat)
