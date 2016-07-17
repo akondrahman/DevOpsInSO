@@ -27,9 +27,19 @@ Total 31017889 posts analyzed
 
 
 
-[Phase-3]$ python reader.py
+[Phase-4]$ python reader.py
 Total 1063406 matching posts found!
 Total 31017889 posts analyzed
 
 ----------------------------------------------------------------------------------------------------
 # Runtime: 2326.524 secs
+
+
+
+
+[Phase-5]$ python reader.py 
+Total 221404 matching posts found!
+Total 31017889 posts analyzed
+
+----------------------------------------------------------------------------------------------------
+# Runtime: 1872.186 secs

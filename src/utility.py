@@ -4,10 +4,10 @@ import numpy as np, os
 def findStringInPost(bodStringParam):
   flag_ = False
   #elems = ['gameshark', 'reconstruction', 'bitsavers']
-  elems = ['Ansible'           , 'Azure'             , 'CFEngine'  , 'Chef'      ,
-           'Docker'            , 'Jiml'              , 'Job DSL'   , 'Kubernetes',
-           'Puppet'            , 'SaltStack'         , 'Vagrant'   , 'Yaml'      , 
-           'amazon web service', 'openshift'         , 'jenkins'   , 'ibm bluemix'
+  elems = ['Ansible'           , 'openstack'         , 'CFEngine'   , 'Chef'       ,
+           'Docker'            , 'Capistrano'        , 'Kubernetes' ,
+           'Puppet'            , 'SaltStack'         , 'Vagrant'    , 'ibm bluemix', 
+           'amazon web service', 'openshift'         , 'jenkins'   
            ]
 
   formatted_body_str = bodStringParam.lower()
@@ -67,10 +67,15 @@ def dumpContentIntoFile(strP, fileP):
   fileToWrite.close()
   return str(os.stat(fileP).st_size)
 
-
-
-
-
+def preprocesstags(rawTagsParam):
+  tagList = []  
+  if (len(rawTagsParam) > 0):
+    rawTags = rawTagsParam.split('>')
+    for raw_tag in rawTags:
+      if '<' in raw_tag: 
+        formatted_tag = raw_tag.split('<')[1]
+        tagList.append(formatted_tag)          
+  return tagList
 def getFormattedTags(fileNameParam):
     tagList = []
     f_ = open(fileNameParam)
@@ -85,6 +90,17 @@ def getFormattedTags(fileNameParam):
     return list_ret
 
 
+
+
+#def findStringInAllTags(allTagsParam, tag_unicoded_str):
+#  flagToRet = False     
+#  comaprer_tags = preprocesstags(tag_unicoded_str)
+#  comapree_tags =  allTagsParam
+#  res = set(comaprer_tags) & set(comapree_tags)
+#  if len(res) > 0: 
+#    flagToRet = True 
+#    print "comparer ={}, comparee={}, res={}".format(comaprer_tags, comapree_tags, res)
+#  return flagToRet      
 
 # phase-1
 # elems = ['AWS' , 'AWS CodeDeploy' , 'AWS OpsWorks' , 'Agile management' ,'Ansible',
@@ -153,3 +169,56 @@ def getFormattedTags(fileNameParam):
 # 'Kubernetes', 'OpsCode', 'Puppet', 'SaltStack',
 # 'Vagrant', 'yml', 'Yaml', 'amazon web service', 'openstack',
 # 'openshift', 'jenkins', 'ibm bluemix']
+
+#phase-5
+#  elems = ['Ansible'           , 'Azure'             , 'CFEngine'  , 'Chef'      ,
+#           'Docker'            , 'Jiml'              , 'Job DSL'   , 'Kubernetes',
+#           'Puppet'            , 'SaltStack'         , 'Vagrant'   , 'Yaml'      , 
+#           'amazon web service', 'openshift'         , 'jenkins'   , 'ibm bluemix'
+#           ]
+
+#phase-6
+#  elems = ['Ansible'           , 'Azure'             , 'CFEngine'  , 'Chef'       ,
+#           'Docker'            , 'Capistrano'        , 'Job DSL'   , 'Kubernetes' ,
+#           'Puppet'            , 'SaltStack'         , 'Vagrant'   , 'ibm bluemix', 
+#           'amazon web service', 'openshift'         , 'jenkins'   
+#           ]
+
+def getTagsFromFormattedFile(fileNameParam):
+  import csv
+  tagList = []
+  with open(fileNameParam, 'rb') as f:
+    reader = csv.reader(f)
+    for row in reader:
+         for elems in row:
+             if elems != '':
+               tagList.append(elems)
+  unique_tag_list = np.unique(tagList)
+  print "Total tags to look for ", len (unique_tag_list)             
+  return tagList
+
+def getAllExistingTagsinSO(allTagsinSOParam): 
+  import csv
+  tagList = []
+  with open(allTagsinSOParam, 'rb') as f:
+    reader = csv.reader(f)
+    for row in reader:
+      if row[1] != '':
+        tagList.append(row[1])
+  return tagList    
+
+
+def writeTagsToFile(inFileParam, outFileParam): 
+  theTags = getTags(inFileParam) 
+  current_tags_in_so = getAllExistingTagsinSO('AllTagsinSO.csv')
+  str_ = ''  
+  for tag_ in theTags:
+    if tag_ in current_tags_in_so:  
+      str_ = str_ + tag_ + ',' + '\n'        
+  sta_ = dumpContentIntoFile(str_, outFileParam)
+  return sta_   
+if __name__ == "__main__":
+  dirName='stackoverflow.com-Posts'
+  inFile =  dirName +  '.matching_tags.txt'  
+  status_ = writeTagsToFile(inFile, 'allTagsOfInterest.txt')  
+  print "Dumped-a-file-of-{}-bytes".format(status_)  
