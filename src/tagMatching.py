@@ -80,15 +80,18 @@ if __name__ == "__main__":
     dictToStore={}
     strTooutput=''
     dirNameForBatches='batches/rhel/'
-    inputBatch = 'batch_x29'
+    inputBatch = 'batch_x28'
     print "The file is called:", inputBatch
     matched_tags_file =  dirNameForBatches + inputBatch
     outputFile =  matched_tags_file + '_tag-stat.csv'
     allTheTags= utility.getTagsFromFormattedFile(matched_tags_file)
+    tagProcCount = 1
     for tagElem in allTheTags:
       with utility.duration():
          matchedPostsCnt =  main(tagElem)
          dictToStore[tagElem] = matchedPostsCnt
+         print "So far {} tags processed".format(tagProcCount)
+         tagProcCount = tagProcCount +  1
     for k_, v_ in dictToStore.items():
        #print "Tag->{}, Count->{}".format(k_, v_)
        #v_[0] for number of posts that match the tag
