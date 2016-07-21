@@ -1,5 +1,8 @@
 from lxml import etree
 import sys, utility
+from multiprocessing import Pool
+from contextlib import closing
+import multiprocessing
 
 reload(sys)
 sys.setdefaultencoding('utf-8')
@@ -73,29 +76,35 @@ def main(tagElement):
     bodyAndTagMatchCount, matchedCount = 0, 0
     fast_iter(context, process_element, fout, tagElement)
     #print "Tag: {}, matched count: {}".format(tagElement, matchedCount)
-    return  matchedCount, bodyAndTagMatchCount
+    return  tagElement, matchedCount, bodyAndTagMatchCount
 
 
 if __name__ == "__main__":
-    dictToStore={}
+    print "Started at:", utility.giveTimeStamp()
+    multi_processed_output=[]
     strTooutput=''
     dirNameForBatches='batches/rhel/'
-    inputBatch = 'batch_ff'
+    inputBatch = 'mc_baal'
     print "The file is called:", inputBatch
     matched_tags_file =  dirNameForBatches + inputBatch
     outputFile =  matched_tags_file + '_tag-stat.csv'
     allTheTags= utility.getTagsFromFormattedFile(matched_tags_file)
     tagProcCount = 1
-    for tagElem in allTheTags:
+    #for tagElem in allTheTags:
+    ### multi processing zone
+    #no_of_threads = len(allTheTags)
+    no_of_threads = multiprocessing.cpu_count()
+    print "Count of threads that will be used:", no_of_threads
+    with closing(Pool(processes=no_of_threads)) as pool:
       with utility.duration():
-         matchedPostsCnt =  main(tagElem)
-         dictToStore[tagElem] = matchedPostsCnt
-         print "So far {} tags processed".format(tagProcCount)
-         tagProcCount = tagProcCount +  1
-    for k_, v_ in dictToStore.items():
-       #print "Tag->{}, Count->{}".format(k_, v_)
-       #v_[0] for number of posts that match the tag
-       #v_[1] for number of posts that match the tag and has at least one of the keywords
-       strTooutput = strTooutput + k_ + ',' + str(v_[0]) + ',' + str(v_[1]) + '\n'
+        multi_processed_output = pool.map(main, allTheTags)
+        print "Parallel output: \n", multi_processed_output
+        pool.terminate()
+    for outputElem in multi_processed_output:
+       #outputElem[0] name of the tag
+       #outputElem[1] for number of posts that match the tag
+       #outputElem[2] for number of posts that match the tag and has at least one of the keywords
+       strTooutput = strTooutput + outputElem[0] + ',' + str(outputElem[1]) + ',' + str(outputElem[2]) + '\n'
     dump_stat = utility.dumpContentIntoFile(strTooutput, outputFile)
     print "Dumped a file with {} bytes".format(dump_stat)
+    print "Ended at:", utility.giveTimeStamp()

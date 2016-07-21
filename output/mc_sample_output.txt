@@ -1,0 +1,49 @@
+[arahman@arahman src]$ python mc_tagMatching.py 
+The file is called: mc_batch_x30
+Total tags to look for  7
+Parallel output: 
+[(4614, 36), (28, 11), (160, 1), (1886, 3), (1587, 1), (14616, 7), (41, 1)]
+
+----------------------------------------------------------------------------------------------------
+# Runtime: 4881.572 secs
+[arahman@arahman src]$ python 
+Python 2.7.5 (default, Oct 11 2015, 17:47:16) 
+[GCC 4.8.3 20140911 (Red Hat 4.8.3-9)] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> abal = 1, 2, 3 
+>>> print abal 
+(1, 2, 3)
+>>> exit()
+[arahman@arahman src]$ python 
+Python 2.7.5 (default, Oct 11 2015, 17:47:16) 
+[GCC 4.8.3 20140911 (Red Hat 4.8.3-9)] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import multiprocessing
+>>> print multiprocessing.cpu_count() 
+4
+>>> exit()
+[arahman@arahman src]$ python mc_tagMatching.py 
+The file is called: mc_batch_x30
+Total tags to look for  4
+Count of threads that will be used: 4
+Parallel output: 
+[('sphinx', 4614, 36), ('spinnaker', 28, 11), ('spl-autoload-register', 160, 1), ('splash', 1886, 3)]
+
+----------------------------------------------------------------------------------------------------
+# Runtime: 2853.148 secs
+Dumped a file with 73 bytes
+[arahman@arahman src]$ 
+[arahman@arahman src]$ python mc_tagMatching.py 
+Started at: 2016-07-21 13:05:07
+The file is called: mc_baal
+Total tags to look for  2
+Count of threads that will be used: 4
+Parallel output: 
+[('sphinx', 4614, 36), ('spinnaker', 28, 11)]
+
+----------------------------------------------------------------------------------------------------
+# Runtime: 2016.045 secs
+Dumped a file with 31 bytes
+Ended at: 2016-07-21 13:38:43
+
+
