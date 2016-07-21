@@ -80,7 +80,7 @@ if __name__ == "__main__":
     dictToStore={}
     strTooutput=''
     dirNameForBatches='batches/rhel/'
-    inputBatch = 'batch_x28'
+    inputBatch = 'batch_ff'
     print "The file is called:", inputBatch
     matched_tags_file =  dirNameForBatches + inputBatch
     outputFile =  matched_tags_file + '_tag-stat.csv'
