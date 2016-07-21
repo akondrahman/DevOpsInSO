@@ -6,8 +6,8 @@ def findStringInPost(bodStringParam):
   #elems = ['gameshark', 'reconstruction', 'bitsavers']
   elems = ['Ansible'           , 'openstack'         , 'CFEngine'   , 'Chef'       ,
            'Docker'            , 'Capistrano'        , 'Kubernetes' ,
-           'Puppet'            , 'SaltStack'         , 'Vagrant'    , 'ibm bluemix', 
-           'amazon web service', 'openshift'         , 'jenkins'   
+           'Puppet'            , 'SaltStack'         , 'Vagrant'    , 'ibm bluemix',
+           'amazon web service', 'openshift'         , 'jenkins'
            ]
 
   formatted_body_str = bodStringParam.lower()
@@ -68,13 +68,13 @@ def dumpContentIntoFile(strP, fileP):
   return str(os.stat(fileP).st_size)
 
 def preprocesstags(rawTagsParam):
-  tagList = []  
+  tagList = []
   if (len(rawTagsParam) > 0):
     rawTags = rawTagsParam.split('>')
     for raw_tag in rawTags:
-      if '<' in raw_tag: 
+      if '<' in raw_tag:
         formatted_tag = raw_tag.split('<')[1]
-        tagList.append(formatted_tag)          
+        tagList.append(formatted_tag)
   return tagList
 def getFormattedTags(fileNameParam):
     tagList = []
@@ -92,15 +92,21 @@ def getFormattedTags(fileNameParam):
 
 
 
+def giveTimeStamp():
+  import time, datetime
+  tsObj = time.time()
+  strToret = datetime.datetime.fromtimestamp(tsObj).strftime('%Y-%m-%d %H:%M:%S')
+  return strToret   
+
 #def findStringInAllTags(allTagsParam, tag_unicoded_str):
-#  flagToRet = False     
+#  flagToRet = False
 #  comaprer_tags = preprocesstags(tag_unicoded_str)
 #  comapree_tags =  allTagsParam
 #  res = set(comaprer_tags) & set(comapree_tags)
-#  if len(res) > 0: 
-#    flagToRet = True 
+#  if len(res) > 0:
+#    flagToRet = True
 #    print "comparer ={}, comparee={}, res={}".format(comaprer_tags, comapree_tags, res)
-#  return flagToRet      
+#  return flagToRet
 
 # phase-1
 # elems = ['AWS' , 'AWS CodeDeploy' , 'AWS OpsWorks' , 'Agile management' ,'Ansible',
@@ -173,15 +179,15 @@ def getFormattedTags(fileNameParam):
 #phase-5
 #  elems = ['Ansible'           , 'Azure'             , 'CFEngine'  , 'Chef'      ,
 #           'Docker'            , 'Jiml'              , 'Job DSL'   , 'Kubernetes',
-#           'Puppet'            , 'SaltStack'         , 'Vagrant'   , 'Yaml'      , 
+#           'Puppet'            , 'SaltStack'         , 'Vagrant'   , 'Yaml'      ,
 #           'amazon web service', 'openshift'         , 'jenkins'   , 'ibm bluemix'
 #           ]
 
 #phase-6
 #  elems = ['Ansible'           , 'Azure'             , 'CFEngine'  , 'Chef'       ,
 #           'Docker'            , 'Capistrano'        , 'Job DSL'   , 'Kubernetes' ,
-#           'Puppet'            , 'SaltStack'         , 'Vagrant'   , 'ibm bluemix', 
-#           'amazon web service', 'openshift'         , 'jenkins'   
+#           'Puppet'            , 'SaltStack'         , 'Vagrant'   , 'ibm bluemix',
+#           'amazon web service', 'openshift'         , 'jenkins'
 #           ]
 
 def getTagsFromFormattedFile(fileNameParam):
@@ -194,10 +200,10 @@ def getTagsFromFormattedFile(fileNameParam):
              if elems != '':
                tagList.append(elems)
   unique_tag_list = np.unique(tagList)
-  print "Total tags to look for ", len (unique_tag_list)             
+  print "Total tags to look for ", len (unique_tag_list)
   return tagList
 
-def getAllExistingTagsinSO(allTagsinSOParam): 
+def getAllExistingTagsinSO(allTagsinSOParam):
   import csv
   tagList = []
   with open(allTagsinSOParam, 'rb') as f:
@@ -205,20 +211,20 @@ def getAllExistingTagsinSO(allTagsinSOParam):
     for row in reader:
       if row[1] != '':
         tagList.append(row[1])
-  return tagList    
+  return tagList
 
 
-def writeTagsToFile(inFileParam, outFileParam): 
-  theTags = getTags(inFileParam) 
+def writeTagsToFile(inFileParam, outFileParam):
+  theTags = getTags(inFileParam)
   current_tags_in_so = getAllExistingTagsinSO('AllTagsinSO.csv')
-  str_ = ''  
+  str_ = ''
   for tag_ in theTags:
-    if tag_ in current_tags_in_so:  
-      str_ = str_ + tag_ + ',' + '\n'        
+    if tag_ in current_tags_in_so:
+      str_ = str_ + tag_ + ',' + '\n'
   sta_ = dumpContentIntoFile(str_, outFileParam)
-  return sta_   
+  return sta_
 if __name__ == "__main__":
   dirName='stackoverflow.com-Posts'
-  inFile =  dirName +  '.matching_tags.txt'  
-  status_ = writeTagsToFile(inFile, 'allTagsOfInterest.txt')  
-  print "Dumped-a-file-of-{}-bytes".format(status_)  
+  inFile =  dirName +  '.matching_tags.txt'
+  status_ = writeTagsToFile(inFile, 'allTagsOfInterest.txt')
+  print "Dumped-a-file-of-{}-bytes".format(status_)

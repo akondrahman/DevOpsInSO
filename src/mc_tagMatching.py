@@ -80,11 +80,11 @@ def main(tagElement):
 
 
 if __name__ == "__main__":
-    #dictToStore={}
+    print "Started at:", utility.giveTimeStamp()
     multi_processed_output=[]
     strTooutput=''
     dirNameForBatches='batches/rhel/'
-    inputBatch = 'mc_batch_x30'
+    inputBatch = 'mc_baal'
     print "The file is called:", inputBatch
     matched_tags_file =  dirNameForBatches + inputBatch
     outputFile =  matched_tags_file + '_tag-stat.csv'
@@ -107,3 +107,4 @@ if __name__ == "__main__":
        strTooutput = strTooutput + outputElem[0] + ',' + str(outputElem[1]) + ',' + str(outputElem[2]) + '\n'
     dump_stat = utility.dumpContentIntoFile(strTooutput, outputFile)
     print "Dumped a file with {} bytes".format(dump_stat)
+    print "Ended at:", utility.giveTimeStamp()

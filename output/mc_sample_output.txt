@@ -33,4 +33,17 @@ Parallel output:
 # Runtime: 2853.148 secs
 Dumped a file with 73 bytes
 [arahman@arahman src]$ 
+[arahman@arahman src]$ python mc_tagMatching.py 
+Started at: 2016-07-21 13:05:07
+The file is called: mc_baal
+Total tags to look for  2
+Count of threads that will be used: 4
+Parallel output: 
+[('sphinx', 4614, 36), ('spinnaker', 28, 11)]
+
+----------------------------------------------------------------------------------------------------
+# Runtime: 2016.045 secs
+Dumped a file with 31 bytes
+Ended at: 2016-07-21 13:38:43
+
 
