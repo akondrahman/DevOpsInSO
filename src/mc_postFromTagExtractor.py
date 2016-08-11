@@ -1,5 +1,8 @@
 from lxml import etree
 import sys, utility
+from multiprocessing import Pool
+from contextlib import closing
+import multiprocessing
 
 reload(sys)
 sys.setdefaultencoding('utf-8')
@@ -75,7 +78,7 @@ def getPostDetail(elem, fout, postIDParam):
   # get post ID
   postID = elem.attrib['Id']
   #attribs = ['Title', 'Body']
-  attribs = ['PostTypeId', 'AcceptedAnswerId', 'CreationDate', 'Score', 'ViewCount', 'AnswerCount', 'CommentCount', 'OwnerUserId', 'ParentId', 'FavoriteCount'] 
+  attribs = ['PostTypeId', 'AcceptedAnswerId', 'CreationDate', 'Score', 'ViewCount', 'AnswerCount', 'CommentCount', 'OwnerUserId', 'ParentId', 'FavoriteCount']
   #attribs=['PostTypeId', 'AcceptedAnswerId', 'CreationDate', 'Score', 'ViewCount',
   #                 'AnswerCount', 'CommentCount', 'OwnerUserId', 'LastActivityDate', 'ParentId',
   #                 'LastEditorUserId', 'LastEditDate', 'FavoriteCount']
@@ -106,30 +109,45 @@ def extractPostDetailsFrom(postID):
 
 
 if __name__ == "__main__":
+    print "Started at: ", utility.giveTimeStamp()
+    tagFile='final_tags.txt'
     allThePosts = []
-    matched_tags_file =   dirName + '/' + 'final_tags.txt'
+    matched_tags_file =   dirName + '/' + tagFile
     allTheTags= utility.getFormattedTags(matched_tags_file)
-    for tagElem in allTheTags:
+    multi_processed_output=None
+    pool_spec_output=None
+
+    no_of_threads = multiprocessing.cpu_count()
+    print "Count of threads that will be used for ID extraction:", no_of_threads
+    with closing(Pool(processes=no_of_threads)) as pool:
       with utility.duration():
-         matchedPostTup =  extractPostIDsFromTag(tagElem)
-         # matchedPosts[0] gives the counter
-         # matchedPosts[1] gives the matching posts
+        multi_processed_output = pool.map(extractPostIDsFromTag, allTheTags)
+        pool.terminate()
+
+    for matchedPostTup in multi_processed_output:
          verifyingCount = matchedPostTup[0]
          thePosts = matchedPostTup[1]
          matchedPostCount = len(thePosts)
          #print"Tag:{}, count:{}, veryfying count:{}".format(tagElem, matchedPostCount, verifyingCount)
          for post in thePosts:
            allThePosts.append(post)
-    #print "All posts: ", len(allThePosts)
+    print "Length of all posts: ", len(allThePosts)
+    print "Details of all posts:"
+    print allThePosts
     # at this point all the post ID are ready; so lets get the details
     # first we will get all the fields except for body and title
-    with utility.duration():
-      strToWrite = ',ID, PostTypeId, AcceptedAnswerId, CreationDate, Score, ViewCount, AnswerCount, CommentCount, OwnerUserId, ParentId, FavoriteCount'
-      #strToWrite = ',ID, PostTypeId, AcceptedAnswerId, CreationDate, Score, ViewCount, AnswerCount, CommentCount, OwnerUserId, LastActivityDate, ParentId, LastEditorUserId, LastEditDate, FavoriteCount'
-      #strToWrite = ',ID, Title, Body'
-      for indiPost in allThePosts:
-        temp_ID_content = extractPostDetailsFrom(indiPost)
-        #print "ID:{}, content:{}".format(indiPost, temp_ID_content)
+    print "Count of threads that will be used for spec extraction:", no_of_threads
+    strToWrite = ',ID, PostTypeId, AcceptedAnswerId, CreationDate, Score, ViewCount, AnswerCount, CommentCount, OwnerUserId, ParentId, FavoriteCount'
+    #strToWrite = ',ID, PostTypeId, AcceptedAnswerId, CreationDate, Score, ViewCount, AnswerCount, CommentCount, OwnerUserId, LastActivityDate, ParentId, LastEditorUserId, LastEditDate, FavoriteCount'
+    #strToWrite = ',ID, Title, Body'
+    with closing(Pool(processes=no_of_threads)) as pool_spec:
+      with utility.duration():
+        pool_spec_output = pool_spec.map(extractPostDetailsFrom, allThePosts)
+        pool_spec.terminate()
+
+    for temp_ID_content in pool_spec_output:
         strToWrite = strToWrite + '\n' + temp_ID_content
-    status_ = utility.dumpContentIntoFile(strToWrite, 'legit_posts_details.csv')
+    outFile = tagFile + '_' + 'legit_posts_details.csv'
+    status_ = utility.dumpContentIntoFile(strToWrite, outFile)
     print "Dumped legit posts with details of {} bytes".format(status_)
+    print "Ended at: ", utility.giveTimeStamp()
