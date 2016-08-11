@@ -83,8 +83,8 @@ if __name__ == "__main__":
     print "Started at:", utility.giveTimeStamp()
     multi_processed_output=[]
     strTooutput=''
-    dirNameForBatches='batches/rhel/'
-    inputBatch = 'mc_baal'
+    dirNameForBatches='batches/mac/'
+    inputBatch = 'batch_eu'
     print "The file is called:", inputBatch
     matched_tags_file =  dirNameForBatches + inputBatch
     outputFile =  matched_tags_file + '_tag-stat.csv'
