@@ -74,9 +74,11 @@ def getPostDetail(elem, fout, postIDParam):
   global  str_content
   # get post ID
   postID = elem.attrib['Id']
-  attribs=['PostTypeId', 'AcceptedAnswerId', 'CreationDate', 'Score', 'ViewCount',
-                 'AnswerCount', 'CommentCount', 'OwnerUserId', 'LastActivityDate', 'ParentId',
-                 'LastEditorUserId', 'LastEditDate']
+  #attribs = ['Title', 'Body']
+  attribs = ['PostTypeId', 'AcceptedAnswerId', 'CreationDate', 'Score', 'ViewCount', 'AnswerCount', 'CommentCount', 'OwnerUserId', 'ParentId', 'FavoriteCount'] 
+  #attribs=['PostTypeId', 'AcceptedAnswerId', 'CreationDate', 'Score', 'ViewCount',
+  #                 'AnswerCount', 'CommentCount', 'OwnerUserId', 'LastActivityDate', 'ParentId',
+  #                 'LastEditorUserId', 'LastEditDate', 'FavoriteCount']
   if (postID==postIDParam):
    str_content = str_content + ',' + str(postID)
    for attrib_ in attribs:
@@ -122,7 +124,9 @@ if __name__ == "__main__":
     # at this point all the post ID are ready; so lets get the details
     # first we will get all the fields except for body and title
     with utility.duration():
-      strToWrite = ',ID, PostTypeId , AcceptedAnswerId , CreationDate , Score , ViewCount ,AnswerCount , CommentCount , OwnerUserId , LastActivityDate , ParentId, LastEditorUserId , LastEditDate'
+      strToWrite = ',ID, PostTypeId, AcceptedAnswerId, CreationDate, Score, ViewCount, AnswerCount, CommentCount, OwnerUserId, ParentId, FavoriteCount'
+      #strToWrite = ',ID, PostTypeId, AcceptedAnswerId, CreationDate, Score, ViewCount, AnswerCount, CommentCount, OwnerUserId, LastActivityDate, ParentId, LastEditorUserId, LastEditDate, FavoriteCount'
+      #strToWrite = ',ID, Title, Body'
       for indiPost in allThePosts:
         temp_ID_content = extractPostDetailsFrom(indiPost)
         #print "ID:{}, content:{}".format(indiPost, temp_ID_content)

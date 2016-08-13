@@ -1,0 +1,483 @@
+[arahman@arahman src]$ python mc_tagMatching.py
+Started at: 2016-07-21 20:23:46
+The file is called: batch_fg
+Total tags to look for  25
+Count of threads that will be used: 4
+Parallel output:
+[('scoverage', 54, 5), ('scp', 1567, 37), ('scrapinghub', 27, 1), ('scrapy', 5656, 27), ('scrapy-shell', 20, 1), ('scrapy-spider', 645, 4), ('scrapyd', 201, 4), ('scrapyjs', 10, 2), ('screen', 21335, 35), ('screen-capture', 501, 2), ('screen-orientation', 1204, 1), ('screen-resolution', 993, 1), ('screen-scraping', 2455, 1), ('screenshot', 2925, 14), ('scribe', 2241, 10), ('script-console', 4, 1), ('scripting', 11329, 38), ('scroll', 43798, 17), ('scrollto', 1493, 1), ('scrolltop', 878, 1), ('scrum', 812, 1), ('scrutinizer', 10, 1), ('scrypt', 105, 1), ('sctp', 127, 1), ('sd-card', 1158, 2)]
+
+----------------------------------------------------------------------------------------------------
+# Runtime: 12683.575 secs
+Dumped a file with 423 bytes
+Ended at: 2016-07-21 23:55:10
+[arahman@arahman src]$ python mc_tagMatching.py
+Started at: 2016-07-22 00:24:32
+The file is called: batch_fh
+Total tags to look for  25
+Count of threads that will be used: 4
+Parallel output:
+[('select2', 2609, 5), ('select2-rails', 87, 2), ('selectedindexchanged', 253, 1), ('selectnodes', 80, 1), ('selectonemenu', 567, 2), ('selector', 18958, 3), ('selendroid', 202, 1), ('selenide', 29, 2), ('selenium', 38616, 907), ('selenium-chromedriver', 1214, 47), ('selenium-firefoxdriver', 230, 3), ('selenium-grid', 847, 73), ('selenium-grid2', 88, 10), ('selenium-ide', 1480, 12), ('selenium-rc', 1355, 20), ('selenium-server', 39, 1), ('selenium-webdriver', 16081, 268), ('self-host', 510, 3), ('self-hosting', 437, 2), ('self-join', 617, 1), ('self-modifying', 106, 2), ('self-reference', 354, 1), ('self-signed', 417, 5), ('selinux', 268, 23), ('semantic-ui', 808, 1)]
+
+----------------------------------------------------------------------------------------------------
+# Runtime: 10188.226 secs
+Dumped a file with 501 bytes
+Ended at: 2016-07-22 03:14:20
+[arahman@arahman src]$ python mc_tagMatching.py
+Started at: 2016-07-22 04:42:47
+The file is called: batch_fi
+Total tags to look for  25
+Count of threads that will be used: 4
+Parallel output:
+[('sequence', 4277, 2), ('sequencing', 60, 1), ('sequential', 448, 1), ('serena', 48, 1), ('serenity-bdd', 62, 3), ('serial-port', 7165, 5), ('serializable', 790, 2), ('serialization', 27761, 24), ('serializer', 3257, 6), ('series', 4955, 7), ('serve', 274496, 646), ('server', 273859, 643), ('server-administration', 112, 3), ('server-application', 20, 1), ('server-configuration', 122, 6), ('server-core', 13, 1), ('server-push', 275, 1), ('server-rendering', 6, 1), ('server-sent-events', 661, 2), ('server-side', 2134, 3), ('server-variables', 64, 1), ('server.xml', 114, 2), ('serverless-framework', 44, 2), ('serversocket', 1110, 2), ('serverspec', 56, 30)]
+
+----------------------------------------------------------------------------------------------------
+# Runtime: 10217.483 secs
+Dumped a file with 488 bytes
+Ended at: 2016-07-22 07:33:05
+[arahman@arahman src]$ python mc_tagMatching.py
+Started at: 2016-07-22 19:11:44
+The file is called: batch_x0x
+Total tags to look for  251
+Count of threads that will be used: 4
+Parallel output:
+[('profiler', 2178, 4), ('profiles', 700, 11), ('profiling', 4258, 13), ('proftpd', 84, 2), ('proget', 30, 2), ('programming-languages', 3749, 2), ('progress-bar', 4628, 3), ('proguard', 2681, 10), ('project', 13714, 44), ('project-calico', 3, 3), ('project-management', 1801, 9), ('project-structure', 230, 2), ('projects', 1509, 4), ('projects-and-solutions', 1082, 1), ('prolog', 7280, 3), ('prometheus', 32, 7), ('promise', 6872, 13), ('promoted-builds', 14, 14), ('promotions', 88, 7), ('prompt', 3522, 21), ('propagation', 887, 3), ('propel', 1100, 3), ('propel2', 27, 1), ('properties', 15811, 39), ('properties-file', 590, 3), ('psql', 1022, 14), ('psr-4', 116, 3), ('pstree', 14, 1), ('psych', 434, 3), ('psycopg2', 1188, 11), ('pthreads', 5563, 4), ('ptrace', 260, 2), ('ptvs', 159, 1), ('pty', 731, 5), ('public', 3117, 31), ('public-folders', 24, 1), ('public-html', 87, 1), ('public-key', 1587, 19), ('public-key-encryption', 1034, 8), ('publish', 4804, 40), ('publish-profiles', 49, 2), ('publish-subscribe', 1387, 3), ('publisher', 307, 2), ('publishing', 1030, 3), ('pubnub', 603, 3), ('pudb', 17, 1), ('pull', 2506, 51), ('pull-request', 497, 26), ('pulseaudio', 139, 2), ('puma', 507, 78), ('pundit', 212, 1), ('rjb', 40, 2), ('rkt', 21, 2), ('rm', 431324, 1589), ('rmagick', 715, 6), ('rman', 67936, 219), ('rmdir', 100, 1), ('rmi', 32257, 350), ('rmq', 27, 1), ('rmysql', 216, 4), ('robocopy', 496, 5), ('robolectric', 1060, 11), ('robolectric-gradle-plugin', 56, 2), ('robomongo', 98, 4), ('robospice', 264, 7), ('robot', 4924, 73), ('robot-legs-problem', 9, 1), ('robotframework', 1277, 40), ('robotium', 1001, 23), ('robotlegs', 80, 1), ('roboto', 31, 1), ('robots.txt', 969, 3), ('robustness', 96, 1), ('rockbox', 5, 1), ('rocket', 780, 43), ('rocket.chat', 18, 3), ('rpc', 4905, 21), ('rpgle', 193, 2), ('rpm', 1592, 71), ('rpm-maven-plugin', 55, 4), ('rpm-spec', 263, 5), ('rpmbuild', 478, 17), ('rpy2', 535, 3), ('rpyc', 57, 1), ('rsa', 13801, 111), ('rsa-key-fingerprint', 16, 1), ('rserve', 1025, 2), ('rspec', 15086, 268), ('rspec-expectations', 26, 1), ('rspec-mocks', 34, 1), ('rspec-puppet', 27, 26), ('rspec-rails', 1354, 13), ('rspec2', 1144, 9), ('rspec3', 258, 1), ('rss', 7165, 16), ('rss-reader', 354, 1), ('rstudio', 2655, 18), ('rstudio-server', 160, 10), ('rsync', 1555, 76), ('rsyslog', 315, 15), ('rtc', 11644, 23), ('ruby-install', 21, 2), ('ruby-on-rails', 280567, 5419), ('ruby-on-rails-2', 713, 8), ('ruby-on-rails-3', 62633, 898), ('ruby-on-rails-3.1', 5362, 103), ('ruby-on-rails-3.2', 6906, 156), ('ruby-on-rails-4', 32202, 561), ('ruby-on-rails-4.1', 474, 11), ('ruby-on-rails-4.2', 561, 19), ('ruby-on-rails-5', 300, 8), ('ruby-on-rails-plugins', 721, 5), ('ruby-parser', 8, 1), ('ruby-rice', 4, 1), ('ruby-test', 37, 1), ('rubygems', 6619, 310), ('rubymine', 924, 25), ('rubymine-7', 56, 2), ('rubymotion', 665, 1), ('rubyzip', 98, 3), ('rufus-scheduler', 144, 1), ('rule', 2878, 9), ('rules', 1670, 6), ('run-script', 67, 1), ('runc', 1565, 7), ('rundeck', 80, 14), ('sakai', 80, 1), ('sal', 17273, 455), ('salesforce', 4957, 13), ('salt', 1383, 349), ('salt-cloud', 5, 3), ('salt-stack', 554, 336), ('samba', 591, 10), ('same-origin-policy', 740, 1), ('saml', 2654, 10), ('saml-2.0', 1138, 3), ('sample', 1729, 2), ('samsung-mobile', 1080, 1), ('san', 17347, 164), ('sandbox', 4022, 20), ('sanitization', 726, 1), ('sanitizer', 100, 1), ('sap', 7978, 7), ('sapui5', 1984, 1), ('sas', 21021, 98), ('sass', 10524, 93), ('sata', 39, 1), ('satellizer', 135, 1), ('satis', 510, 4), ('saucelabs', 254, 18), ('save', 8709, 13), ('sdk', 45528, 101), ('sdlc', 114, 1), ('sdn', 1055, 5), ('sdwebimage', 544, 8), ('seam', 1691, 2), ('search', 65385, 267), ('search-engine', 2712, 1), ('search-path', 86, 1), ('searchkick', 190, 1), ('seaside', 144, 1), ('seccomp', 18, 1), ('second-level-cache', 268, 1), ('secret-key', 180, 3), ('secure-gateway', 61, 19), ('security', 56332, 271), ('sed', 19103, 85), ('sedna', 18, 1), ('seed', 847, 10), ('seeding', 302, 5), ('seek', 1994, 1), ('segment-tree', 96, 8), ('segmentation-fault', 6897, 22), ('segue', 4334, 1), ('select', 60981, 20), ('select-n-plus-1', 29, 1), ('semantic-versioning', 135, 1), ('semantic-web', 1284, 2), ('semaphore', 1825, 1), ('sencha-cmd', 357, 1), ('sencha-touch', 7028, 7), ('sencha-touch-2', 4174, 5), ('sendasynchronousrequest', 74, 1), ('sender', 292, 1), ('sendfile', 260, 8), ('sendgrid', 960, 7), ('sendkeys', 613, 1), ('sendmail', 2342, 18), ('sendmailr', 41, 1), ('sense', 4247, 6), ('sensu', 148, 21), ('sentestingkit', 97, 1), ('sentiment-analysis', 597, 3), ('sentinel', 290, 13), ('sentry', 432, 8), ('seo', 9379, 10), ('separation-of-concerns', 371, 3), ('separator', 605, 1), ('sequel', 2416, 22), ('sequelize.js', 1770, 7), ('sequelpro', 112, 12), ('service', 154267, 2920), ('service-discovery', 213, 25), ('service-locator', 318, 3), ('service-worker', 348, 5), ('servicecontroller', 71, 1), ('servicemix', 506, 5), ('servicepoint', 34, 1), ('servicepointmanager', 18, 1), ('servicestack', 4104, 11), ('servicestack.redis', 142, 2), ('servlet-3.0', 693, 2), ('servlet-container', 54, 1), ('servlet-filters', 1521, 17), ('servletcontextlistener', 121, 1), ('servlets', 25712, 92), ('sesame', 267, 1), ('session', 43360, 81), ('session-cache', 15, 1), ('session-cookies', 2491, 2), ('session-management', 173, 2), ('session-replication', 84, 2), ('session-scope', 148, 1), ('session-state', 1553, 2), ('session-variables', 2759, 1), ('set', 66572, 381), ('scaling', 2518, 74), ('scalr', 45, 1), ('scan-build', 15, 2), ('scanf', 3632, 5), ('scanning', 480, 1), ('scapy', 845, 1), ('schedule', 9900, 41), ('scheduled-tasks', 3757, 10), ('scheduler', 5433, 22), ('scheduling', 2316, 13), ('schema', 9421, 20), ('schema.org', 842, 3), ('schema.rb', 14, 2), ('schemacrawler', 31, 1), ('schemaspy', 17, 1), ('schematron', 134, 1), ('schroot', 5, 1), ('scientific-computing', 411, 2), ('scikit-learn', 4914, 6), ('scilab', 345, 1), ('scipy', 7332, 9), ('scmmanager', 15, 2), ('scons', 863, 5), ('scope', 21206, 31), ('scotty', 42, 1)]
+
+----------------------------------------------------------------------------------------------------
+# Runtime: 99347.300 secs
+Dumped a file with 4301 bytes
+Ended at: 2016-07-23 22:47:31
+
+[arahman@arahman src]$ python mc_tagMatching.py
+Started at: 2016-07-23 23:15:10
+The file is called: batch_x1x
+Total tags to look for  251
+Count of threads that will be used: 4
+Parallel output:
+[('shader', 4537, 3), ('shake-build-system', 50, 1), ('shallow-clone', 26, 2), ('shapefile', 663, 1), ('shapeless', 451, 1), ('sharding', 939, 3), ('share', 49384, 93), ('shared', 15240, 61), ('shared-folders', 192, 17), ('shared-host', 906, 13), ('shared-hosting', 898, 12), ('shared-libraries', 4341, 15), ('shared-memory', 1792, 5), ('shared-ptr', 1805, 1), ('shared-secret', 29, 1), ('sharedpreferences', 4342, 3), ('sharejs', 12, 1), ('sharekit', 480, 1), ('sharepoint', 28234, 9), ('sharepoint-2010', 8433, 1), ('sharing', 1838, 5), ('sharpziplib', 207, 2), ('shell', 86283, 1000), ('shell-exec', 648, 3), ('shellexecute', 438, 1), ('siebel', 222, 1), ('sieve', 386, 3), ('sieve-of-eratosthenes', 274, 1), ('sigabrt', 564, 4), ('sightly', 135, 1), ('sign', 117510, 140), ('signalr', 4748, 5), ('signalr.client', 423, 1), ('signals', 5704, 12), ('signature', 3141, 5), ('significant-terms', 8, 1), ('signtool', 147, 3), ('sigsegv', 542, 15), ('sigterm', 93, 4), ('sikuli', 485, 11), ('sikuli-script', 44, 1), ('silent', 454, 6), ('silent-installer', 193, 5), ('silex', 1030, 6), ('silktest', 77, 1), ('silverlight', 32252, 10), ('silverlight-4.0', 5319, 2), ('silverstripe', 1249, 5), ('simctl', 7, 1), ('similarity', 1046, 1), ('single-sign-on', 3639, 11), ('singleton', 5626, 5), ('sinon', 837, 1), ('sinopia', 13, 1), ('sip', 2725, 5), ('site-prism', 61, 2), ('sitebricks', 35, 1), ('sitecore', 4812, 4), ('sitecore-instance-manager', 8, 1), ('sitecore7.2', 296, 1), ('size', 20686, 18), ('size-t', 204, 1), ('sizing', 1748, 3), ('sjsxp', 2, 1), ('skeleton-code', 40, 1), ('skeleton-css-boilerplate', 143, 1), ('skflow', 41, 1), ('skip', 622, 4), ('skipper', 54, 1), ('skydns', 17, 15), ('skydock', 1, 1), ('skype', 1064, 3), ('slack', 450, 12), ('slack-api', 290, 7), ('slackware', 63, 1), ('smarty', 3650, 3), ('smb', 406, 8), ('sml', 1329, 1), ('smlnj', 501, 1), ('smo', 3521, 8), ('smoke-testing', 32, 2), ('smooth-scrolling', 544, 2), ('smpp', 332, 1), ('sms', 9167, 3), ('sms-gateway', 502, 1), ('smtp', 7843, 37), ('snakeyaml', 128, 1), ('snap-framework', 200, 2), ('snappy', 148, 1), ('snapshot', 886, 25), ('snapshot-view', 12, 1), ('sni', 3126, 16), ('snmp', 1755, 2), ('snmpd', 74, 1), ('snort', 176, 2), ('snowball', 57, 1), ('snowplow', 12, 1), ('soa', 26090, 97), ('soap', 24421, 82), ('soap-client', 1308, 2), ('soapui', 2342, 48), ('solidworks', 143, 1), ('solr', 14358, 73), ('solrcloud', 484, 3), ('solrnet', 508, 2), ('solution', 5729, 12), ('solver', 1465, 2), ('sonar-maven-plugin', 14, 6), ('sonar-runner', 575, 98), ('sonarlint', 94, 2), ('sonarlint-eclipse', 17, 1), ('sonarqube', 4886, 793), ('sonarqube-4.5', 170, 33), ('sonarqube-5.0', 135, 21), ('sonarqube-5.5', 15, 3), ('sonarqube-msbuild-runner', 76, 8), ('sonarqube-ops', 40, 7), ('sonarqube-scan', 73, 22), ('sonarqube-web', 74, 2), ('sonarqube5.1', 256, 47), ('sonarqube5.1.2', 35, 5), ('sonarqube5.2', 50, 3), ('sonarqube5.3', 81, 7), ('sonarqube5.6', 4, 1), ('sonata-user-bundle', 171, 1), ('sonatype', 226, 12), ('theory', 6583, 5), ('therubyracer', 94, 9), ('thin', 3647, 68), ('thin-client', 44, 1), ('thinking-sphinx', 818, 26), ('this', 4275, 2), ('thor', 7338, 45), ('thoughtworks-go', 26, 2), ('thread-safety', 5994, 8), ('thread-synchronization', 279, 1), ('threadpool', 2995, 1), ('three.js', 8691, 2), ('threetenbp', 20, 1), ('threshold', 371, 1), ('thrift', 1390, 7), ('throttle', 133, 1), ('throttling', 425, 3), ('throughput', 209, 1), ('thruway', 16, 1), ('thucydides', 83, 8), ('thumbnails', 2613, 4), ('thymeleaf', 1693, 2), ('tibco', 636, 2), ('tibco-ems', 163, 1), ('tidy', 830, 2), ('testcomplete', 305, 6), ('testdriven.net', 118, 1), ('testdroid', 18, 1), ('testem', 35, 1), ('testfairy', 19, 1), ('testflight', 1058, 20), ('testing', 72375, 924), ('testing-strategies', 40, 1), ('testlink', 131, 21), ('testng', 3754, 182), ('testng-dataprovider', 122, 3), ('testng-eclipse', 49, 2), ('testr', 336, 2), ('testrail', 17, 1), ('testunit', 324, 4), ('texas-instruments', 179, 1), ('text', 138892, 107), ('text-align', 740, 2), ('text-alignment', 462, 1), ('text-editor', 2100, 5), ('text-extraction', 449, 1), ('text-files', 3894, 1), ('text-mining', 1033, 1), ('text-processing', 821, 2), ('text-size', 203, 1), ('team', 8032, 107), ('team-build', 364, 1), ('teamcity', 4079, 69), ('teamcity-7.0', 123, 2), ('teamcity-8.0', 216, 3), ('teamcity-9.0', 232, 4), ('teamforge', 7, 2), ('teamsite', 55, 1), ('teamviewer', 41, 1), ('teardown', 38, 1), ('teaspoon', 31, 2), ('technical-debt', 42, 1), ('tee', 2955, 13), ('telegram-bot', 384, 6), ('telemetry', 33, 1), ('telepat', 12, 1), ('telerik', 9014, 4), ('telerik-mvc', 883, 1), ('telerik-reporting', 266, 2), ('telerik-test-studio', 28, 1), ('telnet', 1743, 8), ('temp', 57492, 138), ('template-engine', 1371, 6), ('templates', 42359, 95), ('templating', 1007, 2), ('tabcontainer', 194, 1), ('table', 165222, 167), ('tablecellrenderer', 392, 2), ('tablesorter', 1530, 1), ('tablespace', 167, 1), ('tabletools', 171, 1), ('tableview', 52335, 21), ('tabnavigator', 43, 1), ('tabs', 13266, 7), ('tabular', 463, 2), ('tachyon', 33, 1), ('taco', 2936, 1), ('tagbar', 23, 1), ('tagging', 931, 12), ('taglib', 896, 2), ('taglist', 57, 1), ('tags', 11735, 48), ('tail', 3567, 15), ('talend', 968, 2), ('tampermonkey', 440, 1), ('tap', 8323, 22), ('tap-harness', 12, 4), ('tapestry', 829, 1), ('tar', 23612, 157), ('tarfile', 80, 1), ('symfony-2.3', 705, 7), ('symfony-2.6', 145, 1), ('symfony-2.7', 158, 1), ('symfony-2.8', 101, 2), ('symfony-components', 55, 1), ('symfony-forms', 1469, 2), ('symfony-process', 50, 1), ('symfony-sonata', 462, 1), ('symfony1', 4011, 9), ('symfony2', 40713, 342), ('symfony3', 1110, 16), ('symlink', 1405, 61), ('symlink-traversal', 22, 1), ('sympy', 1065, 1), ('sync', 55761, 176), ('synced-folder', 4, 4), ('synchronization', 7153, 18), ('synchronize', 1484, 5), ('synchronized', 1189, 1), ('synctool', 1, 1), ('synology', 140, 6), ('syntastic', 166, 4), ('syntax', 21777, 43), ('syntax-error', 4827, 15), ('syntax-highlighting', 2579, 4)]
+
+----------------------------------------------------------------------------------------------------
+# Runtime: 98986.750 secs
+Dumped a file with 4272 bytes
+Ended at: 2016-07-25 02:44:57
+
+
+
+[arahman@arahman ~]$ cd Personal/stack-overflow-project/DevOpsInSO/src/
+[arahman@arahman src]$ python mc_tagMatching.py
+Started at: 2016-07-25 08:39:25
+The file is called: batch_fl
+Total tags to look for  25
+Count of threads that will be used: 4
+Parallel output:
+[('simple-authentication', 10, 1), ('simple-form', 2133, 1), ('simple-framework', 418, 1), ('simple-html-dom', 1162, 2), ('simple-injector', 537, 1), ('simple-spring-memcached', 18, 8), ('simpleadapter', 293, 3), ('simplecov', 46, 1), ('simplecursoradapter', 898, 3), ('simplehttpserver', 159, 2), ('simplejson', 216, 2), ('simplepie', 281, 1), ('simpletest', 161, 2), ('simplexml', 3172, 8), ('simplification', 131, 2), ('simulated-annealing', 108, 1), ('simulation', 2155, 3), ('simulator', 6010, 28), ('simulink', 1609, 1), ('sinatra', 4534, 66), ('sinatra-assetpack', 20, 2), ('single-file', 14, 1), ('single-instance', 43, 1), ('single-page-application', 2018, 2), ('single-quotes', 58, 2)]
+
+----------------------------------------------------------------------------------------------------
+# Runtime: 13728.860 secs
+Dumped a file with 520 bytes
+Ended at: 2016-07-25 12:28:14
+[arahman@arahman src]$ python mc_tagMatching.py
+Started at: 2016-07-25 13:10:57
+The file is called: batch_fm
+Total tags to look for  24
+Count of threads that will be used: 4
+Parallel output:
+[('slash', 1064, 2), ('slave', 653, 181), ('sleep', 2592, 1), ('sles', 359, 4), ('slf4j', 1673, 9), ('slice', 1945, 2), ('slicehost', 22, 1), ('slick2d', 629, 1), ('slide', 17619, 9), ('slider', 11510, 4), ('slideshow', 2778, 2), ('slidetoggle', 1109, 1), ('sliding-window', 162, 1), ('slim', 2812, 14), ('slim-3', 55, 1), ('slim-lang', 462, 2), ('sling', 552, 6), ('sloc', 621, 1), ('slowcheetah', 149, 1), ('smalltalk', 1228, 1), ('smart-http', 15, 1), ('smartcard', 1310, 1), ('smartfoxserver', 82, 1), ('smartos', 18, 2)]
+
+----------------------------------------------------------------------------------------------------
+# Runtime: 13228.465 secs
+Dumped a file with 357 bytes
+Ended at: 2016-07-25 16:51:25
+[arahman@arahman ~]$ cd Personal/stack-overflow-project/DevOpsInSO/src/
+[arahman@arahman src]$ python mc_tagMatching.py
+Started at: 2016-07-25 19:11:05
+The file is called: batch_fnop
+Total tags to look for  75
+Count of threads that will be used: 4
+Parallel output:
+[('socat', 120, 4), ('soci', 14636, 24), ('social-framework', 162, 1), ('social-networking', 1855, 4), ('social-stream', 17, 1), ('socialengine', 256, 1), ('socket-timeout-exception', 124, 3), ('socket.io', 8968, 84), ('socket.io-1.0', 204, 1), ('socket.io-java-client', 16, 1), ('socket.io-redis', 41, 1), ('socketexception', 427, 4), ('sockets', 42230, 142), ('sockjs', 329, 3), ('sockjs-tornado', 6, 1), ('socks', 435, 2), ('softlayer', 359, 16), ('software-design', 795, 2), ('software-distribution', 445, 5), ('software-engineering', 1640, 5), ('software-packaging', 68, 1), ('software-product-lines', 18, 1), ('software-quality', 123, 2), ('solaris', 2365, 20), ('solaris-10', 234, 3), ('sorl-thumbnail', 200, 2), ('sorting', 38164, 33), ('soundcloud', 1946, 1), ('source-code-protection', 105, 1), ('source-maps', 459, 4), ('source-monitor', 25, 1), ('sourceanalyser', 1, 1), ('sourceforge', 178, 1), ('sourcetree', 866, 6), ('space', 19384, 153), ('spacemacs', 50, 2), ('spaces', 10574, 29), ('spaceship-operator', 24, 1), ('spacing', 768, 1), ('spagobi', 118, 3), ('spam', 1562, 3), ('sparc', 210, 1), ('spark-cassandra-connector', 250, 3), ('spark-dataframe', 698, 1), ('spark-graphx', 167, 3), ('spark-java', 167, 6), ('spark-jobserver', 67, 10), ('spark-notebook', 18, 3), ('spark-streaming', 1528, 11), ('sparkle', 75, 1), ('splunk', 465, 8), ('spnego', 202, 1), ('spock', 1030, 15), ('spoon', 247, 10), ('spoon-gradle-plugin', 6, 1), ('spork', 254, 11), ('spotfire', 369, 1), ('spotify', 1849, 5), ('spray', 959, 10), ('spray-can', 7, 1), ('spray-client', 65, 2), ('spray-json', 192, 2), ('spreadsheet', 10712, 2), ('spree', 1415, 55), ('spree-auth-devise', 49, 1), ('spring', 127420, 713), ('spring-3', 716, 1), ('spring-amqp', 516, 1), ('spring-annotations', 631, 2), ('spring-aop', 1206, 6), ('spring-batch', 2977, 3), ('spring-boot', 9778, 166), ('spring-boot-actuator', 108, 2), ('spring-boot-docker-plugin', 1, 1), ('spring-boot-gradle-plugin', 19, 1)]
+
+----------------------------------------------------------------------------------------------------
+# Runtime: 29695.165 secs
+Dumped a file with 1447 bytes
+Ended at: 2016-07-26 03:26:00
+[arahman@arahman src]$ python mc_tagMatching.py
+Started at: 2016-07-26 08:32:21
+The file is called: batch_fq
+Total tags to look for  25
+Count of threads that will be used: 4
+Parallel output:
+[('spring-loaded', 42, 1), ('spring-mobile', 27, 1), ('spring-modules', 12, 1), ('spring-mvc', 35287, 124), ('spring-mvc-test', 106, 1), ('spring-profiles', 94, 1), ('spring-rabbit', 210, 1), ('spring-remoting', 79, 1), ('spring-rest', 458, 1), ('spring-roo', 1167, 3), ('spring-security', 13384, 50), ('spring-security-acl', 62, 1), ('spring-security-oauth2', 758, 4), ('spring-session', 197, 2), ('spring-social-facebook', 139, 1), ('spring-test', 679, 7), ('spring-tool-suite', 597, 3), ('spring-transactions', 772, 1), ('spring-websocket', 474, 3), ('spring-xd', 518, 3), ('spring4d', 53, 1), ('springjunit4classrunner', 33, 2), ('sprinkle', 1, 1), ('sprint', 138, 1), ('sprite', 13809, 4)]
+
+----------------------------------------------------------------------------------------------------
+# Runtime: 14419.844 secs
+Dumped a file with 519 bytes
+Ended at: 2016-07-26 12:32:41
+[arahman@arahman src]$ python mc_tagMatching.py
+Started at: 2016-07-26 13:17:19
+The file is called: batch_fr
+Total tags to look for  25
+Count of threads that will be used: 4
+Parallel output:
+[('sqlbulkcopy', 612, 1), ('sqlcipher', 409, 2), ('sqlcipher-android', 30, 1), ('sqlcmd', 592, 1), ('sqldb', 1795, 7), ('sqlexception', 601, 1), ('sqlite', 58754, 122), ('sqlite3', 10893, 65), ('sqlite3-ruby', 136, 3), ('sqljdbc', 55, 2), ('sqlperformance', 237, 1), ('sqlplus', 1796, 5), ('sqlsrv', 324, 1), ('sqoop', 1235, 12), ('sqoop2', 98, 2), ('squash', 180, 2), ('squeel', 123, 2), ('squid', 584, 4), ('squirrel-sql', 187, 1), ('squirrel.windows', 13, 1), ('squirrelmail', 39, 1), ('squish', 122, 3), ('ssas', 3680, 1), ('ssd', 4690, 20), ('ssdl', 10, 1)]
+
+----------------------------------------------------------------------------------------------------
+# Runtime: 22461.930 secs
+Dumped a file with 387 bytes
+Ended at: 2016-07-26 19:31:41
+
+
+
+Started at: 2016-07-26 19:34:17
+The file is called: batch_fstu
+Total tags to look for  75
+Count of threads that will be used: 4
+Parallel output:
+[('stackdriver', 29, 5), ('stackexchange.redis', 328, 2), ('staf', 100, 1), ('stage', 1161, 6), ('stagewebview', 75, 1), ('stagewebviewbridge', 14, 1), ('staging', 347, 21), ('standards', 3046, 2), ('standards-compliance', 294, 1), ('stanford-nlp', 1686, 6), ('starcounter', 11, 1), ('stardog', 43, 2), ('start-job', 83, 1), ('start-process', 87, 3), ('start-stop-daemon', 65, 3), ('starteam', 124, 7), ('starttls', 124, 1), ('startup', 2018, 15), ('stat', 95515, 268), ('stata', 1962, 3), ('statamic', 8, 1), ('state', 49755, 46), ('stateful-session-bean', 100, 2), ('stateless', 462, 2), ('states', 342, 1), ('stdout', 2502, 14), ('stealjs', 24, 1), ('steam', 705, 2), ('steambot', 55, 1), ('stemming', 292, 1), ('sticky', 1411, 2), ('sticky-footer', 593, 1), ('stimulsoft', 159, 1), ('stl', 22454, 49), ('stomp', 740, 5), ('stop-words', 284, 2), ('storage', 17985, 123), ('store', 52592, 68), ('stored-procedures', 22581, 3), ('stormpath', 150, 3), ('storyboard', 10513, 1), ('str-replace', 1597, 1), ('strace', 356, 4), ('stratio', 4886, 52), ('stream', 48276, 94), ('streaming', 14852, 37), ('streamreader', 1456, 3), ('streamwriter', 985, 2), ('stress', 538, 5), ('stress-testing', 468, 4), ('struts2-json-plugin', 102, 1), ('stty', 60, 1), ('stub', 956, 1), ('stun', 601, 8), ('stunnel', 98, 2), ('stxxl', 48, 1), ('stylecop', 479, 11), ('styles', 9527, 5), ('stylesheet', 2539, 3), ('styling', 1283, 1), ('stylus', 564, 1), ('su', 320339, 1011), ('suave', 25, 1), ('sub-array', 79, 1), ('subcommand', 15, 1), ('subdirectory', 572, 4), ('subdirs', 18, 1), ('subdomain', 4113, 27), ('subdomains', 534, 2), ('subfolder', 625, 1), ('subject', 105, 1), ('sublime-text-plugin', 423, 1), ('sublimelinter', 134, 1), ('sublimetext', 7055, 37), ('sublimetext2', 3862, 17)]
+
+----------------------------------------------------------------------------------------------------
+# Runtime: 37360.243 secs
+Dumped a file with 1245 bytes
+Ended at: 2016-07-27 05:56:57
+[arahman@arahman src]$ python mc_tagMatching.py
+Started at: 2016-07-27 08:35:08
+The file is called: batch_fv
+Total tags to look for  25
+Count of threads that will be used: 4
+Parallel output:
+[('summary', 631, 2), ('sun', 4093, 25), ('sungridengine', 220, 5), ('sunspot', 1052, 13), ('sunspot-rails', 381, 5), ('sunspot-solr', 265, 5), ('super', 5076, 129), ('supertab', 24, 1), ('supertest', 252, 1), ('superuser', 43, 1), ('supervisor', 914, 122), ('supervisord', 620, 99), ('support-v4', 10, 1), ('suppress-warnings', 425, 2), ('surefire', 712, 83), ('surfaceview', 2627, 1), ('surround', 71, 1), ('surroundscm', 13, 1), ('suse', 5562, 32), ('suspend', 251, 2), ('susy', 510, 1), ('svc', 1053, 2), ('svg', 19882, 7), ('svn', 25634, 685), ('svn-checkout', 34, 2)]
+
+----------------------------------------------------------------------------------------------------
+# Runtime: 14078.879 secs
+Dumped a file with 398 bytes
+Ended at: 2016-07-27 12:29:47
+[arahman@arahman src]$ python mc_tagMatching.py
+Started at: 2016-07-27 13:35:01
+The file is called: batch_fw
+Total tags to look for  25
+Count of threads that will be used: 4
+Parallel output:
+[('swashbuckle', 157, 1), ('swc', 241, 1), ('swi-prolog', 591, 1), ('swift', 102280, 215), ('swift2', 7399, 1), ('swiftmailer', 1006, 6), ('swig', 2113, 4), ('swing', 61790, 23), ('swingworker', 747, 2), ('swipe', 3672, 3), ('swipe-gesture', 370, 1), ('swiperefreshlayout', 354, 1), ('swisscomdev', 24, 1), ('switch-statement', 6172, 2), ('switching', 324, 3), ('swt', 4880, 7), ('swtbot', 120, 4), ('sybase', 2941, 2), ('sybase-ase', 874, 1), ('syck', 21, 1), ('sylius', 279, 1), ('symbol', 4183, 4), ('symbolicate', 211, 1), ('symfony-1.4', 2395, 3), ('symfony-2.1', 1017, 7)]
+
+----------------------------------------------------------------------------------------------------
+# Runtime: 20845.262 secs
+Dumped a file with 403 bytes
+Ended at: 2016-07-27 19:22:26
+[arahman@arahman src]$
+Started at: 2016-07-27 19:26:39
+The file is called: batch_fx
+Total tags to look for  25
+Count of threads that will be used: 4
+Parallel output:
+[('sysadmin', 393, 26), ('sysctl', 85, 4), ('sysinternals', 97, 2), ('syslog', 911, 31), ('syslog-ng', 101, 2), ('system', 39822, 185), ('system-administration', 218, 7), ('system-calls', 1817, 4), ('system-configuration', 35, 1), ('system-identification', 27, 1), ('system-properties', 162, 5), ('system-requirements', 37, 1), ('system-rules', 8, 1), ('system-testing', 72, 2), ('system.in', 113, 1), ('system.net.webexception', 120, 1), ('system.reactive', 2156, 1), ('system.web.routing', 19, 1), ('systemctl', 8, 5), ('systemd', 415, 50), ('systemjs', 552, 2), ('systemmanagement', 11, 1), ('systemtap', 85, 2), ('systemtime', 105, 1), ('sysv', 55, 2)]
+
+----------------------------------------------------------------------------------------------------
+# Runtime: 12662.617 secs
+Dumped a file with 481 bytes
+Ended at: 2016-07-27 22:57:41
+[arahman@arahman src]$ python mc_tagMatching.py
+Started at: 2016-07-27 23:58:45
+The file is called: batch_fy
+Total tags to look for  25
+Count of threads that will be used: 4
+Parallel output:
+[('target', 2441, 6), ('target-platform', 94, 1), ('targets', 152, 2), ('task', 29991, 78), ('task-management', 26, 1), ('task-parallel-library', 4207, 2), ('task-queue', 505, 2), ('taskkill', 149, 1), ('tasklist', 120, 1), ('taskmanager', 318, 1), ('tastypie', 1523, 5), ('taxonomy', 1659, 1), ('tbxml', 90, 1), ('tcl', 5405, 20), ('tcp', 18853, 60), ('tcp-ip', 780, 4), ('tcpclient', 1464, 1), ('tcpdump', 554, 4), ('tcplistener', 522, 1), ('tcpreplay', 29, 2), ('tcpserver', 423, 1), ('tcpsocket', 313, 2), ('tcserver', 84, 2), ('tcsh', 400, 2), ('tdd', 4666, 36)]
+
+----------------------------------------------------------------------------------------------------
+# Runtime: 12743.359 secs
+Dumped a file with 392 bytes
+Ended at: 2016-07-28 03:31:08
+
+[arahman@arahman ~]$ cd Personal/stack-overflow-project/DevOpsInSO/src/
+[arahman@arahman src]$ python mc_tagMatching.py 
+Started at: 2016-07-28 08:33:08
+The file is called: batch_fz
+Total tags to look for  25
+Count of threads that will be used: 4
+Parallel output: 
+[('temporary-asp.net-files', 7, 1), ('temporary-files', 594, 2), ('tensorboard', 97, 5), ('tensorflow', 1888, 56), ('tensorflow-serving', 27, 3), ('teradata', 1905, 2), ('terminal', 11218, 88), ('terminal-color', 15, 1), ('terminal-server', 12, 1), ('terminate', 682, 3), ('termination', 234, 1), ('terminator', 79, 1), ('terminology', 1508, 2), ('terracotta', 178, 3), ('terraform', 73, 18), ('tesseract', 1650, 3), ('test-environments', 67, 7), ('test-kitchen', 154, 133), ('test-more', 14, 1), ('test-plan', 37, 1), ('test-reporting', 26, 1), ('test-suite', 181, 5), ('testbed', 22, 1), ('testcase', 631, 11), ('testcasesource', 26, 1)]
+
+----------------------------------------------------------------------------------------------------
+# Runtime: 14558.646 secs
+Dumped a file with 464 bytes
+Ended at: 2016-07-28 12:35:47
+[arahman@arahman src]$ python mc_tagMatching.py 
+Started at: 2016-07-28 13:31:51
+The file is called: baal
+Total tags to look for  25
+Count of threads that will be used: 4
+Parallel output: 
+[('text-to-speech', 1850, 4), ('textarea', 6145, 3), ('textbox', 12585, 2), ('textmate', 1106, 2), ('textpad', 104, 1), ('texture-mapping', 649, 1), ('textures', 4071, 2), ('textview', 15625, 8), ('textwatcher', 479, 1), ('tf', 83799, 1276), ('tf-idf', 418, 1), ('tfs', 17680, 154), ('tfs-power-tools', 144, 1), ('tfs2008', 515, 5), ('tfs2010', 3576, 11), ('tfs2012', 1855, 3), ('tfs2013', 1415, 8), ('tfs2015', 593, 5), ('tfsbuild', 1936, 9), ('tftp', 148, 2), ('tfvc', 128, 1), ('theano', 1221, 3), ('theano-cuda', 33, 1), ('theforeman', 55, 41), ('themes', 5396, 7)]
+
+----------------------------------------------------------------------------------------------------
+# Runtime: 21423.833 secs
+Dumped a file with 394 bytes
+Ended at: 2016-07-28 19:28:55
+[arahman@arahman src]$ 
+
+[arahman@arahman src]$ python mc_tagMatching.py 
+Started at: 2016-07-28 19:58:36
+The file is called: baal
+Total tags to look for  24
+Count of threads that will be used: 4
+Parallel output: 
+[('tile', 5063, 3), ('tilecache', 13, 1), ('tiles', 1758, 1), ('tilt', 133, 1), ('time', 129314, 221), ('time-complexity', 3235, 6), ('time-format', 1258, 1), ('time-limiting', 52, 3), ('time-series', 3758, 6), ('timed', 1069, 1), ('timeline', 1008, 2), ('timeout', 10276, 52), ('timeoutexception', 179, 1), ('timepicker', 3239, 2), ('timer', 16166, 6), ('timer-jobs', 116, 1), ('timestamp', 7533, 7), ('timestamping', 38, 1), ('timetable', 110, 1), ('timezone', 7184, 17), ('tinkerpop', 296, 1), ('tiny-tds', 103, 1), ('tinymce', 5850, 64), ('tinymce-3', 42, 1)]
+
+----------------------------------------------------------------------------------------------------
+# Runtime: 11838.333 secs
+Dumped a file with 395 bytes
+Ended at: 2016-07-28 23:15:54
+Started at: 2016-07-28 23:30:14
+The file is called: baal
+Total tags to look for  34
+Count of threads that will be used: 4
+Parallel output: 
+[('tinymce-4', 791, 21), ('tinymce-rails', 24, 1), ('tinyscrollbar', 69, 1), ('tipsy', 99, 1), ('tire', 516, 6), ('titan', 6795, 23), ('titanium', 6101, 16), ('titanium-alloy', 792, 3), ('titanium-android', 71, 1), ('titanium-mobile', 1725, 4), ('title', 3431, 4), ('tk', 37236, 29), ('tkinter', 11774, 7), ('tlbimp', 83, 1), ('tld', 238, 1), ('tlf', 113, 1), ('tls1.2', 365, 14), ('tm', 697717, 662), ('tmp', 1350, 12), ('tmpfs', 37, 3), ('tmux', 799, 9), ('tns', 229, 2), ('tnsnames', 145, 1), ('toad', 766, 2), ('tofixed', 41, 1), ('toggle', 6270, 3), ('token', 8596, 17), ('tokenize', 1878, 2), ('tokyo-cabinet', 79, 1), ('tomcat', 34599, 802), ('tomcat-juli', 10, 1), ('tomcat-manager', 18, 1), ('tomcat5.5', 252, 1), ('tomcat6', 1858, 28)]
+
+----------------------------------------------------------------------------------------------------
+# Runtime: 16934.899 secs
+Dumped a file with 507 bytes
+Ended at: 2016-07-29 04:12:29
+Started at: 2016-07-29 08:37:57
+The file is called: baal
+Total tags to look for  24
+Count of threads that will be used: 4
+Parallel output: 
+[('tomcat7', 4701, 123), ('tomcat8', 891, 26), ('tomee', 555, 11), ('tomee-7', 19, 1), ('tone-analyzer', 7, 2), ('toolbar', 5743, 2), ('toolchain', 394, 3), ('tooling', 65, 2), ('toolkit', 5781, 5), ('tools.jar', 46, 1), ('tooltip', 4924, 4), ('tooltwist', 47, 3), ('topaz-signatures', 19, 1), ('toplink', 236, 2), ('tor', 325258, 1374), ('tornado', 2464, 25), ('tornado-motor', 55, 1), ('torque', 291, 11), ('torquebox', 89, 9), ('tortoisecvs', 65, 1), ('tortoisegit', 651, 4), ('tortoisehg', 926, 4), ('tortoisehg-2.0', 22, 1), ('tortoisesvn', 4055, 21)]
+
+----------------------------------------------------------------------------------------------------
+# Runtime: 13142.701 secs
+Dumped a file with 388 bytes
+Ended at: 2016-07-29 12:17:00
+Started at: 2016-07-29 12:19:58
+The file is called: baal
+Total tags to look for  25
+Count of threads that will be used: 4
+Parallel output: 
+[('tostring', 1512, 1), ('touch', 52999, 24), ('touch.unit', 7, 1), ('tox', 163, 8), ('trac', 33618, 143), ('trace', 4828, 27), ('trace32', 39, 1), ('traceability', 24, 1), ('traceroute', 171, 1), ('tracing', 1101, 2), ('tracker', 325, 4), ('tradeoff', 28, 1), ('trading', 360, 1), ('traffic', 894, 4), ('trafficshaping', 49, 1), ('trailblazer', 18, 1), ('trailing', 261, 1), ('trait', 2676, 2), ('traits', 1440, 1), ('tramp', 177, 3), ('transactional', 766, 2), ('transactionmanager', 100, 1), ('transactions', 11475, 17), ('transfer', 2905, 8), ('transform', 9559, 5)]
+
+----------------------------------------------------------------------------------------------------
+# Runtime: 13998.138 secs
+Dumped a file with 395 bytes
+Ended at: 2016-07-29 16:13:17
+Started at: 2016-07-29 17:01:10
+The file is called: batch_x2x
+Total tags to look for  175
+Count of threads that will be used: 4
+Parallel output: 
+[('svn-client', 25, 1), ('svn-externals', 230, 5), ('svn-hooks', 197, 4), ('svn-lock', 8, 1), ('svn-merge', 105, 1), ('svn-notify', 4, 1), ('svn-repository', 53, 1), ('svn-switch', 15, 1), ('svn-trunk', 18, 1), ('svn2git', 52, 1), ('svnant', 52, 2), ('svncommit', 19, 1), ('svnkit', 280, 11), ('svnserve', 61, 1), ('svnsync', 85, 2), ('sw-precache', 6, 2), ('sw-toolbox', 6, 1), ('swagger', 2061, 14), ('swagger-2.0', 315, 1), ('swagger-editor', 97, 1), ('swagger-ui', 670, 4), ('swampdragon', 27, 1), ('swap', 1719, 6), ('swapfile', 43, 1), ('swarm', 249, 153), ('sublimetext3', 2978, 18), ('submenu', 998, 1), ('submit', 6835, 2), ('subnet', 352, 8), ('subprocess', 4657, 23), ('subquery', 5535, 2), ('subrepos', 171, 2), ('subscribe', 1789, 5), ('subscription', 1580, 2), ('subset', 2685, 1), ('subshell', 118, 2), ('substance', 53, 1), ('substitution', 1097, 3), ('substr', 5503, 4), ('substring', 4632, 3), ('substrings', 133, 1), ('subtree', 412, 4), ('subversive', 337, 2), ('sudo', 2051, 102), ('sudoers', 127, 10), ('suds', 570, 4), ('suffix-array', 107, 1), ('sugarcrm', 1253, 3), ('suitecrm', 127, 1), ('sulu', 22, 1), ('string', 132529, 88), ('string-comparison', 1111, 2), ('string-concatenation', 1052, 2), ('string-formatting', 2552, 1), ('string-interpolation', 287, 1), ('string-length', 458, 3), ('string-matching', 1060, 2), ('string.format', 351, 1), ('stringify', 319, 2), ('stringio', 187, 3), ('stringtokenizer', 441, 1), ('stripe-payments', 2126, 5), ('stripping', 53, 1), ('strong-named-key', 21, 1), ('strong-parameters', 687, 3), ('strongloop', 902, 17), ('strophe', 744, 1), ('strpos', 489, 1), ('strtok', 755, 2), ('struct', 66494, 72), ('structure', 25044, 52), ('structured-data', 120, 2), ('struts', 14017, 14), ('struts-1', 950, 1), ('struts2', 10293, 9), ('static', 21956, 90), ('static-analysis', 1139, 22), ('static-code-analysis', 240, 12), ('static-content', 154, 2), ('static-files', 329, 10), ('static-ip-address', 139, 7), ('static-libraries', 3029, 2), ('static-linking', 1062, 7), ('static-members', 1008, 1), ('static-site', 124, 1), ('static-variables', 455, 1), ('staticfilehandler', 15, 1), ('statistics', 7286, 14), ('statlight', 4, 1), ('statsd', 179, 10), ('statsmodels', 589, 2), ('statsvn', 10, 2), ('status', 12518, 81), ('statusbar', 2049, 2), ('stax', 2424, 21), ('std', 13339, 33), ('stderr', 761, 5), ('stdin', 2143, 3), ('stdio', 599, 1), ('stdmap', 515, 1), ('ssdt', 767, 2), ('sse', 52729, 620), ('ssh', 16524, 1380), ('ssh-agent', 122, 23), ('ssh-keygen', 39, 2), ('ssh-keys', 815, 116), ('ssh-tunnel', 246, 11), ('ssh2-exec', 33, 1), ('sshd', 177, 14), ('sshfs', 144, 5), ('sshkit', 31, 28), ('sshpass', 43, 4), ('ssl', 36792, 470), ('ssl-certificate', 4133, 56), ('sslhandshakeexception', 190, 4), ('ssms', 2998, 2), ('ssmtp', 41, 2), ('ssp', 6965, 41), ('sspi', 122, 1), ('stability', 171, 2), ('stack', 24818, 1811), ('stack-level', 12, 1), ('stack-overflow', 2677, 3), ('stack-trace', 1558, 12), ('stackato', 8, 2), ('sprite-kit', 8589, 2), ('sprite-sheet', 350, 1), ('sprockets', 622, 35), ('sproutcore', 256, 1), ('spss', 853, 2), ('spyder', 699, 1), ('spymemcached', 164, 3), ('spyne', 103, 1), ('sql', 938812, 2610), ('sql-azure', 2840, 2), ('sql-insert', 1859, 1), ('sql-order-by', 3976, 2), ('sql-server', 219280, 124), ('sql-server-2000', 2479, 1), ('sql-server-2005', 18118, 4), ('sql-server-2008', 54891, 11), ('sql-server-2008-r2', 9415, 1), ('sql-server-2012', 10410, 9), ('sql-server-2012-express', 360, 1), ('sql-server-2014', 1839, 2), ('sql-server-ce', 3644, 1), ('sql-server-express', 1381, 1), ('sqlalchemy', 8676, 51), ('sqlalchemy-migrate', 52, 2), ('sqlanywhere', 367, 1), ('spring-boot-maven-plugin', 41, 1), ('spring-cache', 162, 10), ('spring-cloud', 945, 45), ('spring-cloud-config', 31, 3), ('spring-cloud-dataflow', 19, 2), ('spring-cloud-feign', 13, 1), ('spring-cloud-netflix', 54, 2), ('spring-cloud-sleuth', 4, 1), ('spring-data', 8293, 20), ('spring-data-gemfire', 69, 5), ('spring-data-jpa', 2475, 3), ('spring-data-mongodb', 968, 1), ('spring-data-neo4j', 1259, 1), ('spring-data-redis', 109, 1), ('spring-dsl', 57, 2), ('spring-el', 411, 1), ('spring-gem', 26, 1), ('spring-insight', 24, 2), ('spring-integration', 3136, 12), ('spring-integration-sftp', 19, 1), ('spring-java-config', 458, 1), ('spring-jdbc', 983, 3), ('spring-jms', 716, 2), ('spring-jpa', 289, 1), ('spring-junit', 36, 1)]
+
+----------------------------------------------------------------------------------------------------
+# Runtime: 93236.599 secs
+Dumped a file with 3166 bytes
+Ended at: 2016-07-30 18:55:06
+Started at: 2016-07-30 19:13:26
+The file is called: baal
+Total tags to look for  180
+Count of threads that will be used: 4
+Parallel output: 
+[('transformation', 2049, 3), ('transient', 295, 1), ('transifex', 12, 1), ('transitive-dependency', 94, 1), ('translate-animation', 321, 1), ('translation', 3552, 6), ('transliteration', 162, 1), ('transmission', 134, 2), ('transmission-daemon', 5, 1), ('transparent', 1508, 1), ('traversal', 2152, 3), ('travis-ci', 1697, 135), ('treasure-data', 5, 1), ('tree', 41452, 41), ('treemap', 851, 2), ('treeset', 354, 1), ('treetop', 75, 1), ('treeview', 7668, 2), ('trend', 376, 2), ('trie', 1828, 9), ('trigger.io', 700, 1), ('triggers', 11131, 44), ('trinidad', 212, 1), ('triplestore', 165, 1), ('triton', 7, 2), ('truecrypt', 79, 1), ('truncation', 191, 1), ('trunk', 137, 4), ('trx', 30, 1), ('try-catch', 4669, 4), ('tsc', 5738, 13), ('tshark', 200, 1), ('tslint', 66, 1), ('tsql', 39166, 3), ('tsung', 132, 2), ('ttl', 3572, 29), ('tty', 12374, 151), ('tuckey-urlrewrite-filter', 214, 1), ('tuleap', 81, 2), ('tumblr', 1869, 4), ('tun', 7655, 44), ('tunnel', 900, 28), ('tunneling', 223, 5), ('tuples', 4385, 1), ('turbine', 61, 3), ('turbolinks', 473, 4), ('tutum', 20, 16), ('tween', 1698, 1), ('tweetsharp', 219, 1), ('twemproxy', 26, 2), ('twig', 5399, 18), ('twig-extension', 80, 1), ('twilio', 2596, 7), ('twill', 73, 1), ('twirl', 63, 1), ('twistd', 37, 1), ('twisted', 2717, 13), ('twisted.web', 150, 1), ('twitter', 94688, 155), ('twitter-bootstrap', 73743, 111), ('twitter-bootstrap-3', 14316, 12), ('twitter-bootstrap-rails', 197, 6), ('twitter-fabric', 157, 1), ('twitter-oauth', 2116, 1), ('two-factor-authentication', 139, 3), ('tycho', 522, 33), ('tycho-surefire-plugin', 30, 3), ('type-conversion', 6256, 2), ('type-hinting', 232, 2), ('typeerror', 2056, 7), ('types', 33489, 48), ('typesafe', 627, 15), ('typesafe-activator', 348, 11), ('typesafe-config', 73, 1), ('typesafe-stack', 78, 2), ('typescript', 11501, 18), ('typhoeus', 75, 1), ('typo3', 3739, 9), ('typo3-4.5', 63, 1), ('typo3-6.2.x', 511, 2), ('typo3-flow', 103, 1), ('typo3-neos', 74, 2), ('tyrus', 93, 3), ('u-boot', 395, 1), ('uac', 1220, 4), ('uber-api', 219, 1), ('uberjar', 87, 2), ('uberspace', 4, 1), ('uberspacify', 1, 1), ('ubuntu', 37195, 2005), ('ubuntu-10.04', 720, 17), ('ubuntu-10.10', 196, 1), ('ubuntu-11.04', 316, 11), ('ubuntu-11.10', 266, 4), ('ubuntu-12.04', 2802, 143), ('ubuntu-12.10', 130, 3), ('ubuntu-13.04', 56, 2), ('ubuntu-13.10', 207, 6), ('ubuntu-14.04', 3584, 275), ('ubuntu-14.10', 46, 5), ('ubuntu-15.04', 147, 11), ('ubuntu-15.10', 111, 6), ('ubuntu-16.04', 123, 8), ('ubuntu-cloud', 3, 1), ('ubuntu-on-windows', 23, 1), ('ubuntu-server', 309, 15), ('ucd', 17, 2), ('ucp', 43, 7), ('udeploy', 13, 3), ('udev', 306, 3), ('udf', 4263, 231), ('udid', 318, 1), ('udp', 6788, 20), ('uefi', 144, 1), ('ufw', 15, 5), ('uglifyjs', 466, 2), ('ui-automation', 2041, 27), ('ui-testing', 847, 15), ('uiapplicationdelegate', 459, 1), ('uiautomator', 448, 1), ('uibackgroundtask', 49, 1), ('uibutton', 8276, 3), ('uicollectionview', 6931, 7), ('uicollectionviewcell', 2015, 4), ('uid', 10435, 21), ('uigesturerecognizer', 2760, 1), ('uiimage', 17085, 8), ('uiimageview', 8484, 1), ('uiinclude', 74, 1), ('uikit', 5764, 1), ('uinavigationcontroller', 8557, 1), ('uipageviewcontroller', 1430, 2), ('uipickerview', 2529, 5), ('uipickerviewcontroller', 74, 1), ('uiscrollview', 10064, 4), ('uitableview', 45780, 20), ('uitextfield', 5947, 2), ('uiview', 26597, 7), ('uiviewanimation', 1517, 1), ('uiviewanimationtransition', 325, 1), ('uiviewcontroller', 12636, 4), ('uiwebview', 9635, 2), ('ulimit', 184, 15), ('ultraedit', 78, 1), ('umask', 88, 6), ('umbraco', 3386, 2), ('uml', 4462, 4), ('uname', 34, 1), ('unauthorized', 322, 4), ('unauthorizedaccessexcepti', 103, 1), ('unbuffered-output', 10, 1), ('unc', 86402, 96), ('uncaught-exception', 220, 1), ('unchecked-conversion', 17, 1), ('uncompress', 82, 1), ('undefined', 5671, 11), ('undefined-reference', 705, 1), ('undeploy', 24, 2), ('underscore.js', 4533, 4), ('undertow', 167, 1), ('unexpectendoffile', 29, 1), ('unfuddle', 37, 2), ('unicode', 16210, 30), ('unicorn', 2288, 290), ('uniform', 374, 1), ('unikernel', 14, 2), ('uninitialized-constant', 73, 2), ('uninstall', 1396, 12), ('uninstaller', 153, 1), ('union-find', 67, 1), ('unionfs', 7, 5), ('unique', 6405, 4), ('unique-constraint', 696, 1), ('uniqueidentifier', 1007, 1), ('unison', 45, 1), ('unit-testing', 41673, 417), ('unittest2', 45, 1), ('unity-container', 2884, 3), ('unity3d', 17659, 27), ('unity3d-2dtools', 294, 1)]
+
+----------------------------------------------------------------------------------------------------
+# Runtime: 81898.643 secs
+Dumped a file with 3187 bytes
+Ended at: 2016-07-31 17:58:24
+Started at: 2016-07-31 19:05:12
+The file is called: baal
+Total tags to look for  175
+Count of threads that will be used: 4
+Parallel output: 
+[('unity5', 952, 1), ('unityscript', 1522, 2), ('universal', 7616, 89), ('universal-image-loader', 816, 82), ('unix', 32507, 185), ('unix-domain-sockets', 120, 1), ('unix-socket', 192, 6), ('unixodbc', 334, 3), ('unknown-host', 93, 2), ('unobtrusive-validation', 930, 2), ('unpack', 548, 2), ('unrar', 67, 1), ('unsafe', 614, 1), ('unsatisfiedlinkerror', 347, 1), ('unsigned', 1323, 3), ('unsigned-integer', 274, 1), ('unsupported-class-version', 58, 1), ('unzip', 1177, 8), ('update-attributes', 142, 1), ('update-site', 49, 2), ('updatepanel', 3055, 3), ('updates', 2454, 16), ('upgrade', 2565, 29), ('upload', 34908, 88), ('uploading', 2323, 7), ('upnp', 451, 2), ('upstart', 488, 35), ('uptime', 112, 1), ('uptodate', 20, 1), ('uri', 69956, 413), ('uri-scheme', 65, 2), ('url', 91885, 365), ('url-for', 95, 1), ('url-mapping', 321, 1), ('url-pattern', 239, 1), ('url-redirection', 1705, 6), ('url-rewrite-module', 427, 1), ('url-rewriting', 10934, 15), ('url-routing', 3052, 5), ('url-scheme', 636, 1), ('urldecode', 318, 2), ('urlencode', 1349, 3), ('urllib', 3813, 14), ('urllib2', 2372, 9), ('urllib3', 155, 4), ('usability', 1464, 5), ('usage-statistics', 205, 3), ('usb', 8717, 11), ('usb-hostcontroller', 15, 1), ('usb4java', 49, 1), ('use-case', 487, 3), ('user', 72533, 156), ('user-accounts', 551, 4), ('user-agent', 1567, 1), ('user-controls', 8617, 4), ('user-data', 185, 7), ('user-defined-functions', 1688, 1), ('user-defined-types', 396, 1), ('user-environment', 9, 1), ('user-experience', 968, 1), ('user-friendly', 61, 1), ('user-input', 2441, 5), ('user-interaction', 236, 1), ('user-interface', 35945, 45), ('user-management', 319, 8), ('user-permissions', 581, 10), ('userdel', 5, 2), ('username', 1209, 6), ('using', 1700, 2), ('utf', 15169, 52), ('utf-8', 13936, 45), ('utf8mb4', 128, 3), ('utilization', 88, 1), ('uuid', 1476, 7), ('uwp', 2551, 4), ('uwsgi', 1419, 50), ('v8', 1497, 6), ('vaadin', 3350, 18), ('vaadin7', 1012, 2), ('vagrant', 5407, 5302), ('vagrant-cachier', 3, 3), ('vagrant-gatling-rsync', 3, 2), ('vagrant-plugin', 50, 50), ('vagrant-provision', 61, 60), ('vagrant-windows', 118, 118), ('vagrantfile', 599, 596), ('vala', 652, 2), ('valgrind', 2290, 11), ('validation', 51578, 49), ('value', 15049, 14), ('vao', 118, 1), ('var', 60164, 404), ('varchar', 1302, 1), ('variable-assignment', 2375, 2), ('variables', 45685, 376), ('varnish', 1276, 23), ('varnish-4', 49, 2), ('varnish-vcl', 353, 3), ('varying', 32, 1), ('vault', 230, 19), ('vb.net', 100675, 25), ('vb6', 8693, 5), ('vba', 86598, 16), ('vbo', 898, 13), ('vbox', 139, 12), ('vbscript', 13309, 18), ('vbulletin', 422, 2), ('vc6', 588, 2), ('vcbuild', 27, 1), ('vcenter', 73, 6), ('vcloud-director-rest-api', 31, 2), ('vcpu', 4, 1), ('vcr', 615, 1), ('vector', 23242, 9), ('veewee', 9, 7), ('velocity', 2095, 5), ('vendor', 368, 4), ('vendors', 36, 1), ('veracode', 86, 1), ('verbosity', 83, 1), ('verification', 995, 6), ('verify', 556, 3), ('verifyerror', 141, 2), ('versant-vod', 4, 1), ('version', 32868, 232), ('version-control', 12336, 138), ('version-numbering', 58, 1), ('versioning', 2305, 32), ('versionone', 125, 1), ('versions', 419, 11), ('versions-maven-plugin', 39, 7), ('vert.x', 409, 7), ('vertical-alignment', 2146, 1), ('vertices', 253, 1), ('vfs', 301, 5), ('vfs-stream', 14, 1), ('vhosts', 633, 26), ('vi', 906755, 6392), ('video', 35877, 40), ('video-capture', 1535, 1), ('video-processing', 1448, 2), ('video-recording', 322, 1), ('video-streaming', 4871, 10), ('view', 371412, 262), ('viewbox', 216, 1), ('viewcontroller', 21841, 7), ('viewexpiredexception', 115, 3), ('viewflipper', 642, 1), ('viewgroup', 513, 1), ('viewmodel', 2818, 1), ('viewport', 2108, 1), ('views', 18381, 22), ('viewstate', 1481, 1), ('vifm', 14, 1), ('vim', 21146, 53), ('vim-ipython', 3, 1), ('vim-plugin', 680, 7), ('vim-syntax-highlighting', 243, 1), ('vimeo-player', 115, 1), ('vine', 423, 1), ('violation', 1223, 3), ('vips', 21, 1), ('virsh', 17, 1), ('virtual', 20283, 1769), ('virtual-environment', 6, 1), ('virtual-hosts', 204, 2), ('virtual-ip-address', 31, 4), ('virtual-machine', 4274, 533), ('virtual-server', 53, 2), ('virtualbox', 3311, 1139), ('virtualenv', 3077, 101), ('virtualenvwrapper', 360, 8), ('virtualhost', 1923, 36), ('virtualization', 1697, 151), ('visibility', 2240, 1)]
+
+----------------------------------------------------------------------------------------------------
+# Runtime: 74534.673 secs
+Dumped a file with 3079 bytes
+Ended at: 2016-08-01 15:47:27
+Started at: 2016-08-01 17:43:02
+The file is called: baal
+Total tags to look for  50
+Count of threads that will be used: 4
+Parallel output: 
+[('visio', 11330, 246), ('visitor', 660, 3), ('visitor-statistic', 83, 2), ('visual-c#-express-2010', 255, 1), ('visual-c++', 23080, 6), ('visual-editor', 69, 1), ('visual-foxpro', 754, 2), ('visual-recognition', 18, 1), ('visual-sourcesafe', 754, 5), ('visual-studio', 155499, 234), ('visual-studio-2005', 3113, 1), ('visual-studio-2008', 15582, 8), ('visual-studio-2010', 46387, 47), ('visual-studio-2012', 22347, 47), ('visual-studio-2013', 17659, 37), ('visual-studio-2015', 9956, 27), ('visual-studio-code', 216, 1), ('visual-studio-cordova', 959, 2), ('visual-studio-debugging', 1273, 1), ('visual-studio-express', 565, 1), ('visual-studio-gallery', 5, 1), ('visual-studio-lightswitch', 1040, 1), ('visualization', 9479, 8), ('visualsvn', 865, 10), ('visualsvn-server', 569, 8), ('visualvm', 609, 7), ('vlad', 22, 2), ('vlan', 52, 3), ('vlc', 2051, 2), ('vm-implementation', 271, 1), ('vmc', 2417, 4), ('vmrun', 23, 2), ('vmware', 2363, 83), ('vmware-fusion', 117, 13), ('vmware-player', 142, 1), ('vmware-server', 77, 1), ('vmware-tools', 81, 1), ('vmware-workstation', 239, 9), ('vnc', 578, 26), ('vnc-server', 147, 9), ('voice-recognition', 859, 1), ('void-pointers', 773, 1), ('voip', 1736, 6), ('volojs', 2, 1), ('voltrb', 80, 2), ('volume', 1742, 120), ('volumes', 333, 44), ('vorbis', 121, 1), ('voting', 417, 2), ('vowpalwabbit', 144, 2)]
+
+----------------------------------------------------------------------------------------------------
+# Runtime: 20374.242 secs
+Dumped a file with 1002 bytes
+Ended at: 2016-08-01 23:22:36
+[arahman@arahman src]$ 
+
+Started at: 2016-08-02 00:50:28
+The file is called: baal
+Total tags to look for  49
+Count of threads that will be used: 4
+Parallel output: 
+[('vows', 66, 1), ('vpc', 427, 58), ('vpn', 1990, 46), ('vps', 1179, 45), ('vqmod', 136, 3), ('vraptor', 31, 1), ('vs-team-services', 2051, 18), ('vs-unit-testing-framework', 234, 2), ('vscode', 1257, 8), ('vscode-extensions', 60, 1), ('vsftpd', 61, 1), ('vsphere', 246, 22), ('vstest', 105, 10), ('vstest.console', 10, 1), ('vstesthost', 11, 1), ('vsto', 3756, 4), ('vsts-build-task', 33, 1), ('vt100', 61, 1), ('vtt', 60, 1), ('vue.js', 1174, 5), ('vulcan', 25, 1), ('vundle', 73, 2), ('vvv-wordpress', 9, 8), ('vvvv', 8, 4), ('w3-total-cache', 81, 1), ('w3c', 1592, 4), ('w3c-validation', 680, 2), ('w3m', 30, 1), ('wadl', 183, 1), ('waf', 312, 1), ('wagon', 62, 5), ('wagtail', 92, 6), ('wai-aria', 447, 1), ('wait', 7951, 8), ('wake-on-lan', 86, 2), ('wamp', 5357, 15), ('wampserver', 1812, 4), ('wan', 2213, 3), ('war', 27716, 571), ('war-files', 18, 1), ('warbler', 160, 7), ('warden', 186, 5), ('warnings', 5087, 18), ('wash-out', 27, 2), ('watch', 9010, 65), ('watch-os', 850, 3), ('watch-os-2', 776, 2), ('watchconnectivity', 100, 1), ('watchdog', 318, 3)]
+
+----------------------------------------------------------------------------------------------------
+# Runtime: 19599.855 secs
+Dumped a file with 723 bytes
+Ended at: 2016-08-02 06:17:08
+
+Started at: 2016-08-02 07:37:59
+The file is called: baal
+Total tags to look for  24
+Count of threads that will be used: 4
+Parallel output: 
+[('watchify', 70, 3), ('watchkit', 2210, 5), ('watchman', 32, 4), ('watchr', 13, 1), ('watcom', 30, 1), ('waterfall', 101, 1), ('waterline', 951, 6), ('watin', 1612, 3), ('watir', 2594, 44), ('watir-webdriver', 1475, 31), ('watson-iot', 5, 2), ('wcag', 172, 1), ('wcat', 27, 1), ('wcf', 48627, 32), ('wcf-ria-services', 1553, 1), ('wcs', 162, 2), ('wdk', 325, 2), ('weak-references', 712, 2), ('weasyprint', 32, 1), ('weather', 859, 3), ('weather-api', 433, 2), ('weave', 2854, 24), ('web', 333929, 3851), ('web-analytics', 389, 1)]
+
+----------------------------------------------------------------------------------------------------
+# Runtime: 17468.433 secs
+Dumped a file with 364 bytes
+Ended at: 2016-08-02 12:29:07
+
+Started at: 2016-08-02 12:41:51
+The file is called: baal
+Total tags to look for  25
+Count of threads that will be used: 4
+Parallel output: 
+[('web-api', 22950, 16), ('web-applications', 16282, 80), ('web-architecture', 45, 1), ('web-audio', 1058, 1), ('web-component', 1017, 2), ('web-component-tester', 46, 1), ('web-config', 6621, 17), ('web-container', 40, 1), ('web-content', 54, 1), ('web-crawler', 5165, 12), ('web-deployment', 2284, 101), ('web-deployment-project', 283, 3), ('web-development-server', 195, 1), ('web-essentials', 388, 1), ('web-feature-service', 20, 1), ('web-frameworks', 536, 3), ('web-hosting', 1685, 17), ('web-inf', 152, 1), ('web-parts', 1528, 1), ('web-platform-installer', 100, 2), ('web-project', 100, 2), ('web-scraping', 8552, 13), ('web-services', 78871, 2612), ('web-site-project', 276, 2), ('web-technologies', 47, 1)]
+
+----------------------------------------------------------------------------------------------------
+# Runtime: 11026.034 secs
+Dumped a file with 541 bytes
+Ended at: 2016-08-02 15:45:37
+
+Started at: 2016-08-02 16:05:53
+The file is called: baal
+Total tags to look for  25
+Count of threads that will be used: 4
+Parallel output: 
+[('web-testing', 319, 2), ('web-worker', 891, 1), ('web.py', 748, 5), ('web.xml', 1593, 11), ('web2py', 1674, 12), ('webapp2', 779, 1), ('webbrowser-control', 3693, 1), ('webby', 23, 2), ('webcam', 2010, 1), ('webclient', 2578, 5), ('webcontent', 26, 1), ('webdav', 1041, 4), ('webdeploy', 805, 12), ('webdriver', 21662, 362), ('webdriver-io', 195, 3), ('webdriverjs', 51, 1), ('webfaction', 178, 7), ('webforms', 10545, 1), ('webgl', 3914, 2), ('webhdfs', 143, 2), ('webhooks', 713, 42), ('webistrano', 26, 14), ('webkit', 8418, 17), ('weblate', 12, 1), ('weblogic', 5836, 41)]
+
+----------------------------------------------------------------------------------------------------
+# Runtime: 17467.227 secs
+Dumped a file with 403 bytes
+Ended at: 2016-08-02 20:57:00
+Started at: 2016-08-02 21:51:17
+The file is called: baal
+Total tags to look for  52
+Count of threads that will be used: 4
+Parallel output: 
+[('weblogic-10.x', 823, 4), ('weblogic-maven-plugin', 12, 1), ('weblogic11g', 519, 4), ('weblogic12c', 876, 8), ('weblogic8.x', 53, 2), ('weblogic9.x', 82, 1), ('webmachine', 36, 1), ('webmethod', 1133, 1), ('webmin', 188, 2), ('webmock', 93, 1), ('webob', 93, 1), ('webp', 6723, 35), ('webpack', 3566, 32), ('webpack-dev-server', 391, 10), ('webpack-hmr', 49, 1), ('webpage', 2795, 2), ('webpage-screenshot', 129, 1), ('webrat', 187, 1), ('webrequest', 5800, 4), ('webrick', 486, 15), ('webrtc', 2838, 6), ('webserver', 5579, 39), ('webservice-client', 916, 1), ('webservices-client', 216, 1), ('websharper', 108, 1), ('website', 8561, 11), ('websocket', 11093, 129), ('websockify', 12, 1), ('websphere', 8299, 107), ('websphere-6.1', 292, 3), ('websphere-7', 773, 8), ('websphere-8', 774, 11), ('websphere-commerce', 139, 2), ('websphere-extreme-scale', 7, 2), ('websphere-liberty', 652, 34), ('websphere-mq', 1971, 7), ('websphere-portal', 485, 4), ('webstorm', 2083, 13), ('websvn', 50, 1), ('webtest', 220, 1), ('webui', 246, 1), ('webview', 27400, 13), ('webviewclient', 249, 1), ('weceem', 24, 1), ('weighted', 367, 1), ('weka', 2207, 2), ('wercker', 48, 21), ('wget', 2170, 30), ('whatsapp', 898, 1), ('when-js', 52, 1), ('whenever', 370, 66), ('whenever-capistrano', 29, 25)]
+
+----------------------------------------------------------------------------------------------------
+# Runtime: 22064.319 secs
+Dumped a file with 920 bytes
+Ended at: 2016-08-03 03:59:01
+
+Started at: 2016-08-03 08:42:12
+The file is called: baal
+Total tags to look for  24
+Count of threads that will be used: 4
+Parallel output: 
+[('which', 176, 3), ('while-loop', 11551, 4), ('white', 3614, 7), ('whitelist', 320, 3), ('whitespace', 2949, 3), ('whois', 302, 2), ('whoops', 10, 1), ('whoosh', 266, 2), ('wicked-pdf', 323, 2), ('wicket', 3036, 6), ('widget', 18903, 5), ('wifi', 5720, 5), ('wiimote', 75, 1), ('wiki', 5246, 15), ('wikipedia', 1344, 2), ('wildcard', 2916, 11), ('wildcard-subdomain', 264, 4), ('wildfly', 3066, 131), ('wildfly-10', 123, 10), ('wildfly-8', 944, 31), ('wildfly-9', 152, 2), ('will-paginate', 739, 6), ('win-universal-app', 4243, 5), ('win32-process', 189, 1)]
+
+----------------------------------------------------------------------------------------------------
+# Runtime: 14674.930 secs
+Dumped a file with 391 bytes
+Ended at: 2016-08-03 12:46:47
+Started at: 2016-08-03 14:55:59
+The file is called: baal
+Total tags to look for  25
+Count of threads that will be used: 4
+Parallel output: 
+[('win32-service-gem', 3, 1), ('win32com', 560, 2), ('win32ole', 186, 1), ('win64', 157, 1), ('winapi', 27454, 10), ('winbinder', 6, 1), ('windbg', 1846, 2), ('window', 227534, 1508), ('window-tester', 17, 1), ('window.location', 420, 1), ('windowbuilder', 410, 1), ('windows', 211694, 1489), ('windows-10', 4635, 47), ('windows-10-mobile', 585, 1), ('windows-2003-webserver', 48, 1), ('windows-7', 11624, 68), ('windows-7-x64', 1535, 14), ('windows-8', 13738, 32), ('windows-8.1', 3782, 16), ('windows-applications', 864, 2), ('windows-authentication', 1843, 1), ('windows-azure-networking', 55, 1), ('windows-azure-storage', 2405, 11), ('windows-console', 265, 2), ('windows-firewall', 268, 2)]
+
+----------------------------------------------------------------------------------------------------
+# Runtime: 22763.434 secs
+Dumped a file with 521 bytes
+Ended at: 2016-08-03 21:15:22
+Started at: 2016-08-03 21:55:25
+The file is called: baal
+Total tags to look for  49
+Count of threads that will be used: 4
+Parallel output: 
+[('windows-installer', 5665, 13), ('windows-mobile', 3729, 2), ('windows-nt', 42, 1), ('windows-phone', 46344, 32), ('windows-phone-7', 20846, 10), ('windows-phone-8', 25307, 19), ('windows-phone-8-emulator', 379, 1), ('windows-phone-8.1', 7787, 8), ('windows-rt', 226, 2), ('windows-runtime', 8047, 5), ('windows-scripting', 194, 2), ('windows-server', 7394, 86), ('windows-server-2003', 1243, 6), ('windows-server-2008', 4193, 27), ('windows-server-2008-r2', 1632, 11), ('windows-server-2012', 1624, 32), ('windows-server-2012-r2', 570, 20), ('windows-server-2016', 25, 10), ('windows-server-container', 1, 1), ('windows-services', 6601, 24), ('windows-share', 27, 1), ('windows-shell', 606, 1), ('windows-store', 6689, 8), ('windows-store-apps', 6431, 5), ('windows-update', 176, 1), ('windows-vista', 1606, 4), ('windows-xp', 3575, 9), ('windows-xp-sp3', 132, 1), ('windows2012', 129, 5), ('windowsiot', 99, 1), ('windsor-facilities', 32, 1), ('wine', 365, 2), ('winforms', 67243, 11), ('wininet', 443, 1), ('winrm', 173, 47), ('winrt-xaml', 3869, 1), ('winrt-xaml-toolkit', 103, 1), ('winscp', 425, 1), ('winston', 244, 5), ('winstone', 14, 3), ('wiredtiger', 57, 1), ('wiremock', 57, 2), ('wireshark', 1507, 3), ('wix', 7127, 18), ('wix3.5', 654, 1), ('wix3.7', 368, 1), ('wix3.9', 102, 1), ('wizard', 2504, 15), ('wkhtmltopdf', 1349, 8)]
+
+----------------------------------------------------------------------------------------------------
+# Runtime: 24611.989 secs
+Dumped a file with 1001 bytes
+Ended at: 2016-08-04 04:45:37
+[arahman@arahman src]$ python mc_tagMatching.py 
+Started at: 2016-08-04 08:34:01
+The file is called: baal
+Total tags to look for  25
+Count of threads that will be used: 4
+Parallel output: 
+[('wkwebview', 670, 1), ('wlan', 301, 1), ('wmi', 3560, 3), ('wmic', 334, 1), ('woocommerce', 7396, 5), ('word', 124520, 452), ('word-count', 379, 1), ('wordnet', 596, 1), ('wordpress', 94613, 385), ('wordpress-plugin', 7855, 14), ('wordpress-theming', 4694, 7), ('workbench', 3223, 24), ('worker', 6158, 23), ('workflow', 6915, 354), ('workflow-foundation-4', 1604, 1), ('workflow-remote-loader', 1, 1), ('working-directory', 241, 1), ('working-remotely', 17, 1), ('worklight-server', 343, 1), ('workload', 36, 2), ('workload-scheduler', 9, 1), ('worksheet', 1418, 1), ('workspace', 900, 22), ('world-domination', 3, 1), ('wowza', 564, 1)]
+
+----------------------------------------------------------------------------------------------------
+# Runtime: 14016.635 secs
+Dumped a file with 465 bytes
+Ended at: 2016-08-04 12:27:38
+Started at: 2016-08-04 12:51:25
+The file is called: baal
+Total tags to look for  26
+Count of threads that will be used: 4
+Parallel output: 
+[('wp-api', 112, 1), ('wp-cli', 32, 1), ('wp-query', 413, 1), ('wpa', 7946, 22), ('wpf', 120001, 27), ('wpml', 164, 1), ('wps', 18, 1), ('wrap', 6885, 19), ('wrapper', 3364, 13), ('writetofile', 255, 1), ('ws4py', 17, 2), ('wsadmin', 167, 1), ('wsc', 481, 1), ('wsdl', 7790, 18), ('wsdl2java', 508, 3), ('wsf', 252, 1), ('wsgi', 4616, 100), ('wsgiref', 26, 1), ('wso2', 6585, 57), ('wso2-am', 717, 4), ('wso2-emm', 194, 1), ('wso2as', 55, 3), ('wso2bam', 176, 2), ('wso2carbon', 855, 9), ('wso2cep', 151, 1), ('wso2cloud', 12, 1)]
+
+----------------------------------------------------------------------------------------------------
+# Runtime: 27208.025 secs
+Dumped a file with 348 bytes
+Ended at: 2016-08-04 20:24:53
+
+Started at: 2016-08-04 20:40:04
+The file is called: baal
+Total tags to look for  20
+Count of threads that will be used: 4
+Parallel output: 
+[('wso2esb', 2297, 4), ('wso2greg', 110, 1), ('wso2is', 1045, 3), ('wso2stratos', 49, 10), ('wss', 1246, 4), ('wss4j', 146, 1), ('wtforms', 1009, 5), ('wx', 7162, 17), ('wxpython', 5074, 4), ('wysiwyg', 1932, 4), ('x-accel-redirect', 24, 1), ('x-frame-options', 178, 1), ('x-sendfile', 118, 4), ('x11', 2062, 29), ('x11-forwarding', 85, 10), ('x509', 2742, 13), ('x509certificate', 1875, 7), ('x86', 9152, 8), ('x86-64', 1929, 3), ('xalan', 309, 2)]
+
+----------------------------------------------------------------------------------------------------
+# Runtime: 10499.804 secs
+Dumped a file with 309 bytes
+Ended at: 2016-08-04 23:35:04
+
+Started at: 2016-08-05 00:16:12
+The file is called: baal
+Total tags to look for  39
+Count of threads that will be used: 4
+Parallel output: 
+[('xamarin', 22747, 49), ('xamarin-studio', 946, 3), ('xamarin.android', 5085, 9), ('xamarin.forms', 2842, 2), ('xamarin.ios', 7783, 19), ('xamarin.mac', 220, 1), ('xaml', 42487, 5), ('xampp', 6586, 76), ('xap', 2111, 3), ('xapian', 95, 1), ('xargs', 562, 2), ('xbmc', 210, 1), ('xbuild', 849, 9), ('xcache', 88, 2), ('xcarchive', 14, 3), ('xcconfig', 45, 1), ('xcode', 122095, 401), ('xcode-bots', 119, 7), ('xcode-instruments', 304, 2), ('xcode-plugin', 9, 1), ('xcode-server', 83, 2), ('xcode-ui-testing', 429, 6), ('xcode-workspace', 51, 1), ('xcode4', 10818, 16), ('xcode4.2', 2037, 1), ('xcode4.3', 1107, 1), ('xcode4.5', 1712, 5), ('xcode4.6', 505, 1), ('xcode5', 4407, 11), ('xcode6', 7336, 21), ('xcode6.1', 426, 3), ('xcode6.3', 297, 2), ('xcode7', 4628, 11), ('xcode7-beta6', 65, 1), ('xcodebuild', 768, 75), ('xcopy', 530, 2), ('xcrun', 64, 3), ('xctest', 811, 8), ('xctool', 53, 12)]
+
+----------------------------------------------------------------------------------------------------
+# Runtime: 20315.746 secs
+Dumped a file with 623 bytes
+Ended at: 2016-08-05 05:54:48
+
+Started at: 2016-08-05 08:28:58
+The file is called: baal
+Total tags to look for  25
+Count of threads that will be used: 4
+Parallel output: 
+[('xdcr', 4, 1), ('xdebug', 1750, 106), ('xen', 636, 21), ('xendesktop', 15, 1), ('xerces', 612, 3), ('xfce', 128, 2), ('xfs', 67, 1), ('xgboost', 156, 1), ('xgrid', 1031, 1), ('xhp', 62, 3), ('xhprof', 50, 2), ('xhtml', 6420, 11), ('xhtml2pdf', 99, 2), ('xib', 2357, 3), ('xilinx-edk', 32, 1), ('xinclude', 80, 1), ('xinetd', 44, 1), ('xip.io', 12, 2), ('xlib', 743, 5), ('xlrd', 670, 1), ('xlwt', 420, 1), ('xmemcached', 16, 1), ('xming', 50, 1), ('xml', 180324, 464), ('xml-dtd', 170, 1)]
+
+----------------------------------------------------------------------------------------------------
+# Runtime: 13532.502 secs
+Dumped a file with 316 bytes
+Ended at: 2016-08-05 12:14:30
+
+Started at: 2016-08-05 16:47:46
+The file is called: batch_xgx.txt
+Total tags to look for  107
+Count of threads that will be used: 4
+Parallel output: 
+[('xrdp', 27, 2), ('xsd', 10599, 10), ('xserver', 321, 7), ('xsl-fo', 1050, 5), ('xslt', 26229, 31), ('xslt-1.0', 3259, 2), ('xslt-2.0', 2334, 1), ('xssf', 236, 1), ('xstream', 844, 6), ('xterm', 334, 2), ('xtext', 886, 2), ('xtradb', 34, 2), ('xts', 6108, 1), ('xubuntu', 97, 1), ('xunit', 1008, 54), ('xunit.net', 391, 7), ('xvfb', 305, 59), ('xwiki', 96, 2), ('yahoo-oauth', 52, 1), ('yajl', 60, 2), ('yaml', 3807, 193), ('yaml-cpp', 154, 1), ('yandex', 146, 3), ('yandex-tank', 12, 2), ('yard', 358, 17), ('yarn', 1460, 29), ('yat', 80, 1), ('ycsb', 93, 1), ('yelp', 251, 1), ('yeoman', 2300, 34), ('yeoman-generator', 724, 9), ('yeoman-generator-angular', 262, 4), ('yepnope', 138, 2), ('yesod', 989, 17), ('yield', 1131, 1), ('yii', 20347, 49), ('yii-components', 382, 1), ('yii-extensions', 831, 2), ('yii2', 6260, 14), ('yii2-advanced-app', 738, 1), ('yo', 108440, 110), ('yocto', 402, 4), ('yosemite', 2186, 37), ('yourkit', 77, 1), ('youtrack', 180, 2), ('youtube', 15825, 9), ('youtube-api', 7260, 5), ('youtube-dl', 169, 1), ('youtube-javascript-api', 674, 1), ('yslow', 210, 8), ('yui', 2799, 6), ('yui-compressor', 269, 2), ('yum', 1043, 80), ('yuv', 470, 4), ('z-index', 2777, 2), ('zabbix', 350, 7), ('zap', 213, 4), ('zapier', 102, 2), ('zbar', 408, 1), ('zend-auth', 197, 1), ('zend-autoloader', 87, 1), ('zend-db', 1296, 1), ('zend-form', 2064, 2), ('zend-form-element', 332, 1), ('zend-form2', 66, 1), ('zend-framework', 26368, 82), ('zend-framework-modules', 84, 1), ('zend-framework2', 7872, 40), ('zend-guard', 53, 3), ('zend-inputfilter', 50, 1), ('zend-loader', 31, 1), ('zend-rest', 53, 1), ('zend-server', 296, 12), ('zend-studio', 467, 1), ('zendesk', 163, 1), ('zenoss', 36, 1), ('zentest', 41, 1), ('zephir', 20, 2), ('zeroclipboard', 250, 1), ('zerocloud', 1, 1), ('zeromq', 1829, 13), ('zerovm', 2, 1), ('zeus', 90, 4), ('zfc-rbac', 21, 1), ('zfcuser', 195, 3), ('zfs', 92, 5), ('zip', 12672, 48), ('ziparchive', 395, 1), ('zipfile', 741, 4), ('zipkin', 14, 3), ('zk', 987, 2), ('zlib', 1263, 6), ('zodb', 161, 1), ('zombie-process', 197, 2), ('zombie.js', 190, 4), ('zone', 8627, 21), ('zookeeper', 1523, 78), ('zope', 724, 1), ('zos', 265, 2), ('zsh', 2090, 30), ('zsh-completion', 97, 3), ('zshrc', 212, 2), ('zurb-foundation', 4196, 15), ('zurb-foundation-5', 294, 1), ('zurb-foundation-6', 208, 1), ('zuul', 200, 5), ('zypper', 29, 3)]
+
+----------------------------------------------------------------------------------------------------
+# Runtime: 60996.942 secs
+Dumped a file with 1623 bytes
+Ended at: 2016-08-06 09:44:23
+
+Started at: 2016-08-06 11:56:53
+The file is called: batch_emlk
+Total tags to look for  150
+Count of threads that will be used: 4
+Parallel output: 
+[('phpthumb', 107, 5), ('phpundercontrol', 27, 1), ('phpunit', 5513, 171), ('phpword', 228, 1), ('phundament', 12, 4), ('phusion', 82, 5), ('physics', 4332, 2), ('picasso', 1277, 3), ('pickle', 1652, 9), ('picklist', 81, 1), ('picocontainer', 27, 1), ('pid', 3181, 17), ('pie-chart', 1424, 1), ('pig-udf', 15, 1), ('pika', 297, 4), ('pillow', 604, 6), ('ping', 43132, 89), ('pingfederate', 137, 2), ('pip', 16572, 565), ('pipe', 11643, 407), ('pipeline', 4849, 382), ('pipelinedb', 12, 1), ('pipelining', 112, 1), ('piping', 250, 2), ('pitest', 29, 1), ('pivot', 8160, 14), ('pivot-table', 2545, 2), ('pivotal-cloud-foundry', 67, 9), ('pivotaltracker', 57, 2), ('piwik', 326, 3), ('pkcs#12', 245, 3), ('pkg-config', 226, 4), ('pkg-file', 51, 1), ('pkgcloud', 17, 7), ('pki', 5085, 7), ('placeholder', 1381, 1), ('plane', 436, 1), ('platypus', 43, 1), ('player', 21267, 21), ('playframework', 18074, 179), ('playframework-1.x', 705, 3), ('playframework-2.0', 6380, 50), ('playframework-2.1', 1000, 6), ('playframework-2.2', 1063, 9), ('playframework-2.3', 922, 12), ('playframework-2.4', 509, 6), ('playframework-2.5', 151, 4), ('plesk', 946, 6), ('plex', 11262, 22), ('plexus', 34, 1), ('periodic-processing', 15, 1), ('perl', 65082, 145), ('perl-core', 8, 1), ('perl-module', 1179, 3), ('perldoc', 30, 2), ('permalinks', 1159, 2), ('permgen', 308, 8), ('permission-denied', 687, 20), ('permissions', 13738, 230), ('permutation', 2418, 2), ('persist', 6101, 43), ('persistence', 4573, 24), ('persistence.xml', 365, 5), ('persistent', 1104, 19), ('persistent-object-store', 22, 1), ('persistent-storage', 234, 15), ('persistent-volume-claims', 1, 1), ('persistent-volumes', 1, 1), ('persona', 1370, 3), ('personality-insights', 18, 1), ('petsc', 61, 1), ('pexpect', 443, 6), ('pfsense', 45, 2), ('pfx', 268, 5), ('pg', 13681, 99), ('pg-dump', 173, 2), ('pg-restore', 65, 2), ('pg-search', 133, 1), ('pgadmin', 645, 10), ('pgbouncer', 73, 2), ('pgloader', 9, 1), ('pgp', 2163, 9), ('phabricator', 294, 14), ('phactory', 5, 1), ('phalcon', 1267, 10), ('phalcon-routing', 59, 1), ('phantomjs', 5271, 102), ('phar', 1380, 7), ('pharo', 609, 2), ('philips-hue', 92, 1), ('phing', 810, 40), ('phinx', 4637, 37), ('phirehose', 23, 1), ('phishing', 86, 1), ('phoenix', 1222, 18), ('phoenix-framework', 871, 15), ('phonegap-build', 2120, 2), ('phonegap-plugins', 3775, 1), ('photo', 6323, 5), ('photologue', 47, 1), ('photon-controller', 1, 1), ('photon-os', 2, 1), ('photoshop', 1821, 1), ('php', 968777, 3290), ('php-5.2', 217, 1), ('php-5.3', 1152, 2), ('php-5.4', 338, 3), ('php-5.5', 376, 4), ('php-5.6', 294, 12), ('php-7', 398, 24), ('php-builtin-server', 30, 1), ('php-carbon', 146, 1), ('php-codebrowser', 7, 2), ('php-cpp', 20, 2), ('php-extension', 648, 2), ('php-font-lib', 2, 1), ('php-gd', 219, 2), ('php-imap', 12, 1), ('php-include', 240, 1), ('php-ini', 232, 1), ('php-java-bridge', 134, 2), ('php-opencloud', 14, 4), ('php-phantomjs', 13, 1), ('php-resque', 22, 1), ('php-shorttags', 34, 1), ('php4', 319, 1), ('phpactiverecord', 161, 1), ('phpass', 91, 1), ('phpbb', 760, 5), ('phpbb3', 398, 3), ('phpcodesniffer', 45, 2), ('phpdoc', 706, 9), ('phpdocumentor2', 46, 1), ('phpexcel', 2495, 3), ('phpexcelreader', 98, 2), ('phpfarm', 10, 3), ('phpfog', 27, 1), ('phpfox', 147, 1), ('phpinfo', 119, 1), ('phpize', 10, 1), ('phplint', 17, 1), ('phploc', 6, 3), ('phpmailer', 2499, 3), ('phpmd', 45, 8), ('phpmyadmin', 9623, 54), ('phppgadmin', 97, 3), ('phpredis', 91, 1), ('phpseclib', 465, 3), ('phpspec', 145, 3), ('phpstorm', 3239, 113)]
+
+----------------------------------------------------------------------------------------------------
+# Runtime: 75366.712 secs
+Dumped a file with 2496 bytes
+Ended at: 2016-08-07 08:52:59
+
