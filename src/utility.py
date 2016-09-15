@@ -34,7 +34,7 @@ def duration():
 def readCSVForKeywords(fileNameParam):
   import csv
   kwList = []
-  with open(fileNameParam, 'rb') as f:
+  with open(fileNameParam, 'rU') as f:
     reader = csv.reader(f)
     for row in reader:
          for elems in row:
