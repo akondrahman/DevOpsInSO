@@ -11,6 +11,7 @@ t1 <- Sys.time()
 
 t1 <- Sys.time()
 stop_words <- stopwords("SMART")
+extra_stop_words <- c("like", "can", "one", "way", "use", "want", "will", "need", "know", "do", "dont", "possible", "just")
 #stop_words <- c("the", "and", "you", "that", "for", "your", "are", "have", "with", "this")
 
 file_to_read ="/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/all_needed_content.csv"
@@ -61,20 +62,20 @@ for(ind_ in 1:len_string_list)
     # & (numeric_status==NA) & (core_str!="pre") & (core_str!="code")
     if( (length(core_str)>0) & (!identical(core_str, "pre")) & (!identical(core_str, "code"))  )
     {
-      if(
-           (!identical(core_str, "ansible")) & (!identical(core_str, "openstack")) & (!identical(core_str, "cfengine")) &
-           (!identical(core_str, "chef")) & (!identical(core_str, "docker")) & (!identical(core_str, "capistrano")) & 
-           (!identical(core_str, "kubernetes")) & (!identical(core_str, "puppet")) & (!identical(core_str, "saltstack")) & 
-           (!identical(core_str, "vagrant")) & (!identical(core_str, "bluemix")) & (!identical(core_str, "amazon")) & 
-           (!identical(core_str, "openshift")) & (!identical(core_str, "jenkins"))              
-         )
-      {
+#       if(
+#            (!identical(core_str, "ansible")) & (!identical(core_str, "openstack")) & (!identical(core_str, "cfengine")) &
+#            (!identical(core_str, "chef")) & (!identical(core_str, "docker")) & (!identical(core_str, "capistrano")) & 
+#            (!identical(core_str, "kubernetes")) & (!identical(core_str, "puppet")) & (!identical(core_str, "saltstack")) & 
+#            (!identical(core_str, "vagrant")) & (!identical(core_str, "bluemix")) & (!identical(core_str, "amazon")) & 
+#            (!identical(core_str, "openshift")) & (!identical(core_str, "jenkins"))              
+#          )
+#       {
         if(is.na(numeric_status))
         {
           #print(core_str)
           str_ <- paste(str_, core_str)
         }        
-      }
+#       }
 
     }
   }
@@ -88,6 +89,7 @@ print(length(formatted_string_list))
 
 docs <- Corpus(VectorSource(formatted_string_list))
 docs <- tm_map(docs, removeWords, stopwords("english"))
+docs <- tm_map(docs, removeWords, extra_stop_words)
 #writeLines(as.character(docs[[30]]))
 #dtm <- DocumentTermMatrix(docs)
 #dtm <- DocumentTermMatrix(docs, control = list(stemming = TRUE, stopwords = TRUE, removeNumbers = TRUE, removePunctuation = TRUE))
@@ -96,7 +98,7 @@ dim_dtm <- dim(dtm)
 print("Dimension before sparese pre-processing")
 print(dim_dtm)
 #print(head(dtm))
-max_sparsity_allowed <- 0.995
+max_sparsity_allowed <- 0.999
 dtm <-  removeSparseTerms(dtm, max_sparsity_allowed)
 dim_dtm <- dim(dtm)
 print("Dimension after sparese pre-processing")
@@ -115,16 +117,27 @@ ord <-order(freq, decreasing=TRUE)
 write.csv(freq[ord],"so_word_freq_tm.csv")
 
 ##Set parameters for Gibbs sampling
-burnin_ <- 2000
-iter_ <- 2000
+burnin_ <- 1000
+iter_ <- 1000
 thin <- 250
 seed <-list(2003, 5, 63, 100001, 765)
+#seed <-500
 nstart <- 5
 best <- TRUE
 
 
+
+# function for harminc mean 
+harmonicMean <- function(logLikelihoods, precision=2000L) {
+  
+  llMed <- median(logLikelihoods)
+  as.double(llMed - log(mean(exp(-mpfr(logLikelihoods, prec = precision) + llMed))))
+}
+# 
+
+
 ##Number of topics
-k <- 20
+k <- 75
 #k <- 10  
 #That done, we can now do the actual work – run the topic modelling algorithm on our corpus. 
 #Here is the code:
@@ -145,6 +158,18 @@ write.csv(ldaOut.terms,file=paste("final_formatted_", k, "_TopicsToTerms.csv"))
 #probabilities associated with each topic assignment
 topicProbabilities <- as.data.frame(ldaOut@gamma)
 write.csv(topicProbabilities,file=paste("final_formatted_", k, "_TopicProb.csv"))
+
+# sequ <- seq(2, 300, 20)
+# keep_ <- 50
+# 
+# # fitted_many <- lapply(sequ,
+# #                       function(topicCnt) LDA(dtm, k=topicCnt, method="Gibbs", 
+# #                       control=list(burnin=burnin_, iter=iter_,keep=keep_)))
+# # extract logliks from each topic
+# logLiks_many <- lapply(fitted_many, function(L)  L@logLiks[-c(1:(burnin_/keep_))])
+# 
+# # compute harmonic means, harmonic mean of log likelihodd is perplexity
+# hm_many <- sapply(logLiks_many, function(h) harmonicMean(h))
 
 t2 <- Sys.time()
 print(t2 - t1)  # 
