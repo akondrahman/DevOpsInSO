@@ -1,29 +1,39 @@
 cat("\014") 
 options(max.print=1000000)
-library(lda)
-library(tm)
-library(LDAvis)
-library(SnowballC)
-library(topicmodels)
-library(Rmpfr)
-library(slam)
 t1 <- Sys.time()
 
-t1 <- Sys.time()
+all_needed_file <-  "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/all_needed_content.csv"
+all_posts_data <- read.csv(all_needed_file)
+
+all_aa_id_file <- "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/all_aa_id.csv"
+all_aa_id_data <- read.csv(all_aa_id_file)
+all_aa_id_ <- all_aa_id_data$AA_ID
+
+all_naa_id_file <- "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/all_naa_id.csv"
+all_naa_id_data <- read.csv(all_naa_id_file)
+all_naa_id_ <- all_naa_id_data$NAA_ID
+
+########NAA Topic Modeling Zone Started #######
+naa_file_name <- "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/all_naa_contents.csv"
+id_in_all_content <- all_posts_data$Id
+naa_matching_indecies <- match(all_naa_id_, id_in_all_content)
+#print((naa_matching_indecies))
+naa_matrix_body <- all_posts_data[naa_matching_indecies, ]
+naa_matrix_body <- naa_matrix_body$Body
+print("NAA Matrix Topic Modeling")
+print(length(naa_matrix_body))
+#print(head(naa_matrix_body))
+#write.table(naa_matrix_body,file=naa_file_name, sep=",", col.names=NA) 
+
+## Topic Modeling Stuff 
 stop_words <- stopwords("SMART")
 stop_file ="/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/extra_stop_word_list.csv"
 stop_words_data <- read.csv(stop_file)
 extra_stop_words = stop_words_data$stop_
-#print((extra_stop_words))
 #extra_stop_words <- c("like", "can", "one", "way", "use", "want", "will", "need", "know", "do", "dont", "possible", "just")
 #stop_words <- c("the", "and", "you", "that", "for", "your", "are", "have", "with", "this")
 
-file_to_read ="/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/all_needed_content.csv"
-all_posts_data <- read.csv(file_to_read)
-body_of_posts_data = all_posts_data$Body[1:100]
-#print(body_of_posts_data)
-
-all_text_from_posts <- body_of_posts_data
+all_text_from_posts <- naa_matrix_body
 all_text_from_posts <- iconv(all_text_from_posts, "ASCII", "UTF-8", sub="")
 
 # pre-processing:
@@ -66,21 +76,21 @@ for(ind_ in 1:len_string_list)
     # & (numeric_status==NA) & (core_str!="pre") & (core_str!="code")
     if( (length(core_str)>0) & (!identical(core_str, "pre")) & (!identical(core_str, "code"))  )
     {
-#       if(
-#            (!identical(core_str, "ansible")) & (!identical(core_str, "openstack")) & (!identical(core_str, "cfengine")) &
-#            (!identical(core_str, "chef")) & (!identical(core_str, "docker")) & (!identical(core_str, "capistrano")) & 
-#            (!identical(core_str, "kubernetes")) & (!identical(core_str, "puppet")) & (!identical(core_str, "saltstack")) & 
-#            (!identical(core_str, "vagrant")) & (!identical(core_str, "bluemix")) & (!identical(core_str, "amazon")) & 
-#            (!identical(core_str, "openshift")) & (!identical(core_str, "jenkins"))              
-#          )
-#       {
-        if(is.na(numeric_status))
-        {
-          #print(core_str)
-          str_ <- paste(str_, core_str)
-        }        
-#       }
-
+      #       if(
+      #            (!identical(core_str, "ansible")) & (!identical(core_str, "openstack")) & (!identical(core_str, "cfengine")) &
+      #            (!identical(core_str, "chef")) & (!identical(core_str, "docker")) & (!identical(core_str, "capistrano")) & 
+      #            (!identical(core_str, "kubernetes")) & (!identical(core_str, "puppet")) & (!identical(core_str, "saltstack")) & 
+      #            (!identical(core_str, "vagrant")) & (!identical(core_str, "bluemix")) & (!identical(core_str, "amazon")) & 
+      #            (!identical(core_str, "openshift")) & (!identical(core_str, "jenkins"))              
+      #          )
+      #       {
+      if(is.na(numeric_status))
+      {
+        #print(core_str)
+        str_ <- paste(str_, core_str)
+      }        
+      #       }
+      
     }
   }
   formatted_string_list[ind_] <- str_
@@ -146,6 +156,7 @@ k <- 75
 #That done, we can now do the actual work – run the topic modelling algorithm on our corpus. 
 #Here is the code:
 #Run LDA using Gibbs sampling
+
 ldaOut <-LDA( dtm, k, method="Gibbs", control=list(nstart=nstart, seed = seed, best=best, burnin = burnin_, iter = iter_, thin=thin))
 
 
@@ -162,19 +173,22 @@ write.csv(ldaOut.terms,file=paste("final_formatted_", k, "_TopicsToTerms.csv"))
 #probabilities associated with each topic assignment
 topicProbabilities <- as.data.frame(ldaOut@gamma)
 write.csv(topicProbabilities,file=paste("final_formatted_", k, "_TopicProb.csv"))
+########NAA Extraction Zone Ended #######
 
-# sequ <- seq(2, 300, 20)
-# keep_ <- 50
-# 
-# # fitted_many <- lapply(sequ,
-# #                       function(topicCnt) LDA(dtm, k=topicCnt, method="Gibbs", 
-# #                       control=list(burnin=burnin_, iter=iter_,keep=keep_)))
-# # extract logliks from each topic
-# logLiks_many <- lapply(fitted_many, function(L)  L@logLiks[-c(1:(burnin_/keep_))])
-# 
-# # compute harmonic means, harmonic mean of log likelihodd is perplexity
-# hm_many <- sapply(logLiks_many, function(h) harmonicMean(h))
 
+# ########AA Extraction Zone Started #######
+# aa_file_name <- "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/all_aa_contents.csv"
+# id_in_all_content <- all_posts_data$Id
+# aa_matching_indecies <- match(all_aa_id_, id_in_all_content)
+# #print((aa_matching_indecies))
+# aa_matrix_body <- all_posts_data[aa_matching_indecies, ]
+# aa_matrix_body <- aa_matrix_body[-1, ]
+# print("AA Matrix Dumping")
+# print(dim(aa_matrix_body))
+# #print(head(aa_matrix_body))
+# #write.table(aa_matrix_body,file=aa_file_name, sep=",", col.names=NA) 
+# 
+# ########AA Extraction Zone Started #######
 t2 <- Sys.time()
 print(t2 - t1)  # 
 rm(list = setdiff(ls(), lsf.str()))
