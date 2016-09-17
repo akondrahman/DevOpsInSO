@@ -62,7 +62,7 @@ def giveProcessedStr(listParam):
 if __name__ == "__main__":
     allContent =[]
     print "Started at:", utility.giveTimeStamp()
-    dirName_='/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/DevOpsInSO/output/question_ids/server_fault/'
+    dirName_='/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/DevOpsInSO/output/question_ids/stack_overflow_2/'
     tableName='dummy'
     so_obj = stackexchange.StackOverflow()
     for root, dirs, files in os.walk(dirName_):
@@ -77,7 +77,7 @@ if __name__ == "__main__":
             tuples_  = extractAnswerDetailsViaAPI(allTheIds, so_obj, tableName)
             allContent = allContent + tuples_ #tuples_ is a list of tuples 
 
-        time.sleep(300)
+        time.sleep(150)
     strToDump = giveProcessedStr(allContent)    
-    status_ = utility.dumpContentIntoFile(strToDump, "ans_server_fault_all.csv")
+    status_ = utility.dumpContentIntoFile(strToDump, "ans_stack_overflow_2_all.csv")
     print "Dumped a file of {} bytes".format(status_)

@@ -1,0 +1,54 @@
+>>> runfile('C:/StackOverflowProject/DevOpsInSO/src/TopicCntSelection/TopicCntSelection/phase_4_topicNum.py', wdir='C:/StackOverflowProject/DevOpsInSO/src/TopicCntSelection/TopicCntSelection')
+Reloaded modules: corpora_, tokenReader_, utility
+Started at  2016-09-16 05:31:52
+Documents extracted from CSV:  29225
+Done extracting train-test tokens
+Created training corpus 
+Created test corpus 
+Done for topic count: 10
+*************************
+Done for topic count: 20
+*************************
+Done for topic count: 30
+*************************
+Done for topic count: 40
+*************************
+Done for topic count: 50
+*************************
+Done for topic count: 60
+*************************
+Done for topic count: 70
+*************************
+Done for topic count: 80
+*************************
+Done for topic count: 90
+*************************
+Done for topic count: 100
+*************************
+Done for topic count: 110
+*************************
+Done for topic count: 120
+*************************
+Done for topic count: 130
+*************************
+Done for topic count: 140
+*************************
+Done for topic count: 150
+*************************
+Done for topic count: 160
+*************************
+Done for topic count: 170
+*************************
+Done for topic count: 180
+*************************
+Done for topic count: 190
+*************************
+Done for topic count: 200
+*************************
+Are they equal: topic_cnt=20, perpl=20
+RPC: len->20, content->[10193.860765171052, 26309.863223111628, 24090.721506053211, 21539.493928867578, 18385.515698599815, 20044.448219287395, 11459.074003618956, 27771.009562200306, 15633.318178945779, 14241.168295866251, 11232.344554656744, 12178.197386014461, 12425.647574341298, 557.58919625878332, 2540.2118676126001, 4144.2994674563406, 107.42765406370162, 7268.3623192310333, 8825.7319122970111, 0]
+Difference of perplexity plots:  [0, 16116.002457940576, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+RPC method: index of interest  0
+Optimal topic number for this corpus  is 10
+Ended at  2016-09-16 12:01:00
+>>> 
