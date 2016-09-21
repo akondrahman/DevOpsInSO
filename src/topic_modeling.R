@@ -20,7 +20,7 @@ extra_stop_words = stop_words_data$stop_
 
 file_to_read ="/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/all_needed_content.csv"
 all_posts_data <- read.csv(file_to_read)
-body_of_posts_data = all_posts_data$Body[1:100]
+body_of_posts_data = all_posts_data$Body
 #print(body_of_posts_data)
 
 all_text_from_posts <- body_of_posts_data
@@ -125,23 +125,13 @@ burnin_ <- 1000
 iter_ <- 1000
 thin <- 250
 seed <-list(2003, 5, 63, 100001, 765)
-#seed <-500
 nstart <- 5
 best <- TRUE
 
 
 
-# function for harminc mean 
-harmonicMean <- function(logLikelihoods, precision=2000L) {
-  
-  llMed <- median(logLikelihoods)
-  as.double(llMed - log(mean(exp(-mpfr(logLikelihoods, prec = precision) + llMed))))
-}
-# 
-
-
 ##Number of topics
-k <- 75
+k <- 30
 #k <- 10  
 #That done, we can now do the actual work – run the topic modelling algorithm on our corpus. 
 #Here is the code:

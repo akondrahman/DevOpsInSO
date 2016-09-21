@@ -14,16 +14,23 @@ all_naa_id_data <- read.csv(all_naa_id_file)
 all_naa_id_ <- all_naa_id_data$NAA_ID
 
 ########NAA Topic Modeling Zone Started #######
-naa_file_name <- "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/all_naa_contents.csv"
 id_in_all_content <- all_posts_data$Id
-naa_matching_indecies <- match(all_naa_id_, id_in_all_content)
-#print((naa_matching_indecies))
-naa_matrix_body <- all_posts_data[naa_matching_indecies, ]
-naa_matrix_body <- naa_matrix_body$Body
-print("NAA Matrix Topic Modeling")
-print(length(naa_matrix_body))
-#print(head(naa_matrix_body))
-#write.table(naa_matrix_body,file=naa_file_name, sep=",", col.names=NA) 
+# naa_matching_indecies <- match(all_naa_id_, id_in_all_content)
+# #print((naa_matching_indecies))
+# naa_matrix_ <- all_posts_data[naa_matching_indecies, ]
+# naa_matrix_body <- naa_matrix_$Body
+# print("NAA Matrix Topic Modeling")
+# print(length(naa_matrix_body))
+# all_text_from_posts <- naa_matrix_body
+
+print("AA Matrix Topic Modeling")
+aa_matching_indecies <- match(all_aa_id_, id_in_all_content)
+#print((aa_matching_indecies))
+aa_matrix_ <- all_posts_data[aa_matching_indecies, ]
+aa_matrix_body <- aa_matrix_$Body
+print("AA Matrix Topic Modeling")
+print(length(aa_matrix_body))
+all_text_from_posts <- aa_matrix_body
 
 ## Topic Modeling Stuff 
 stop_words <- stopwords("SMART")
@@ -33,7 +40,7 @@ extra_stop_words = stop_words_data$stop_
 #extra_stop_words <- c("like", "can", "one", "way", "use", "want", "will", "need", "know", "do", "dont", "possible", "just")
 #stop_words <- c("the", "and", "you", "that", "for", "your", "are", "have", "with", "this")
 
-all_text_from_posts <- naa_matrix_body
+
 all_text_from_posts <- iconv(all_text_from_posts, "ASCII", "UTF-8", sub="")
 
 # pre-processing:
@@ -138,21 +145,9 @@ seed <-list(2003, 5, 63, 100001, 765)
 #seed <-500
 nstart <- 5
 best <- TRUE
-
-
-
-# function for harminc mean 
-harmonicMean <- function(logLikelihoods, precision=2000L) {
-  
-  llMed <- median(logLikelihoods)
-  as.double(llMed - log(mean(exp(-mpfr(logLikelihoods, prec = precision) + llMed))))
-}
-# 
-
-
 ##Number of topics
-k <- 75
-#k <- 10  
+k <- 20
+
 #That done, we can now do the actual work – run the topic modelling algorithm on our corpus. 
 #Here is the code:
 #Run LDA using Gibbs sampling
@@ -188,7 +183,7 @@ write.csv(topicProbabilities,file=paste("final_formatted_", k, "_TopicProb.csv")
 # #print(head(aa_matrix_body))
 # #write.table(aa_matrix_body,file=aa_file_name, sep=",", col.names=NA) 
 # 
-# ########AA Extraction Zone Started #######
+# ########AA Extraction Zone Ended #######
 t2 <- Sys.time()
 print(t2 - t1)  # 
 rm(list = setdiff(ls(), lsf.str()))
