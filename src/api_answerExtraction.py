@@ -62,7 +62,7 @@ def giveProcessedStr(listParam):
 if __name__ == "__main__":
     allContent =[]
     print "Started at:", utility.giveTimeStamp()
-    dirName_='/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/DevOpsInSO/output/question_ids/stack_overflow_2/'
+    dirName_='/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/DevOpsInSO/output/question_ids/stack_overflow_7/'
     tableName='dummy'
     so_obj = stackexchange.StackOverflow()
     for root, dirs, files in os.walk(dirName_):
@@ -79,5 +79,6 @@ if __name__ == "__main__":
 
         time.sleep(150)
     strToDump = giveProcessedStr(allContent)    
-    status_ = utility.dumpContentIntoFile(strToDump, "ans_stack_overflow_2_all.csv")
+    status_ = utility.dumpContentIntoFile(strToDump, "ans_stack_overflow_7_all.csv")
     print "Dumped a file of {} bytes".format(status_)
+    print "Ended at:", utility.giveTimeStamp()    

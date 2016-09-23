@@ -7,8 +7,8 @@ Created on Tue Sep 13 10:28:47 2016
 
 def giveConnection():
     import pymysql.cursors
-    #_host = "localhost"
-    _host = "127.0.0.1"    
+    _host = "localhost"
+    #_host = "127.0.0.1"    
     _user = "root"
     _password = "SrcML#2016"
     _database = "DevOpsInSO"

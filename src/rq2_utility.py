@@ -77,9 +77,9 @@ def createRQ2Report(ques_dict_param, andw_dict_param):
       a_act_date    = matched_answ[1] ### will not use 
       a_score       = matched_answ[2]
       # get time difference 
-      q_date_time  = parse(q_create_date)       
-      a_date_time  = parse(a_create_date)   
-      diff_in_minutes  = (a_date_time-q_date_time).total_seconds() / float(60)
+      #q_date_time  = parse(q_create_date)       
+      #a_date_time  = parse(a_create_date)   
+      #diff_in_minutes  = (a_date_time-q_date_time).total_seconds() / float(60)
       ### abnormal results for ask ubintu in case of time difference ... will not be used 
       #print "Q:{}, A:{}, diff:{}".format(q_date_time, a_date_time,  diff_in_minutes )
       #tup_ =(q_score, q_v_cnt, q_ans_cnt, q_com_cnt, q_fav_cnt, a_score, diff_in_minutes) 
@@ -98,3 +98,25 @@ def dumpFinalReport(listParam, headerParam, file2save):
   str2write = str2write + str_   
   status_ = utility.dumpContentIntoFile(str2write, file2save)
   return status_
+  
+  
+  
+  
+def getExtraFormattedRecordOfAnswer(fileNameParam):
+  dict2Ret={}  
+  looser= 0   
+  with open(fileNameParam, 'rU') as f:
+    reader = csv.reader(f)
+    next(reader, None)  # skip the headers        
+    for row in reader:
+      looser = looser + 1  
+      id_         = int(row[0])    # accepted answer ID from stack overflow  
+      create_date = row[1]         # creation date from stack overflow  
+      score       = int(row[2])    # score of answer from stack overflow  
+      view_cnt_   = int(row[3])    # view count  from stack overflow  
+      ans_cnt     = int(row[4])    # answer count from stack overflow  
+      com_cnt     = int(row[5])    # comment count from stack overflow 
+      fav_cnt     = int(row[6])    # favorite count from stack overflow        
+      dict2Ret[id_] = ( create_date, score, view_cnt_, ans_cnt, com_cnt, fav_cnt)
+  #print "Count of rows should be:", looser   
+  return dict2Ret         
