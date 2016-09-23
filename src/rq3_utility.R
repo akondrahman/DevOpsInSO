@@ -5,6 +5,7 @@ t1 <- Sys.time()
 all_needed_file <-  "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/all_needed_content.csv"
 rq3_data_file_body  <- "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/rq3_data_body.csv"
 rq3_data_file_title  <- "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/rq3_data_title.csv"
+rq3_data_file_indicies <- "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/rq3_data_index.txt"
 all_posts_data <- read.csv(all_needed_file)
 
 ## generate random indices os 95% stats. confidence and 5% CI 
@@ -17,7 +18,7 @@ print("Count of entries in corpus")
 print(len_)
 ### get the random indices
 indicesTochoose <- sample(1:len_, cnt_elems_to_pick, replace=FALSE)
-#print(indicesTochoose)
+write.table(indicesTochoose,file=rq3_data_file_indicies, sep=",") 
 selected_matrix <- all_posts_data[indicesTochoose, ]
 ##print(head(selected_matrix))
 # get body 
