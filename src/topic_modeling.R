@@ -20,10 +20,12 @@ extra_stop_words = stop_words_data$stop_
 
 file_to_read ="/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/all_needed_content.csv"
 all_posts_data <- read.csv(file_to_read)
-body_of_posts_data = all_posts_data$Body
+body_of_posts_data  = all_posts_data$Body
+title_of_posts_data = all_posts_data$Title
+all_text_from_posts <- paste(body_of_posts_data, title_of_posts_data, sep=" ")
 #print(body_of_posts_data)
 
-all_text_from_posts <- body_of_posts_data
+####all_text_from_posts <- body_of_posts_data
 all_text_from_posts <- iconv(all_text_from_posts, "ASCII", "UTF-8", sub="")
 
 # pre-processing:
@@ -153,7 +155,7 @@ write.csv(ldaOut.terms,file=paste("final_formatted_", k, "_TopicsToTerms.csv"))
 topicProbabilities <- as.data.frame(ldaOut@gamma)
 write.csv(topicProbabilities,file=paste("final_formatted_", k, "_TopicProb.csv"))
 
-# sequ <- seq(2, 300, 20)
+# sequ <- seq(10, 100, 10)
 # keep_ <- 50
 # 
 # # fitted_many <- lapply(sequ,
