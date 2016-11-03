@@ -78,19 +78,19 @@ ans_au_file   = "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProj
 
 
 ####### Q&A site anme: stackoverflow.stackexhange.com  #######
-dict_ans_so_  = rq2_utility.getAnsDictFromCSV(ans_so_file)
-srcName="so"
-#dict_que_so   = rq2_utility.getFormattedRecordOfAnswer(srcName)
-extra_file_name_for_so = "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/rq2_all_so.csv"
-dict_que_so   = rq2_utility.getExtraFormattedRecordOfAnswer(extra_file_name_for_so)
-### extra rae for stupid db connections 
-so_rep_as_lis = rq2_utility.createRQ2Report(dict_que_so, dict_ans_so_)
-print "Expected answers in stack overflow: ", len(dict_que_so)
-print "Matched records for stack overflow: ", len(so_rep_as_lis)
-#print "Detail fo the matched reocrds: \n" , so_rep_as_lis
-file2save= file2save_prefix+srcName+".csv"
-dump_status = rq2_utility.dumpFinalReport(so_rep_as_lis, header2dump, file2save)
-print "Dumped the full report in CSV file of {} bytes".format(dump_status)
-print "="*50
+#dict_ans_so_  = rq2_utility.getAnsDictFromCSV(ans_so_file)
+#srcName="so"
+##dict_que_so   = rq2_utility.getFormattedRecordOfAnswer(srcName)
+#extra_file_name_for_so = "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/rq2_all_so.csv"
+#dict_que_so   = rq2_utility.getExtraFormattedRecordOfAnswer(extra_file_name_for_so)
+#### extra rae for stupid db connections 
+#so_rep_as_lis = rq2_utility.createRQ2Report(dict_que_so, dict_ans_so_)
+#print "Expected answers in stack overflow: ", len(dict_que_so)
+#print "Matched records for stack overflow: ", len(so_rep_as_lis)
+##print "Detail fo the matched reocrds: \n" , so_rep_as_lis
+#file2save= file2save_prefix+srcName+".csv"
+#dump_status = rq2_utility.dumpFinalReport(so_rep_as_lis, header2dump, file2save)
+#print "Dumped the full report in CSV file of {} bytes".format(dump_status)
+#print "="*50
 
 ################## ###############
