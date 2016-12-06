@@ -1,5 +1,12 @@
 cat("\014")
 options(max.print=1000000)
+library(lda)
+library(tm)
+library(LDAvis)
+library(SnowballC)
+library(topicmodels)
+library(Rmpfr)
+library(slam)
 t1 <- Sys.time()
 
 all_needed_file <-  "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/all_needed_content.csv"
@@ -13,9 +20,11 @@ all_naa_id_file <- "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowP
 all_naa_id_data <- read.csv(all_naa_id_file)
 all_naa_id_ <- all_naa_id_data$NAA_ID
 
-########NAA Topic Modeling Zone Started #######
-print("NAA Matrix Topic Modeling")
+
 id_in_all_content <- all_posts_data$Id
+#######NAA Topic Modeling Zone Started #######
+print("NAA Matrix Topic Modeling")
+
 naa_matching_indecies <- match(all_naa_id_, id_in_all_content)
 #print((naa_matching_indecies))
 naa_matrix_ <- all_posts_data[naa_matching_indecies, ]
@@ -109,6 +118,7 @@ for(ind_ in 1:len_string_list)
   str_ = ""
 }
 
+
 print("After formatting ... length should be same as before")
 print(length(formatted_string_list))
 
@@ -150,7 +160,8 @@ seed <-list(2003, 5, 63, 100001, 765)
 nstart <- 5
 best <- TRUE
 ##Number of topics
-k <- 20
+# k <- 10  ## for aa_corpus 
+k <- 30  ## for naa_corpus 
 
 #That done, we can now do the actual work – run the topic modelling algorithm on our corpus.
 #Here is the code:
@@ -194,3 +205,5 @@ write.csv(topicProbabilities,file=paste("final_formatted_", k, "_TopicProb.csv")
 t2 <- Sys.time()
 print(t2 - t1)  #
 rm(list = setdiff(ls(), lsf.str()))
+
+

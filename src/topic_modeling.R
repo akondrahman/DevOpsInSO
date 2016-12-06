@@ -19,9 +19,12 @@ extra_stop_words = stop_words_data$stop_
 #stop_words <- c("the", "and", "you", "that", "for", "your", "are", "have", "with", "this")
 
 file_to_read ="/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/all_needed_content.csv"
+title_file_all_corp ="/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/all.corp.title.only.txt"
 all_posts_data <- read.csv(file_to_read)
 body_of_posts_data  = all_posts_data$Body
 title_of_posts_data = all_posts_data$Title
+##### write.table(title_of_posts_data, file=title_file_all_corp, sep=",", col.names=NA)
+
 all_text_from_posts <- paste(body_of_posts_data, title_of_posts_data, sep=" ")
 #print(body_of_posts_data)
 
@@ -133,7 +136,8 @@ best <- TRUE
 
 
 ##Number of topics
-k <- 30
+k <- 20
+# k <- 30
 #k <- 10  
 #That done, we can now do the actual work – run the topic modelling algorithm on our corpus. 
 #Here is the code:
@@ -155,13 +159,13 @@ write.csv(ldaOut.terms,file=paste("final_formatted_", k, "_TopicsToTerms.csv"))
 topicProbabilities <- as.data.frame(ldaOut@gamma)
 write.csv(topicProbabilities,file=paste("final_formatted_", k, "_TopicProb.csv"))
 
-# sequ <- seq(10, 100, 10)
-# keep_ <- 50
-# 
-# # fitted_many <- lapply(sequ,
-# #                       function(topicCnt) LDA(dtm, k=topicCnt, method="Gibbs", 
-# #                       control=list(burnin=burnin_, iter=iter_,keep=keep_)))
-# # extract logliks from each topic
+sequ <- seq(10, 100, 10)
+keep_ <- 50
+
+# fitted_many <- lapply(sequ,
+#                       function(topicCnt) LDA(dtm, k=topicCnt, method="Gibbs", 
+#                       control=list(burnin=burnin_, iter=iter_,keep=keep_)))
+# extract logliks from each topic
 # logLiks_many <- lapply(fitted_many, function(L)  L@logLiks[-c(1:(burnin_/keep_))])
 # 
 # # compute harmonic means, harmonic mean of log likelihodd is perplexity

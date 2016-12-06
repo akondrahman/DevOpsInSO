@@ -1,7 +1,7 @@
 cat("\014") 
 options(max.print=1000000)
 t1 <- Sys.time()
-topic_prob_file <- "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/DevOpsInSO/output/all.corpus/30.TopicProb.csv"
+topic_prob_file <- "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/DevOpsInSO/with_title_all_corpus_20_topics/20_TopicProb.csv"
 topic_prob_data <- read.csv(topic_prob_file)
 
 topic_names <- colnames(topic_prob_data, do.NULL = TRUE, prefix = "col")
