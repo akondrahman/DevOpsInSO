@@ -2,8 +2,9 @@ cat("\014")
 options(max.print=1000000)
 t1 <- Sys.time()
 
-topic_prob_file <- "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/DevOpsInSO/output/rq1/with_title_all_corpus_20_topics/20_TopicProb.csv"
+topic_prob_file <- "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/DevOpsInSO/output/rq2/with_title_naa_corpus_30_topics/_TopicProb.csv"
 topic_prob_data <- read.csv(topic_prob_file)
+total_q_count <- 59013
 
 topic_names <- colnames(topic_prob_data, do.NULL = TRUE, prefix = "col")
 doc_names <- rownames(topic_prob_data, do.NULL = TRUE, prefix = "row")
@@ -38,9 +39,36 @@ for(doc_ind in 2:len_doc_names)
   #print("-----")  
 }
 #print(dic_topics)
+len_dic_topic <- length(dic_topics)
+for(top_inex in 1:len_top_names+1)
+{
+  print("#########################")
+  print(top_inex-1)
+  print("---------------")
 
+  qcount_for_topic <- 0 
+  for(doc_index in 2:len_dic_topic)
+  {
+    tmp_ <-  dic_topics[[doc_index]][top_inex]
+    if(tmp_==1)
+    {
+      #print("*****")
+      #print("The question is:")
+      #print(doc_index)
+      qcount_for_topic <- qcount_for_topic + 1
 
+    }
+  }
 
+  print("***Question Count***")
+  print(qcount_for_topic)
+  print("***Total Questions***")
+  print(total_q_count)
+  print("***Share of Questions***")
+  share <- (qcount_for_topic / total_q_count ) * 100
+  print(share)
+  print("#########################")
+}
 
 t2 <- Sys.time()
 print(t2 - t1)  # 
