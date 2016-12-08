@@ -2,11 +2,11 @@ cat("\014")
 options(max.print=1000000)
 t1 <- Sys.time()
 
-content_file <-  "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/garbage/all_naa_contents.csv"
+content_file <-  "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/all_needed_content.csv"
 content_data <- read.csv(content_file)
 
 
-topic_prob_file <- "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/DevOpsInSO/output/rq2/with_title_naa_corpus_30_topics/_TopicProb.csv"
+topic_prob_file <- "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/DevOpsInSO/output/rq1/with_title_all_corpus_20_topics/_TopicProb.csv"
 topic_prob_data <- read.csv(topic_prob_file)
 
 topic_names <- colnames(topic_prob_data, do.NULL = TRUE, prefix = "col")
@@ -79,6 +79,22 @@ for(top_inex in 1:len_top_names+1)
   temp_fav_count_vector <- temp_fav_count_vector[!is.na(temp_fav_count_vector)] 
   sumfavcnt_for_topic <- sum(temp_fav_count_vector)
   print(sumfavcnt_for_topic)  
+  print("===Favorite per question===")
+  fav_per_q     <- (sumfavcnt_for_topic / q_count_topic ) 
+  print(fav_per_q)
+  #print("===Median Of All  Favorite counts ===")
+  median_fav_for_topic <- median(temp_fav_count_vector)  
+  #print(median_fav_for_topic)
+  #print("===Median Scores per question===")  
+  median_fav_per_topic     <- (median_fav_for_topic / q_count_topic ) 
+  #print(median_fav_per_topic)  
+  mean_fav_for_topic <- mean(temp_fav_count_vector)
+  #print("===Mean Of All Scores===")
+  #print(mean_fav_for_topic)
+  mean_fav_per_q     <- (mean_fav_for_topic / q_count_topic ) 
+  print("===Summary of favorite for question===")
+  print(summary(temp_fav_count_vector))    
+  print("#########################")  
 
 }
 
