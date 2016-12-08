@@ -47,7 +47,40 @@ fav_count_vector    <-  content_data$FavoriteCount   ## get favorite count from 
 fav_count_vector    <-  as.numeric(fav_count_vector)    ## convert to number 
 print("------------Summary of favorite------------------")
 print(summary(fav_count_vector))
+for(top_inex in 1:len_top_names+1)
+{
+  ### temp score vector 
+  temp_fav_count_vector <- vector(mode="numeric", length=len_dic_topic)
+  ### counter_ for all questions 
+  counter_ <- 0 
+  ### counter for questions for this topic 
+  q_count_topic <- 0 
+  print("#########################")
+  print("Topic #")
+  print(top_inex-1)
+  for(doc_index in 2:len_dic_topic)
+  {
+    counter_ <- counter_ + 1 
+    tmp_ <-  dic_topics[[doc_index]][top_inex]
+    if(tmp_==1)
+    {
+      q_count_topic <- q_count_topic + 1
+      favCountOfQues <- fav_count_vector[counter_]
+      #print(favCountOfQues)
+      #print("===============")
+      temp_fav_count_vector <- c( temp_fav_count_vector,  favCountOfQues)
+    }
+  }
+  
+  print("***Total questions in this topic***")
+  print(q_count_topic)
+  print("***Favorites for questions***")
+  temp_fav_count_vector <- temp_fav_count_vector[temp_fav_count_vector != ""]
+  temp_fav_count_vector <- temp_fav_count_vector[!is.na(temp_fav_count_vector)] 
+  sumfavcnt_for_topic <- sum(temp_fav_count_vector)
+  print(sumfavcnt_for_topic)  
 
+}
 
 t2 <- Sys.time()
 print(t2 - t1)  
