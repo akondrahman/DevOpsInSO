@@ -2,9 +2,13 @@ cat("\014")
 options(max.print=1000000)
 t1 <- Sys.time()
 
-topic_prob_file <- "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/DevOpsInSO/output/rq2/with_title_naa_corpus_30_topics/_TopicProb.csv"
+content_file <-  "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/garbage/all_aa_contents.csv"
+content_data <- read.csv(content_file)
+
+
+topic_prob_file <- "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/DevOpsInSO/output/rq2/with_title_aa_corpus_10_topics/_TopicProb.csv"
 topic_prob_data <- read.csv(topic_prob_file)
-total_q_count <- 59013
+#total_q_count <- 59013
 
 
 topic_names <- colnames(topic_prob_data, do.NULL = TRUE, prefix = "col")
@@ -39,10 +43,53 @@ for(doc_ind in 2:len_doc_names)
   dic_topics[[doc_ind]] <- dom_topic_for_this_doc
   #print("-----")  
 }
-#print(dic_topics)
-len_dic_topic <- length(dic_topics)
+len_dic_topic <- length(dic_topics) ## get the count of all questions in the corpus 
 
 
+ownerUserID_vector  <-  content_data$OwnerUserId  ## get owner IDs from content file 
+
+
+for(top_inex in 1:len_top_names+1)
+{
+  ### temp owner user ID vector 
+  temp_owner_id_vector <- vector(mode="numeric", length=len_dic_topic)
+  ### counter_ for all questions 
+  counter_ <- 0 
+  ### counter for questions for thsi topic 
+  q_count_topic <- 0 
+  print("#########################")
+  print("Topic #")
+  print(top_inex-1)
+  for(doc_index in 2:len_dic_topic)
+  {
+    counter_ <- counter_ + 1 
+    tmp_ <-  dic_topics[[doc_index]][top_inex]
+    if(tmp_==1)
+    {
+      q_count_topic <- q_count_topic + 1
+      ownerIDForQuestion <- ownerUserID_vector[counter_]
+      #print(ownerIDForQuestion)
+      #print("===============")
+      temp_owner_id_vector <- c( temp_owner_id_vector,  ownerIDForQuestion)
+    }
+  }
+
+  print("***Total questions in this topic***")
+  print(q_count_topic)
+  print("***Programmers involved in questions***")
+  temp_owner_id_vector <- unique(temp_owner_id_vector[temp_owner_id_vector != ""])
+  temp_owner_id_vector <- unique(temp_owner_id_vector[temp_owner_id_vector !=0])  
+  temp_owner_id_vector <- temp_owner_id_vector[!is.na(temp_owner_id_vector)] 
+  up_for_topic <- length(temp_owner_id_vector)
+  print(up_for_topic)  
+  up_per_q     <- (up_for_topic / q_count_topic ) 
+  print("===Unique programmer per question===")
+  print(up_per_q)
+  q_per_up     <- (q_count_topic / up_for_topic ) 
+  print("===Question per unique programmer===")
+  print(q_per_up)
+  print("#########################")
+}
 t2 <- Sys.time()
 print(t2 - t1)  # 
 rm(list = setdiff(ls(), lsf.str()))
