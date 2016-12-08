@@ -75,8 +75,7 @@ for(top_inex in 1:len_top_names+1)
   print("***Total questions in this topic***")
   print(q_count_topic)
   print("***Scores for questions***")
-  temp_score_vector <- unique(temp_score_vector[temp_score_vector != ""])
-  temp_score_vector <- unique(temp_score_vector[temp_score_vector !=0])  
+  temp_score_vector <- temp_score_vector[temp_score_vector != ""]
   temp_score_vector <- temp_score_vector[!is.na(temp_score_vector)] 
   score_for_topic <- sum(temp_score_vector)
   print(score_for_topic)  
