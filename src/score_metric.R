@@ -41,7 +41,12 @@ for(doc_ind in 2:len_doc_names)
   dic_topics[[doc_ind]] <- dom_topic_for_this_doc
   #print("-----")  
 }
-len_dic_topic <- length(dic_topics)        ## get the count of all questions in the corpus 
+len_dic_topic   <- length(dic_topics)        ## get the count of all questions in the corpus 
+score_vector    <-  content_data$Score   ## get scores from content file 
+score_vector    <- as.numeric(score_vector)    ## convert to number 
+print("------------Summary of score------------------")
+print(summary(score_vector))
+
 
 t2 <- Sys.time()
 print(t2 - t1)  
