@@ -2,11 +2,11 @@ cat("\014")
 options(max.print=1000000)
 t1 <- Sys.time()
 
-content_file <-  "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/all_needed_content.csv"
+content_file <-  "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/garbage/all_naa_contents.csv"
 content_data <- read.csv(content_file)
 
 
-topic_prob_file <- "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/DevOpsInSO/output/rq1/with_title_all_corpus_20_topics/_TopicProb.csv"
+topic_prob_file <- "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/DevOpsInSO/output/rq2/with_title_naa_corpus_30_topics/_TopicProb.csv"
 topic_prob_data <- read.csv(topic_prob_file)
 
 topic_names <- colnames(topic_prob_data, do.NULL = TRUE, prefix = "col")
@@ -82,18 +82,18 @@ for(top_inex in 1:len_top_names+1)
   print("===Score per question===")
   score_per_q     <- (score_for_topic / q_count_topic ) 
   print(score_per_q)
-  print("===Median Of All  Scores ===")
+  #print("===Median Of All  Scores ===")
   median_score_for_topic <- median(temp_score_vector)  
-  print(median_score_for_topic)
+  #print(median_score_for_topic)
   #print("===Median Scores per question===")  
   median_score_per_q     <- (median_score_for_topic / q_count_topic ) 
   #print(median_score_per_q)  
   mean_score_for_topic <- mean(temp_score_vector)
-  print("===Mean Of All Scores===")
-  print(mean_score_for_topic)
+  #print("===Mean Of All Scores===")
+  #print(mean_score_for_topic)
   mean_score_per_q     <- (mean_score_for_topic / q_count_topic ) 
-  #print("===Mean Scores per question===")
-  #print(mean_score_per_q)    
+  print("===Summary of score for question===")
+  print(summary(temp_score_vector))    
   print("#########################")
 }
 
