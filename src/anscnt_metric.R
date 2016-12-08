@@ -47,7 +47,56 @@ ans_count_vector    <-  content_data$AnswerCount   ## get answer count from cont
 ans_count_vector    <-  as.numeric(ans_count_vector)    ## convert to number 
 print("------------Summary of answer count------------------")
 print(summary(ans_count_vector))
-
+for(top_inex in 1:len_top_names+1)
+{
+  ### temp score vector 
+  temp_ans_count_vector <- vector(mode="numeric", length=len_dic_topic)
+  ### counter_ for all questions 
+  counter_ <- 0 
+  ### counter for questions for this topic 
+  q_count_topic <- 0 
+  print("#########################")
+  print("Topic #")
+  print(top_inex-1)
+  for(doc_index in 2:len_dic_topic)
+  {
+    counter_ <- counter_ + 1 
+    tmp_ <-  dic_topics[[doc_index]][top_inex]
+    if(tmp_==1)
+    {
+      q_count_topic <- q_count_topic + 1
+      ansCountOfQues <- ans_count_vector[counter_]
+      #print(ansCountOfQues)
+      #print("===============")
+      temp_ans_count_vector <- c( temp_ans_count_vector,  ansCountOfQues)
+    }
+  }
+  
+  print("***Total questions in this topic***")
+  print(q_count_topic)
+  print("***Answer count for all questions***")
+  temp_ans_count_vector <- temp_ans_count_vector[temp_ans_count_vector != ""]
+  temp_ans_count_vector <- temp_ans_count_vector[!is.na(temp_ans_count_vector)] 
+  sum_ans_for_topic <- sum(temp_ans_count_vector)
+  print(sum_ans_for_topic)  
+  print("===Answer count per question===")
+  ansCount_per_q     <- (sum_ans_for_topic / q_count_topic ) 
+  print(ansCount_per_q)
+  #print("===Median Of All Answer counts ===")
+  median_ans_for_topic <- median(temp_ans_count_vector)  
+  #print(median_fav_for_topic)
+  #print("===Median Answer per question===")  
+  median_ans_per_question     <- (median_ans_for_topic / q_count_topic ) 
+  #print(median_ans_per_question)  
+  mean_ans_for_topic <- mean(temp_ans_count_vector)
+  #print("===Mean Of Answers===")
+  #print(mean_ans_for_topic)
+  mean_ans_per_q     <- (mean_ans_for_topic / q_count_topic ) 
+  print("===Summary of answer count per question===")
+  print(summary(temp_ans_count_vector))    
+  print("#########################")  
+  
+}
 
 t2 <- Sys.time()
 print(t2 - t1)  
