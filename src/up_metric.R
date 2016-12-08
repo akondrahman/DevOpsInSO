@@ -26,7 +26,7 @@ topic_prob_cutoff <- 0.10
 for(doc_ind in 2:len_doc_names)
 {
   
-  topics_for_this_doc <- vector(mode="numeric", length=len_top_names+1)
+  topics_for_this_doc <- vector()
   dom_topic_for_this_doc <- rep(0, len_top_names+1)
   for(topic_ind in 1:len_top_names+1)
   {

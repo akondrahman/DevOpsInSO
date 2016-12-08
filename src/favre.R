@@ -50,7 +50,7 @@ print(summary(fav_count_vector))
 for(top_inex in 1:len_top_names+1)
 {
   ### temp score vector 
-  temp_fav_count_vector <- vector(mode="numeric", length=len_dic_topic)
+  temp_fav_count_vector <- vector()
   ### counter_ for all questions 
   counter_ <- 0 
   ### counter for questions for this topic 

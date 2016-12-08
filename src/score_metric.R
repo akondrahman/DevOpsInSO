@@ -2,11 +2,11 @@ cat("\014")
 options(max.print=1000000)
 t1 <- Sys.time()
 
-content_file <-  "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/garbage/all_naa_contents.csv"
+content_file <-  "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/garbage/all_aa_contents.csv"
 content_data <- read.csv(content_file)
 
 
-topic_prob_file <- "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/DevOpsInSO/output/rq2/with_title_naa_corpus_30_topics/_TopicProb.csv"
+topic_prob_file <- "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/DevOpsInSO/output/rq2/with_title_aa_corpus_10_topics/_TopicProb.csv"
 topic_prob_data <- read.csv(topic_prob_file)
 
 topic_names <- colnames(topic_prob_data, do.NULL = TRUE, prefix = "col")
@@ -24,7 +24,7 @@ topic_prob_cutoff <- 0.10
 for(doc_ind in 2:len_doc_names)
 {
   
-  topics_for_this_doc <- vector(mode="numeric", length=len_top_names+1)
+  topics_for_this_doc <- vector()
   dom_topic_for_this_doc <- rep(0, len_top_names+1)
   for(topic_ind in 1:len_top_names+1)
   {
@@ -50,7 +50,7 @@ print(summary(score_vector))
 for(top_inex in 1:len_top_names+1)
 {
   ### temp score vector 
-  temp_score_vector <- vector(mode="numeric", length=len_dic_topic)
+  temp_score_vector <- vector()
   ### counter_ for all questions 
   counter_ <- 0 
   ### counter for questions for this topic 

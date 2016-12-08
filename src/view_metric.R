@@ -50,7 +50,7 @@ print(summary(viewvector))
 for(top_inex in 1:len_top_names+1)
 {
   ### temp view count vector 
-  temp_view_count_vector <- vector(mode="numeric", length=len_dic_topic)
+  temp_view_count_vector <- vector()
   ### counter_ for all questions 
   counter_ <- 0 
   ### counter for questions for this topic 
