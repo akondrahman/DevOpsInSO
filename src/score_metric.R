@@ -41,11 +41,63 @@ for(doc_ind in 2:len_doc_names)
   dic_topics[[doc_ind]] <- dom_topic_for_this_doc
   #print("-----")  
 }
-len_dic_topic   <- length(dic_topics)        ## get the count of all questions in the corpus 
+len_dic_topic   <-  length(dic_topics)        ## get the count of all questions in the corpus 
 score_vector    <-  content_data$Score   ## get scores from content file 
-score_vector    <- as.numeric(score_vector)    ## convert to number 
+score_vector    <-  as.numeric(score_vector)    ## convert to number 
 print("------------Summary of score------------------")
 print(summary(score_vector))
+
+for(top_inex in 1:len_top_names+1)
+{
+  ### temp score vector 
+  temp_score_vector <- vector(mode="numeric", length=len_dic_topic)
+  ### counter_ for all questions 
+  counter_ <- 0 
+  ### counter for questions for this topic 
+  q_count_topic <- 0 
+  print("#########################")
+  print("Topic #")
+  print(top_inex-1)
+  for(doc_index in 2:len_dic_topic)
+  {
+    counter_ <- counter_ + 1 
+    tmp_ <-  dic_topics[[doc_index]][top_inex]
+    if(tmp_==1)
+    {
+      q_count_topic <- q_count_topic + 1
+      scoreOfQues <- score_vector[counter_]
+      #print(scoreOfQues)
+      #print("===============")
+      temp_score_vector <- c( temp_score_vector,  scoreOfQues)
+    }
+  }
+  
+  print("***Total questions in this topic***")
+  print(q_count_topic)
+  print("***Scores for questions***")
+  temp_score_vector <- unique(temp_score_vector[temp_score_vector != ""])
+  temp_score_vector <- unique(temp_score_vector[temp_score_vector !=0])  
+  temp_score_vector <- temp_score_vector[!is.na(temp_score_vector)] 
+  score_for_topic <- sum(temp_score_vector)
+  print(score_for_topic)  
+  print("===Score per question===")
+  score_per_q     <- (score_for_topic / q_count_topic ) 
+  print(score_per_q)
+  print("===Median Of All  Scores ===")
+  median_score_for_topic <- median(temp_score_vector)  
+  print(median_score_for_topic)
+  #print("===Median Scores per question===")  
+  median_score_per_q     <- (median_score_for_topic / q_count_topic ) 
+  #print(median_score_per_q)  
+  mean_score_for_topic <- mean(temp_score_vector)
+  print("===Mean Of All Scores===")
+  print(mean_score_for_topic)
+  mean_score_per_q     <- (mean_score_for_topic / q_count_topic ) 
+  #print("===Mean Scores per question===")
+  #print(mean_score_per_q)    
+  print("#########################")
+}
+
 
 
 t2 <- Sys.time()
