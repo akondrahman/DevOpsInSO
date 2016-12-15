@@ -2,8 +2,8 @@ cat("\014")
 options(max.print=1000000)
 t1 <- Sys.time()
 
-#content_file <-  "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/garbage/all_aa_contents.csv"
-#content_file <-  "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/garbage/all_naa_contents.csv"
+#content_file <-  "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/all_aa_content.csv"
+#content_file <-  "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/all_naa_content.csv"
 content_file <-  "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/all_needed_content.csv"
 content_data <- read.csv(content_file)
 
@@ -80,7 +80,8 @@ for(top_inex in 1:len_top_names+1)
   #print((temp_comm_count_vector))
   print("***Comment count for all questions***")
   temp_comm_count_vector <- temp_comm_count_vector[temp_comm_count_vector != ""]
-  temp_comm_count_vector <- temp_comm_count_vector[!is.na(temp_comm_count_vector)] 
+  #temp_comm_count_vector <- temp_comm_count_vector[!is.na(temp_comm_count_vector)] 
+  temp_comm_count_vector[is.na(temp_comm_count_vector)] <- 0
   sum_comm_for_topic <- sum(temp_comm_count_vector)
   print(sum_comm_for_topic)  
   print("===Comment count per question===")
