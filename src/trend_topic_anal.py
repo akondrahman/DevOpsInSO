@@ -56,7 +56,7 @@ def getTopicWiseDict(fileNameParam):
       date_         = row[1]
       dateOfQues    = formatQues(date_)
       topicIDOfQues = int(row[2])
-      
+
       if topicIDOfQues not in topicWiseDict:
         topicWiseDict[topicIDOfQues]= [dateOfQues]
       else:
@@ -64,16 +64,16 @@ def getTopicWiseDict(fileNameParam):
         topicWiseDict[topicIDOfQues]  = tmp_ + [dateOfQues]
   return topicWiseDict
 
-f_ = '/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/DevOpsInSO/output/rq2/RQ2_QAA_TrendInp.csv'
+f_ = '/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/DevOpsInSO/output/rq2/RQ2_QNAA_TrendInp.csv'
 dateDict=getDateWiseDict(f_)
 #print dateDict
 odd = collections.OrderedDict(sorted(dateDict.items()))
 trendList=[]
 for date_, elems in odd.iteritems():
-   print "Date:", date_
-   print "Questions:", len(elems)
+   #print "Date:", date_
+   #print "Questions:", len(elems)
    trendList.append(len(elems))
-   print '*'*75
+   #print '*'*75
 #print "For stat test:", trendList
 
 
@@ -81,6 +81,18 @@ topicDict = getTopicWiseDict(f_)
 odt = collections.OrderedDict(sorted(topicDict.items()))
 for topic_, dates_ in odt.iteritems():
    print "Topic:", topic_
-   dist_ques = collections.Counter(dates_)
-   print dist_ques
+   dist_ques_dict     = dict(collections.Counter(dates_))
+   dateWiseSortedDict = collections.OrderedDict(sorted(dist_ques_dict.items()))
+   #print dist_ques
+   trendPerTopicHolder = []
+   for dateItem, qForTopic in dateWiseSortedDict.iteritems():
+     questionsForDate = odd[dateItem]
+     ## count of all questions for a topic
+     totcntQues = len(questionsForDate)
+     ## questions for this topic
+     topCntQues = qForTopic
+     qPerDateTopic = float(topCntQues) / float(totcntQues)
+     qPerDateTopic = round(qPerDateTopic, 3)
+     trendPerTopicHolder.append(qPerDateTopic)
+   print trendPerTopicHolder
    print '*'*75
