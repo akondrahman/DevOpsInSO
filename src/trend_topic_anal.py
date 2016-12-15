@@ -2,7 +2,7 @@
 Akond, trends of topics
 '''
 
-import csv
+import csv, collections
 
 def formatQues(dateStr):
    dstr=''
@@ -22,7 +22,7 @@ def formatQues(dateStr):
    if len(month_)==1:
      month_ = '0' + month_
    dstr       = year_ + '-' + month_
-   print dstr
+   #print dstr
    return dstr
 
 def getDateWiseDict(fileNameParam):
@@ -48,3 +48,11 @@ def getDateWiseDict(fileNameParam):
 f_ = '/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/DevOpsInSO/output/rq2/RQ2_QAA_TrendInp.csv'
 dateDict=getDateWiseDict(f_)
 #print dateDict
+odd = collections.OrderedDict(sorted(dateDict.items()))
+trendList=[]
+for date_, elems in odd.iteritems():
+   print "Date:", date_
+   print "Questions:", len(elems)
+   trendList.append(len(elems))
+   print '*'*75
+#print "For stat test:", trendList
