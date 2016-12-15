@@ -1,0 +1,811 @@
+*******************************ALL************************************
+[1] "------------Summary of favorite------------------"
+> print(summary(fav_count_vector))
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  1.000   1.000   1.000   4.546   2.000  99.000 
+
+[1] "#########################"
+[1] "Topic #"
+[1] 1
+[1] "***Total questions in this topic***"
+[1] 10170
+[1] "***Favorites for questions***"
+[1] 42528
+[1] "===Favorite per question==="
+[1] 4.181711
+[1] "===Summary of favorite for question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  1.000   1.000   1.000   4.182   2.000  98.000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 2
+[1] "***Total questions in this topic***"
+[1] 11149
+[1] "***Favorites for questions***"
+[1] 40758
+[1] "===Favorite per question==="
+[1] 3.655754
+[1] "===Summary of favorite for question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  1.000   1.000   1.000   3.656   1.000  98.000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 3
+[1] "***Total questions in this topic***"
+[1] 10636
+[1] "***Favorites for questions***"
+[1] 52402
+[1] "===Favorite per question==="
+[1] 4.926852
+[1] "===Summary of favorite for question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  1.000   1.000   1.000   4.927   1.000  98.000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 4
+[1] "***Total questions in this topic***"
+[1] 8509
+[1] "***Favorites for questions***"
+[1] 36802
+[1] "===Favorite per question==="
+[1] 4.325068
+[1] "===Summary of favorite for question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  1.000   1.000   1.000   4.325   1.000  98.000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 5
+[1] "***Total questions in this topic***"
+[1] 9013
+[1] "***Favorites for questions***"
+[1] 41103
+[1] "===Favorite per question==="
+[1] 4.560413
+[1] "===Summary of favorite for question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+   1.00    1.00    1.00    4.56    2.00   98.00 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 6
+[1] "***Total questions in this topic***"
+[1] 6398
+[1] "***Favorites for questions***"
+[1] 26502
+[1] "===Favorite per question==="
+[1] 4.142232
+[1] "===Summary of favorite for question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  1.000   1.000   1.000   4.142   1.000  98.000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 7
+[1] "***Total questions in this topic***"
+[1] 8761
+[1] "***Favorites for questions***"
+[1] 43504
+[1] "===Favorite per question==="
+[1] 4.965643
+[1] "===Summary of favorite for question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  1.000   1.000   1.000   4.966   3.000  99.000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 8
+[1] "***Total questions in this topic***"
+[1] 8798
+[1] "***Favorites for questions***"
+[1] 39603
+[1] "===Favorite per question==="
+[1] 4.501364
+[1] "===Summary of favorite for question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  1.000   1.000   1.000   4.501   2.000  98.000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 9
+[1] "***Total questions in this topic***"
+[1] 7503
+[1] "***Favorites for questions***"
+[1] 33127
+[1] "===Favorite per question==="
+[1] 4.415167
+[1] "===Summary of favorite for question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  1.000   1.000   1.000   4.415   2.000  98.000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 10
+[1] "***Total questions in this topic***"
+[1] 22477
+[1] "***Favorites for questions***"
+[1] 106207
+[1] "===Favorite per question==="
+[1] 4.725141
+[1] "===Summary of favorite for question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  1.000   1.000   1.000   4.725   2.000  98.000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 11
+[1] "***Total questions in this topic***"
+[1] 10622
+[1] "***Favorites for questions***"
+[1] 46232
+[1] "===Favorite per question==="
+[1] 4.352476
+[1] "===Summary of favorite for question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  1.000   1.000   1.000   4.352   1.000  98.000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 12
+[1] "***Total questions in this topic***"
+[1] 3064
+[1] "***Favorites for questions***"
+[1] 13260
+[1] "===Favorite per question==="
+[1] 4.327676
+[1] "===Summary of favorite for question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  1.000   1.000   1.000   4.328   1.000  99.000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 13
+[1] "***Total questions in this topic***"
+[1] 5175
+[1] "***Favorites for questions***"
+[1] 22071
+[1] "===Favorite per question==="
+[1] 4.264928
+[1] "===Summary of favorite for question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  1.000   1.000   1.000   4.265   1.000  98.000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 14
+[1] "***Total questions in this topic***"
+[1] 7453
+[1] "***Favorites for questions***"
+[1] 35905
+[1] "===Favorite per question==="
+[1] 4.817523
+[1] "===Summary of favorite for question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  1.000   1.000   1.000   4.818   2.000  99.000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 15
+[1] "***Total questions in this topic***"
+[1] 10802
+[1] "***Favorites for questions***"
+[1] 46837
+[1] "===Favorite per question==="
+[1] 4.335956
+[1] "===Summary of favorite for question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  1.000   1.000   1.000   4.336   1.000  98.000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 16
+[1] "***Total questions in this topic***"
+[1] 18180
+[1] "***Favorites for questions***"
+[1] 91431
+[1] "===Favorite per question==="
+[1] 5.029208
+[1] "===Summary of favorite for question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  1.000   1.000   1.000   5.029   3.000  98.000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 17
+[1] "***Total questions in this topic***"
+[1] 6891
+[1] "***Favorites for questions***"
+[1] 27964
+[1] "===Favorite per question==="
+[1] 4.058047
+[1] "===Summary of favorite for question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  1.000   1.000   1.000   4.058   1.000  98.000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 18
+[1] "***Total questions in this topic***"
+[1] 8326
+[1] "***Favorites for questions***"
+[1] 37148
+[1] "===Favorite per question==="
+[1] 4.461686
+[1] "===Summary of favorite for question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  1.000   1.000   1.000   4.462   2.000  98.000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 19
+[1] "***Total questions in this topic***"
+[1] 21648
+[1] "***Favorites for questions***"
+[1] 107122
+[1] "===Favorite per question==="
+[1] 4.948356
+[1] "===Summary of favorite for question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  1.000   1.000   1.000   4.948   2.000  99.000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 20
+[1] "***Total questions in this topic***"
+[1] 7263
+[1] "***Favorites for questions***"
+[1] 32990
+[1] "===Favorite per question==="
+[1] 4.5422
+[1] "===Summary of favorite for question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  1.000   1.000   1.000   4.542   1.000  98.000 
+[1] "#########################"
+> 
+> t2 <- Sys.time()
+> print(t2 - t1)  
+Time difference of 1.828201 mins
+*******************************AA************************************
+[1] "------------Summary of favorite------------------"
+> print(summary(fav_count_vector))
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.    NA's 
+  0.000   1.000   1.000   3.214   2.000 903.000   31610 
+
+[1] "#########################"
+[1] "Topic #"
+[1] 1
+[1] "***Total questions in this topic***"
+[1] 14083
+[1] "***Favorites for questions***"
+[1] 12785
+[1] "===Favorite per question==="
+[1] 0.9078321
+[1] "===Summary of favorite for question==="
+    Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+  0.0000   0.0000   0.0000   0.9078   1.0000 385.0000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 2
+[1] "***Total questions in this topic***"
+[1] 14880
+[1] "***Favorites for questions***"
+[1] 14749
+[1] "===Favorite per question==="
+[1] 0.9911962
+[1] "===Summary of favorite for question==="
+    Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+  0.0000   0.0000   0.0000   0.9912   1.0000 240.0000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 3
+[1] "***Total questions in this topic***"
+[1] 12627
+[1] "***Favorites for questions***"
+[1] 9456
+[1] "===Favorite per question==="
+[1] 0.7488715
+[1] "===Summary of favorite for question==="
+    Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+  0.0000   0.0000   0.0000   0.7489   1.0000 158.0000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 4
+[1] "***Total questions in this topic***"
+[1] 9594
+[1] "***Favorites for questions***"
+[1] 11818
+[1] "===Favorite per question==="
+[1] 1.231812
+[1] "===Summary of favorite for question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  0.000   0.000   0.000   1.232   1.000 903.000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 5
+[1] "***Total questions in this topic***"
+[1] 16973
+[1] "***Favorites for questions***"
+[1] 16687
+[1] "===Favorite per question==="
+[1] 0.9831497
+[1] "===Summary of favorite for question==="
+    Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+  0.0000   0.0000   0.0000   0.9831   1.0000 274.0000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 6
+[1] "***Total questions in this topic***"
+[1] 8532
+[1] "***Favorites for questions***"
+[1] 7143
+[1] "===Favorite per question==="
+[1] 0.8372011
+[1] "===Summary of favorite for question==="
+    Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+  0.0000   0.0000   0.0000   0.8372   1.0000 240.0000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 7
+[1] "***Total questions in this topic***"
+[1] 15348
+[1] "***Favorites for questions***"
+[1] 20236
+[1] "===Favorite per question==="
+[1] 1.318478
+[1] "===Summary of favorite for question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  0.000   0.000   0.000   1.318   1.000 903.000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 8
+[1] "***Total questions in this topic***"
+[1] 24406
+[1] "***Favorites for questions***"
+[1] 31084
+[1] "===Favorite per question==="
+[1] 1.273621
+[1] "===Summary of favorite for question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  0.000   0.000   0.000   1.274   1.000 903.000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 9
+[1] "***Total questions in this topic***"
+[1] 10067
+[1] "***Favorites for questions***"
+[1] 9450
+[1] "===Favorite per question==="
+[1] 0.9387106
+[1] "===Summary of favorite for question==="
+    Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+  0.0000   0.0000   0.0000   0.9387   1.0000 903.0000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 10
+[1] "***Total questions in this topic***"
+[1] 14900
+[1] "***Favorites for questions***"
+[1] 10353
+[1] "===Favorite per question==="
+[1] 0.6948322
+[1] "===Summary of favorite for question==="
+    Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+  0.0000   0.0000   0.0000   0.6948   1.0000 280.0000 
+[1] "#########################"
+> 
+> t2 <- Sys.time()
+> print(t2 - t1)  
+Time difference of 22.16321 secs
+*******************************NAA************************************
+[1] "------------Summary of favorite------------------"
+> print(summary(fav_count_vector))
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.    NA's 
+   0.00    1.00    1.00    1.63    2.00  103.00   47120 
+
+
+[1] "#########################"
+[1] "Topic #"
+[1] 1
+[1] "***Total questions in this topic***"
+[1] 2571
+[1] "***Favorites for questions***"
+[1] 700
+[1] "===Favorite per question==="
+[1] 0.2722676
+[1] "===Summary of favorite for question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+ 0.0000  0.0000  0.0000  0.2723  0.0000 50.0000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 2
+[1] "***Total questions in this topic***"
+[1] 3085
+[1] "***Favorites for questions***"
+[1] 910
+[1] "===Favorite per question==="
+[1] 0.2949757
+[1] "===Summary of favorite for question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  0.000   0.000   0.000   0.295   0.000  36.000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 3
+[1] "***Total questions in this topic***"
+[1] 2753
+[1] "***Favorites for questions***"
+[1] 997
+[1] "===Favorite per question==="
+[1] 0.3621504
+[1] "===Summary of favorite for question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+ 0.0000  0.0000  0.0000  0.3622  0.0000 60.0000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 4
+[1] "***Total questions in this topic***"
+[1] 2643
+[1] "***Favorites for questions***"
+[1] 710
+[1] "===Favorite per question==="
+[1] 0.2686341
+[1] "===Summary of favorite for question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+ 0.0000  0.0000  0.0000  0.2686  0.0000 47.0000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 5
+[1] "***Total questions in this topic***"
+[1] 2262
+[1] "***Favorites for questions***"
+[1] 562
+[1] "===Favorite per question==="
+[1] 0.2484527
+[1] "===Summary of favorite for question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+ 0.0000  0.0000  0.0000  0.2485  0.0000 31.0000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 6
+[1] "***Total questions in this topic***"
+[1] 2725
+[1] "***Favorites for questions***"
+[1] 748
+[1] "===Favorite per question==="
+[1] 0.2744954
+[1] "===Summary of favorite for question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+ 0.0000  0.0000  0.0000  0.2745  0.0000 60.0000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 7
+[1] "***Total questions in this topic***"
+[1] 2697
+[1] "***Favorites for questions***"
+[1] 780
+[1] "===Favorite per question==="
+[1] 0.2892102
+[1] "===Summary of favorite for question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+ 0.0000  0.0000  0.0000  0.2892  0.0000 47.0000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 8
+[1] "***Total questions in this topic***"
+[1] 3436
+[1] "***Favorites for questions***"
+[1] 697
+[1] "===Favorite per question==="
+[1] 0.2028522
+[1] "===Summary of favorite for question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+ 0.0000  0.0000  0.0000  0.2029  0.0000  9.0000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 9
+[1] "***Total questions in this topic***"
+[1] 3535
+[1] "***Favorites for questions***"
+[1] 1200
+[1] "===Favorite per question==="
+[1] 0.3394625
+[1] "===Summary of favorite for question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+ 0.0000  0.0000  0.0000  0.3395  0.0000 52.0000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 10
+[1] "***Total questions in this topic***"
+[1] 2155
+[1] "***Favorites for questions***"
+[1] 521
+[1] "===Favorite per question==="
+[1] 0.2417633
+[1] "===Summary of favorite for question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+ 0.0000  0.0000  0.0000  0.2418  0.0000 10.0000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 11
+[1] "***Total questions in this topic***"
+[1] 3344
+[1] "***Favorites for questions***"
+[1] 1423
+[1] "===Favorite per question==="
+[1] 0.4255383
+[1] "===Summary of favorite for question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+ 0.0000  0.0000  0.0000  0.4255  0.0000 56.0000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 12
+[1] "***Total questions in this topic***"
+[1] 1624
+[1] "***Favorites for questions***"
+[1] 556
+[1] "===Favorite per question==="
+[1] 0.3423645
+[1] "===Summary of favorite for question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+ 0.0000  0.0000  0.0000  0.3424  0.0000 16.0000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 13
+[1] "***Total questions in this topic***"
+[1] 2885
+[1] "***Favorites for questions***"
+[1] 656
+[1] "===Favorite per question==="
+[1] 0.227383
+[1] "===Summary of favorite for question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+ 0.0000  0.0000  0.0000  0.2274  0.0000  9.0000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 14
+[1] "***Total questions in this topic***"
+[1] 2514
+[1] "***Favorites for questions***"
+[1] 798
+[1] "===Favorite per question==="
+[1] 0.3174224
+[1] "===Summary of favorite for question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+ 0.0000  0.0000  0.0000  0.3174  0.0000 33.0000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 15
+[1] "***Total questions in this topic***"
+[1] 1454
+[1] "***Favorites for questions***"
+[1] 347
+[1] "===Favorite per question==="
+[1] 0.238652
+[1] "===Summary of favorite for question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+ 0.0000  0.0000  0.0000  0.2387  0.0000 18.0000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 16
+[1] "***Total questions in this topic***"
+[1] 1263
+[1] "***Favorites for questions***"
+[1] 302
+[1] "===Favorite per question==="
+[1] 0.2391132
+[1] "===Summary of favorite for question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+ 0.0000  0.0000  0.0000  0.2391  0.0000 10.0000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 17
+[1] "***Total questions in this topic***"
+[1] 3110
+[1] "***Favorites for questions***"
+[1] 1308
+[1] "===Favorite per question==="
+[1] 0.4205788
+[1] "===Summary of favorite for question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+ 0.0000  0.0000  0.0000  0.4206  0.0000 36.0000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 18
+[1] "***Total questions in this topic***"
+[1] 2494
+[1] "***Favorites for questions***"
+[1] 811
+[1] "===Favorite per question==="
+[1] 0.3251804
+[1] "===Summary of favorite for question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+ 0.0000  0.0000  0.0000  0.3252  0.0000 18.0000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 19
+[1] "***Total questions in this topic***"
+[1] 2702
+[1] "***Favorites for questions***"
+[1] 709
+[1] "===Favorite per question==="
+[1] 0.2623982
+[1] "===Summary of favorite for question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+ 0.0000  0.0000  0.0000  0.2624  0.0000 49.0000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 20
+[1] "***Total questions in this topic***"
+[1] 2523
+[1] "***Favorites for questions***"
+[1] 937
+[1] "===Favorite per question==="
+[1] 0.3713833
+[1] "===Summary of favorite for question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+ 0.0000  0.0000  0.0000  0.3714  0.0000 36.0000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 21
+[1] "***Total questions in this topic***"
+[1] 7544
+[1] "***Favorites for questions***"
+[1] 3807
+[1] "===Favorite per question==="
+[1] 0.5046394
+[1] "===Summary of favorite for question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+ 0.0000  0.0000  0.0000  0.5046  1.0000 60.0000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 22
+[1] "***Total questions in this topic***"
+[1] 2169
+[1] "***Favorites for questions***"
+[1] 721
+[1] "===Favorite per question==="
+[1] 0.3324112
+[1] "===Summary of favorite for question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+ 0.0000  0.0000  0.0000  0.3324  0.0000 16.0000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 23
+[1] "***Total questions in this topic***"
+[1] 4399
+[1] "***Favorites for questions***"
+[1] 1302
+[1] "===Favorite per question==="
+[1] 0.2959764
+[1] "===Summary of favorite for question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  0.000   0.000   0.000   0.296   0.000  17.000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 24
+[1] "***Total questions in this topic***"
+[1] 3496
+[1] "***Favorites for questions***"
+[1] 1379
+[1] "===Favorite per question==="
+[1] 0.3944508
+[1] "===Summary of favorite for question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+ 0.0000  0.0000  0.0000  0.3945  0.0000 56.0000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 25
+[1] "***Total questions in this topic***"
+[1] 5447
+[1] "***Favorites for questions***"
+[1] 1925
+[1] "===Favorite per question==="
+[1] 0.3534055
+[1] "===Summary of favorite for question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+ 0.0000  0.0000  0.0000  0.3534  0.0000 36.0000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 26
+[1] "***Total questions in this topic***"
+[1] 2907
+[1] "***Favorites for questions***"
+[1] 836
+[1] "===Favorite per question==="
+[1] 0.2875817
+[1] "===Summary of favorite for question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+ 0.0000  0.0000  0.0000  0.2876  0.0000 39.0000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 27
+[1] "***Total questions in this topic***"
+[1] 2773
+[1] "***Favorites for questions***"
+[1] 750
+[1] "===Favorite per question==="
+[1] 0.2704652
+[1] "===Summary of favorite for question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+ 0.0000  0.0000  0.0000  0.2705  0.0000 19.0000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 28
+[1] "***Total questions in this topic***"
+[1] 5621
+[1] "***Favorites for questions***"
+[1] 3579
+[1] "===Favorite per question==="
+[1] 0.6367194
+[1] "===Summary of favorite for question==="
+    Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+  0.0000   0.0000   0.0000   0.6367   1.0000 103.0000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 29
+[1] "***Total questions in this topic***"
+[1] 2749
+[1] "***Favorites for questions***"
+[1] 863
+[1] "===Favorite per question==="
+[1] 0.3139323
+[1] "===Summary of favorite for question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+ 0.0000  0.0000  0.0000  0.3139  0.0000 39.0000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 30
+[1] "***Total questions in this topic***"
+[1] 2605
+[1] "***Favorites for questions***"
+[1] 642
+[1] "===Favorite per question==="
+[1] 0.2464491
+[1] "===Summary of favorite for question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+ 0.0000  0.0000  0.0000  0.2464  0.0000 14.0000 
+[1] "#########################"
+> 
+> t2 <- Sys.time()
+> print(t2 - t1)  
+Time difference of 53.35631 secs

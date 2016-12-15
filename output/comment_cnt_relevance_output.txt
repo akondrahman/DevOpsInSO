@@ -1,0 +1,798 @@
+##########ALL##########
+[1] "------------Summary of comment count------------------"
+> print(summary(comment_count_vector))
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  1.000   1.000   1.000   6.235  13.000  31.000 
+  
+[1] "#########################"
+[1] "Topic #"
+[1] 1
+[1] "***Total questions in this topic***"
+[1] 10170
+[1] "***Comment count for all questions***"
+[1] 64460
+[1] "===Comment count per question==="
+[1] 6.33825
+[1] "===Summary of comment count per question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  1.000   1.000   1.000   6.338  13.000  31.000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 2
+[1] "***Total questions in this topic***"
+[1] 11149
+[1] "***Comment count for all questions***"
+[1] 59270
+[1] "===Comment count per question==="
+[1] 5.316172
+[1] "===Summary of comment count per question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  1.000   1.000   1.000   5.316   2.000  31.000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 3
+[1] "***Total questions in this topic***"
+[1] 10636
+[1] "***Comment count for all questions***"
+[1] 73482
+[1] "===Comment count per question==="
+[1] 6.9088
+[1] "===Summary of comment count per question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  1.000   1.000   1.000   6.909  13.000  31.000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 4
+[1] "***Total questions in this topic***"
+[1] 8509
+[1] "***Comment count for all questions***"
+[1] 55809
+[1] "===Comment count per question==="
+[1] 6.55882
+[1] "===Summary of comment count per question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  1.000   1.000   1.000   6.559  13.000  31.000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 5
+[1] "***Total questions in this topic***"
+[1] 9013
+[1] "***Comment count for all questions***"
+[1] 58086
+[1] "===Comment count per question==="
+[1] 6.444691
+[1] "===Summary of comment count per question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  1.000   1.000   1.000   6.445  13.000  31.000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 6
+[1] "***Total questions in this topic***"
+[1] 6398
+[1] "***Comment count for all questions***"
+[1] 42097
+[1] "===Comment count per question==="
+[1] 6.579712
+[1] "===Summary of comment count per question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+   1.00    1.00    1.00    6.58   13.00   31.00 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 7
+[1] "***Total questions in this topic***"
+[1] 8761
+[1] "***Comment count for all questions***"
+[1] 55128
+[1] "===Comment count per question==="
+[1] 6.292432
+[1] "===Summary of comment count per question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  1.000   1.000   1.000   6.292  13.000  31.000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 8
+[1] "***Total questions in this topic***"
+[1] 8798
+[1] "***Comment count for all questions***"
+[1] 54953
+[1] "===Comment count per question==="
+[1] 6.246079
+[1] "===Summary of comment count per question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  1.000   1.000   1.000   6.246  13.000  31.000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 9
+[1] "***Total questions in this topic***"
+[1] 7503
+[1] "***Comment count for all questions***"
+[1] 46218
+[1] "===Comment count per question==="
+[1] 6.159936
+[1] "===Summary of comment count per question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+   1.00    1.00    1.00    6.16   13.00   31.00 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 10
+[1] "***Total questions in this topic***"
+[1] 22477
+[1] "***Comment count for all questions***"
+[1] 132759
+[1] "===Comment count per question==="
+[1] 5.906438
+[1] "===Summary of comment count per question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  1.000   1.000   1.000   5.906  13.000  31.000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 11
+[1] "***Total questions in this topic***"
+[1] 10622
+[1] "***Comment count for all questions***"
+[1] 65769
+[1] "===Comment count per question==="
+[1] 6.191772
+[1] "===Summary of comment count per question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  1.000   1.000   1.000   6.192  13.000  31.000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 12
+[1] "***Total questions in this topic***"
+[1] 3064
+[1] "***Comment count for all questions***"
+[1] 19917
+[1] "===Comment count per question==="
+[1] 6.500326
+[1] "===Summary of comment count per question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+    1.0     1.0     1.0     6.5    13.0    31.0 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 13
+[1] "***Total questions in this topic***"
+[1] 5175
+[1] "***Comment count for all questions***"
+[1] 30733
+[1] "===Comment count per question==="
+[1] 5.938744
+[1] "===Summary of comment count per question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  1.000   1.000   1.000   5.939  13.000  31.000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 14
+[1] "***Total questions in this topic***"
+[1] 7453
+[1] "***Comment count for all questions***"
+[1] 47482
+[1] "===Comment count per question==="
+[1] 6.370857
+[1] "===Summary of comment count per question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  1.000   1.000   1.000   6.371  13.000  31.000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 15
+[1] "***Total questions in this topic***"
+[1] 10802
+[1] "***Comment count for all questions***"
+[1] 69512
+[1] "===Comment count per question==="
+[1] 6.435105
+[1] "===Summary of comment count per question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  1.000   1.000   1.000   6.435  13.000  31.000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 16
+[1] "***Total questions in this topic***"
+[1] 18180
+[1] "***Comment count for all questions***"
+[1] 120785
+[1] "===Comment count per question==="
+[1] 6.643839
+[1] "===Summary of comment count per question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  1.000   1.000   1.000   6.644  13.000  31.000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 17
+[1] "***Total questions in this topic***"
+[1] 6891
+[1] "***Comment count for all questions***"
+[1] 45448
+[1] "===Comment count per question==="
+[1] 6.595269
+[1] "===Summary of comment count per question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  1.000   1.000   1.000   6.595  13.000  31.000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 18
+[1] "***Total questions in this topic***"
+[1] 8326
+[1] "***Comment count for all questions***"
+[1] 52400
+[1] "===Comment count per question==="
+[1] 6.293538
+[1] "===Summary of comment count per question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  1.000   1.000   1.000   6.294  13.000  31.000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 19
+[1] "***Total questions in this topic***"
+[1] 21648
+[1] "***Comment count for all questions***"
+[1] 132696
+[1] "===Comment count per question==="
+[1] 6.129712
+[1] "===Summary of comment count per question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+   1.00    1.00    1.00    6.13   13.00   31.00 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 20
+[1] "***Total questions in this topic***"
+[1] 7263
+[1] "***Comment count for all questions***"
+[1] 46022
+[1] "===Comment count per question==="
+[1] 6.3365
+[1] "===Summary of comment count per question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  1.000   1.000   1.000   6.337  13.000  31.000 
+[1] "#########################"
+##########AA##########
+[1] "------------Summary of comment count------------------"
+> print(summary(comment_count_vector))
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+ 0.0000  0.0000  0.0000  0.9956  1.0000 37.0000 
+
+ [1] "#########################"
+[1] "Topic #"
+[1] 1
+[1] "***Total questions in this topic***"
+[1] 14083
+[1] "***Comment count for all questions***"
+[1] 14193
+[1] "===Comment count per question==="
+[1] 1.007811
+[1] "===Summary of comment count per question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  0.000   0.000   0.000   1.008   1.000  29.000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 2
+[1] "***Total questions in this topic***"
+[1] 14880
+[1] "***Comment count for all questions***"
+[1] 15343
+[1] "===Comment count per question==="
+[1] 1.031116
+[1] "===Summary of comment count per question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  0.000   0.000   0.000   1.031   2.000  22.000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 3
+[1] "***Total questions in this topic***"
+[1] 12627
+[1] "***Comment count for all questions***"
+[1] 13421
+[1] "===Comment count per question==="
+[1] 1.062881
+[1] "===Summary of comment count per question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  0.000   0.000   0.000   1.063   2.000  22.000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 4
+[1] "***Total questions in this topic***"
+[1] 9594
+[1] "***Comment count for all questions***"
+[1] 9653
+[1] "===Comment count per question==="
+[1] 1.00615
+[1] "===Summary of comment count per question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  0.000   0.000   0.000   1.006   1.000  18.000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 5
+[1] "***Total questions in this topic***"
+[1] 16973
+[1] "***Comment count for all questions***"
+[1] 15267
+[1] "===Comment count per question==="
+[1] 0.8994874
+[1] "===Summary of comment count per question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+ 0.0000  0.0000  0.0000  0.8995  1.0000 37.0000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 6
+[1] "***Total questions in this topic***"
+[1] 8532
+[1] "***Comment count for all questions***"
+[1] 8640
+[1] "===Comment count per question==="
+[1] 1.012658
+[1] "===Summary of comment count per question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  0.000   0.000   0.000   1.013   1.000  37.000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 7
+[1] "***Total questions in this topic***"
+[1] 15348
+[1] "***Comment count for all questions***"
+[1] 15497
+[1] "===Comment count per question==="
+[1] 1.009708
+[1] "===Summary of comment count per question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+   0.00    0.00    0.00    1.01    1.00   24.00 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 8
+[1] "***Total questions in this topic***"
+[1] 24406
+[1] "***Comment count for all questions***"
+[1] 21363
+[1] "===Comment count per question==="
+[1] 0.8753175
+[1] "===Summary of comment count per question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+ 0.0000  0.0000  0.0000  0.8753  1.0000 29.0000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 9
+[1] "***Total questions in this topic***"
+[1] 10067
+[1] "***Comment count for all questions***"
+[1] 10560
+[1] "===Comment count per question==="
+[1] 1.048972
+[1] "===Summary of comment count per question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  0.000   0.000   0.000   1.049   2.000  37.000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 10
+[1] "***Total questions in this topic***"
+[1] 14900
+[1] "***Comment count for all questions***"
+[1] 14663
+[1] "===Comment count per question==="
+[1] 0.984094
+[1] "===Summary of comment count per question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+ 0.0000  0.0000  0.0000  0.9841  1.0000 24.0000 
+[1] "#########################"
+
+##########NAA##########
+[1] "------------Summary of comment count------------------"
+> print(summary(comment_count_vector))
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+   0.00    0.00    0.00    1.29    2.00   30.00 
+[1] "#########################"
+[1] "Topic #"
+[1] 1
+[1] "***Total questions in this topic***"
+[1] 2571
+[1] "***Comment count for all questions***"
+[1] 3997
+[1] "===Comment count per question==="
+[1] 1.554648
+[1] "===Summary of comment count per question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  0.000   0.000   1.000   1.555   2.000  21.000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 2
+[1] "***Total questions in this topic***"
+[1] 3085
+[1] "***Comment count for all questions***"
+[1] 4194
+[1] "===Comment count per question==="
+[1] 1.359481
+[1] "===Summary of comment count per question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  0.000   0.000   1.000   1.359   2.000  18.000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 3
+[1] "***Total questions in this topic***"
+[1] 2753
+[1] "***Comment count for all questions***"
+[1] 3629
+[1] "===Comment count per question==="
+[1] 1.318198
+[1] "===Summary of comment count per question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  0.000   0.000   0.000   1.318   2.000  23.000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 4
+[1] "***Total questions in this topic***"
+[1] 2643
+[1] "***Comment count for all questions***"
+[1] 3198
+[1] "===Comment count per question==="
+[1] 1.209989
+[1] "===Summary of comment count per question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+   0.00    0.00    0.00    1.21    2.00   14.00 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 5
+[1] "***Total questions in this topic***"
+[1] 2262
+[1] "***Comment count for all questions***"
+[1] 3464
+[1] "===Comment count per question==="
+[1] 1.531388
+[1] "===Summary of comment count per question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  0.000   0.000   1.000   1.531   2.000  25.000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 6
+[1] "***Total questions in this topic***"
+[1] 2725
+[1] "***Comment count for all questions***"
+[1] 4387
+[1] "===Comment count per question==="
+[1] 1.609908
+[1] "===Summary of comment count per question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+   0.00    0.00    1.00    1.61    3.00   30.00 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 7
+[1] "***Total questions in this topic***"
+[1] 2697
+[1] "***Comment count for all questions***"
+[1] 3935
+[1] "===Comment count per question==="
+[1] 1.459029
+[1] "===Summary of comment count per question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  0.000   0.000   1.000   1.459   2.000  16.000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 8
+[1] "***Total questions in this topic***"
+[1] 3436
+[1] "***Comment count for all questions***"
+[1] 3183
+[1] "===Comment count per question==="
+[1] 0.9263679
+[1] "===Summary of comment count per question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+ 0.0000  0.0000  0.0000  0.9264  1.0000 30.0000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 9
+[1] "***Total questions in this topic***"
+[1] 3535
+[1] "***Comment count for all questions***"
+[1] 4773
+[1] "===Comment count per question==="
+[1] 1.350212
+[1] "===Summary of comment count per question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+   0.00    0.00    0.00    1.35    2.00   30.00 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 10
+[1] "***Total questions in this topic***"
+[1] 2155
+[1] "***Comment count for all questions***"
+[1] 3200
+[1] "===Comment count per question==="
+[1] 1.484919
+[1] "===Summary of comment count per question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  0.000   0.000   1.000   1.485   2.000  16.000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 11
+[1] "***Total questions in this topic***"
+[1] 3344
+[1] "***Comment count for all questions***"
+[1] 5233
+[1] "===Comment count per question==="
+[1] 1.564892
+[1] "===Summary of comment count per question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  0.000   0.000   1.000   1.565   2.000  20.000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 12
+[1] "***Total questions in this topic***"
+[1] 1624
+[1] "***Comment count for all questions***"
+[1] 2445
+[1] "===Comment count per question==="
+[1] 1.505542
+[1] "===Summary of comment count per question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  0.000   0.000   1.000   1.506   2.000  17.000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 13
+[1] "***Total questions in this topic***"
+[1] 2885
+[1] "***Comment count for all questions***"
+[1] 4073
+[1] "===Comment count per question==="
+[1] 1.411785
+[1] "===Summary of comment count per question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  0.000   0.000   1.000   1.412   2.000  14.000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 14
+[1] "***Total questions in this topic***"
+[1] 2514
+[1] "***Comment count for all questions***"
+[1] 3637
+[1] "===Comment count per question==="
+[1] 1.446698
+[1] "===Summary of comment count per question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  0.000   0.000   0.000   1.447   2.000  30.000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 15
+[1] "***Total questions in this topic***"
+[1] 1454
+[1] "***Comment count for all questions***"
+[1] 2243
+[1] "===Comment count per question==="
+[1] 1.542641
+[1] "===Summary of comment count per question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  0.000   0.000   1.000   1.543   2.000  17.000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 16
+[1] "***Total questions in this topic***"
+[1] 1263
+[1] "***Comment count for all questions***"
+[1] 2182
+[1] "===Comment count per question==="
+[1] 1.727633
+[1] "===Summary of comment count per question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  0.000   0.000   1.000   1.728   2.000  23.000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 17
+[1] "***Total questions in this topic***"
+[1] 3110
+[1] "***Comment count for all questions***"
+[1] 4001
+[1] "===Comment count per question==="
+[1] 1.286495
+[1] "===Summary of comment count per question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  0.000   0.000   0.000   1.286   2.000  15.000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 18
+[1] "***Total questions in this topic***"
+[1] 2494
+[1] "***Comment count for all questions***"
+[1] 3556
+[1] "===Comment count per question==="
+[1] 1.425822
+[1] "===Summary of comment count per question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  0.000   0.000   0.000   1.426   2.000  22.000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 19
+[1] "***Total questions in this topic***"
+[1] 2702
+[1] "***Comment count for all questions***"
+[1] 4238
+[1] "===Comment count per question==="
+[1] 1.568468
+[1] "===Summary of comment count per question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  0.000   0.000   1.000   1.568   2.000  17.000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 20
+[1] "***Total questions in this topic***"
+[1] 2523
+[1] "***Comment count for all questions***"
+[1] 3755
+[1] "===Comment count per question==="
+[1] 1.488308
+[1] "===Summary of comment count per question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  0.000   0.000   1.000   1.488   2.000  16.000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 21
+[1] "***Total questions in this topic***"
+[1] 7544
+[1] "***Comment count for all questions***"
+[1] 10130
+[1] "===Comment count per question==="
+[1] 1.342789
+[1] "===Summary of comment count per question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  0.000   0.000   0.000   1.343   2.000  17.000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 22
+[1] "***Total questions in this topic***"
+[1] 2169
+[1] "***Comment count for all questions***"
+[1] 2601
+[1] "===Comment count per question==="
+[1] 1.19917
+[1] "===Summary of comment count per question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  0.000   0.000   0.000   1.199   2.000  16.000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 23
+[1] "***Total questions in this topic***"
+[1] 4399
+[1] "***Comment count for all questions***"
+[1] 4924
+[1] "===Comment count per question==="
+[1] 1.119345
+[1] "===Summary of comment count per question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  0.000   0.000   0.000   1.119   2.000  16.000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 24
+[1] "***Total questions in this topic***"
+[1] 3496
+[1] "***Comment count for all questions***"
+[1] 4663
+[1] "===Comment count per question==="
+[1] 1.33381
+[1] "===Summary of comment count per question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  0.000   0.000   0.000   1.334   2.000  18.000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 25
+[1] "***Total questions in this topic***"
+[1] 5447
+[1] "***Comment count for all questions***"
+[1] 5443
+[1] "===Comment count per question==="
+[1] 0.9992657
+[1] "===Summary of comment count per question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+ 0.0000  0.0000  0.0000  0.9993  2.0000 18.0000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 26
+[1] "***Total questions in this topic***"
+[1] 2907
+[1] "***Comment count for all questions***"
+[1] 4032
+[1] "===Comment count per question==="
+[1] 1.386997
+[1] "===Summary of comment count per question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  0.000   0.000   0.000   1.387   2.000  20.000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 27
+[1] "***Total questions in this topic***"
+[1] 2773
+[1] "***Comment count for all questions***"
+[1] 4051
+[1] "===Comment count per question==="
+[1] 1.460873
+[1] "===Summary of comment count per question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  0.000   0.000   1.000   1.461   2.000  14.000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 28
+[1] "***Total questions in this topic***"
+[1] 5621
+[1] "***Comment count for all questions***"
+[1] 6757
+[1] "===Comment count per question==="
+[1] 1.202099
+[1] "===Summary of comment count per question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  0.000   0.000   0.000   1.202   2.000  18.000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 29
+[1] "***Total questions in this topic***"
+[1] 2749
+[1] "***Comment count for all questions***"
+[1] 5047
+[1] "===Comment count per question==="
+[1] 1.83594
+[1] "===Summary of comment count per question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  0.000   0.000   1.000   1.836   3.000  21.000 
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 30
+[1] "***Total questions in this topic***"
+[1] 2605
+[1] "***Comment count for all questions***"
+[1] 3588
+[1] "===Comment count per question==="
+[1] 1.377351
+[1] "===Summary of comment count per question==="
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  0.000   0.000   0.000   1.377   2.000  17.000 
+[1] "#########################"

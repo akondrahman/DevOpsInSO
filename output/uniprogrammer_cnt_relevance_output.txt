@@ -1,0 +1,732 @@
+###################ALL##################
+[1] "#########################"
+[1] "Topic #"
+[1] 1
+[1] "***Total questions in this topic***"
+[1] 10170
+[1] "***Programmers involved in questions***"
+[1] 8262
+[1] "===Unique programmer per question==="
+[1] 0.8123894
+[1] "===Question per unique programmer==="
+[1] 1.230937
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 2
+[1] "***Total questions in this topic***"
+[1] 11149
+[1] "***Programmers involved in questions***"
+[1] 7101
+[1] "===Unique programmer per question==="
+[1] 0.6369181
+[1] "===Question per unique programmer==="
+[1] 1.570061
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 3
+[1] "***Total questions in this topic***"
+[1] 10636
+[1] "***Programmers involved in questions***"
+[1] 7711
+[1] "===Unique programmer per question==="
+[1] 0.7249906
+[1] "===Question per unique programmer==="
+[1] 1.379328
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 4
+[1] "***Total questions in this topic***"
+[1] 8509
+[1] "***Programmers involved in questions***"
+[1] 7142
+[1] "===Unique programmer per question==="
+[1] 0.8393466
+[1] "===Question per unique programmer==="
+[1] 1.191403
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 5
+[1] "***Total questions in this topic***"
+[1] 9013
+[1] "***Programmers involved in questions***"
+[1] 7294
+[1] "===Unique programmer per question==="
+[1] 0.8092755
+[1] "===Question per unique programmer==="
+[1] 1.235673
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 6
+[1] "***Total questions in this topic***"
+[1] 6398
+[1] "***Programmers involved in questions***"
+[1] 4558
+[1] "===Unique programmer per question==="
+[1] 0.7124101
+[1] "===Question per unique programmer==="
+[1] 1.403686
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 7
+[1] "***Total questions in this topic***"
+[1] 8761
+[1] "***Programmers involved in questions***"
+[1] 7232
+[1] "===Unique programmer per question==="
+[1] 0.8254765
+[1] "===Question per unique programmer==="
+[1] 1.211421
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 8
+[1] "***Total questions in this topic***"
+[1] 8798
+[1] "***Programmers involved in questions***"
+[1] 7538
+[1] "===Unique programmer per question==="
+[1] 0.8567856
+[1] "===Question per unique programmer==="
+[1] 1.167153
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 9
+[1] "***Total questions in this topic***"
+[1] 7503
+[1] "***Programmers involved in questions***"
+[1] 5975
+[1] "===Unique programmer per question==="
+[1] 0.7963481
+[1] "===Question per unique programmer==="
+[1] 1.255732
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 10
+[1] "***Total questions in this topic***"
+[1] 22477
+[1] "***Programmers involved in questions***"
+[1] 13548
+[1] "===Unique programmer per question==="
+[1] 0.6027495
+[1] "===Question per unique programmer==="
+[1] 1.659064
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 11
+[1] "***Total questions in this topic***"
+[1] 10622
+[1] "***Programmers involved in questions***"
+[1] 8412
+[1] "===Unique programmer per question==="
+[1] 0.7919413
+[1] "===Question per unique programmer==="
+[1] 1.26272
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 12
+[1] "***Total questions in this topic***"
+[1] 3064
+[1] "***Programmers involved in questions***"
+[1] 2691
+[1] "===Unique programmer per question==="
+[1] 0.8782637
+[1] "===Question per unique programmer==="
+[1] 1.13861
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 13
+[1] "***Total questions in this topic***"
+[1] 5175
+[1] "***Programmers involved in questions***"
+[1] 4348
+[1] "===Unique programmer per question==="
+[1] 0.8401932
+[1] "===Question per unique programmer==="
+[1] 1.190202
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 14
+[1] "***Total questions in this topic***"
+[1] 7453
+[1] "***Programmers involved in questions***"
+[1] 5548
+[1] "===Unique programmer per question==="
+[1] 0.7443982
+[1] "===Question per unique programmer==="
+[1] 1.343367
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 15
+[1] "***Total questions in this topic***"
+[1] 10802
+[1] "***Programmers involved in questions***"
+[1] 7265
+[1] "===Unique programmer per question==="
+[1] 0.6725606
+[1] "===Question per unique programmer==="
+[1] 1.486855
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 16
+[1] "***Total questions in this topic***"
+[1] 18180
+[1] "***Programmers involved in questions***"
+[1] 10099
+[1] "===Unique programmer per question==="
+[1] 0.5555006
+[1] "===Question per unique programmer==="
+[1] 1.800178
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 17
+[1] "***Total questions in this topic***"
+[1] 6891
+[1] "***Programmers involved in questions***"
+[1] 3782
+[1] "===Unique programmer per question==="
+[1] 0.5488318
+[1] "===Question per unique programmer==="
+[1] 1.822052
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 18
+[1] "***Total questions in this topic***"
+[1] 8326
+[1] "***Programmers involved in questions***"
+[1] 6607
+[1] "===Unique programmer per question==="
+[1] 0.7935383
+[1] "===Question per unique programmer==="
+[1] 1.260179
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 19
+[1] "***Total questions in this topic***"
+[1] 21648
+[1] "***Programmers involved in questions***"
+[1] 16188
+[1] "===Unique programmer per question==="
+[1] 0.7477827
+[1] "===Question per unique programmer==="
+[1] 1.337287
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 20
+[1] "***Total questions in this topic***"
+[1] 7263
+[1] "***Programmers involved in questions***"
+[1] 6126
+[1] "===Unique programmer per question==="
+[1] 0.8434531
+[1] "===Question per unique programmer==="
+[1] 1.185602
+[1] "#########################"
+> t2 <- Sys.time()
+> print(t2 - t1)  # 
+Time difference of 4.471662 mins
+###################AA###################
+[1] "#########################"
+[1] "Topic #"
+[1] 1
+[1] "***Total questions in this topic***"
+[1] 14083
+[1] "***Programmers involved in questions***"
+[1] 8877
+[1] "===Unique programmer per question==="
+[1] 0.6303344
+[1] "===Question per unique programmer==="
+[1] 1.586459
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 2
+[1] "***Total questions in this topic***"
+[1] 14880
+[1] "***Programmers involved in questions***"
+[1] 9377
+[1] "===Unique programmer per question==="
+[1] 0.6301747
+[1] "===Question per unique programmer==="
+[1] 1.586861
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 3
+[1] "***Total questions in this topic***"
+[1] 12627
+[1] "***Programmers involved in questions***"
+[1] 8037
+[1] "===Unique programmer per question==="
+[1] 0.6364932
+[1] "===Question per unique programmer==="
+[1] 1.571109
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 4
+[1] "***Total questions in this topic***"
+[1] 9594
+[1] "***Programmers involved in questions***"
+[1] 5250
+[1] "===Unique programmer per question==="
+[1] 0.547217
+[1] "===Question per unique programmer==="
+[1] 1.827429
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 5
+[1] "***Total questions in this topic***"
+[1] 16973
+[1] "***Programmers involved in questions***"
+[1] 9907
+[1] "===Unique programmer per question==="
+[1] 0.5836917
+[1] "===Question per unique programmer==="
+[1] 1.713233
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 6
+[1] "***Total questions in this topic***"
+[1] 8532
+[1] "***Programmers involved in questions***"
+[1] 5284
+[1] "===Unique programmer per question==="
+[1] 0.6193155
+[1] "===Question per unique programmer==="
+[1] 1.614686
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 7
+[1] "***Total questions in this topic***"
+[1] 15348
+[1] "***Programmers involved in questions***"
+[1] 8405
+[1] "===Unique programmer per question==="
+[1] 0.5476284
+[1] "===Question per unique programmer==="
+[1] 1.826056
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 8
+[1] "***Total questions in this topic***"
+[1] 24406
+[1] "***Programmers involved in questions***"
+[1] 14593
+[1] "===Unique programmer per question==="
+[1] 0.5979267
+[1] "===Question per unique programmer==="
+[1] 1.672446
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 9
+[1] "***Total questions in this topic***"
+[1] 10067
+[1] "***Programmers involved in questions***"
+[1] 6813
+[1] "===Unique programmer per question==="
+[1] 0.6767657
+[1] "===Question per unique programmer==="
+[1] 1.477616
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 10
+[1] "***Total questions in this topic***"
+[1] 14900
+[1] "***Programmers involved in questions***"
+[1] 8860
+[1] "===Unique programmer per question==="
+[1] 0.5946309
+[1] "===Question per unique programmer==="
+[1] 1.681716
+[1] "#########################"
+> t2 <- Sys.time()
+> print(t2 - t1)  # 
+Time difference of 1.13537 mins
+###################NAA##################
+[1] "#########################"
+[1] "Topic #"
+[1] 1
+[1] "***Total questions in this topic***"
+[1] 2571
+[1] "***Programmers involved in questions***"
+[1] 1942
+[1] "===Unique programmer per question==="
+[1] 0.7553481
+[1] "===Question per unique programmer==="
+[1] 1.323893
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 2
+[1] "***Total questions in this topic***"
+[1] 3085
+[1] "***Programmers involved in questions***"
+[1] 1762
+[1] "===Unique programmer per question==="
+[1] 0.5711507
+[1] "===Question per unique programmer==="
+[1] 1.750851
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 3
+[1] "***Total questions in this topic***"
+[1] 2753
+[1] "***Programmers involved in questions***"
+[1] 2077
+[1] "===Unique programmer per question==="
+[1] 0.7544497
+[1] "===Question per unique programmer==="
+[1] 1.325469
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 4
+[1] "***Total questions in this topic***"
+[1] 2643
+[1] "***Programmers involved in questions***"
+[1] 1587
+[1] "===Unique programmer per question==="
+[1] 0.600454
+[1] "===Question per unique programmer==="
+[1] 1.665406
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 5
+[1] "***Total questions in this topic***"
+[1] 2262
+[1] "***Programmers involved in questions***"
+[1] 1668
+[1] "===Unique programmer per question==="
+[1] 0.7374005
+[1] "===Question per unique programmer==="
+[1] 1.356115
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 6
+[1] "***Total questions in this topic***"
+[1] 2725
+[1] "***Programmers involved in questions***"
+[1] 1984
+[1] "===Unique programmer per question==="
+[1] 0.7280734
+[1] "===Question per unique programmer==="
+[1] 1.373488
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 7
+[1] "***Total questions in this topic***"
+[1] 2697
+[1] "***Programmers involved in questions***"
+[1] 2072
+[1] "===Unique programmer per question==="
+[1] 0.768261
+[1] "===Question per unique programmer==="
+[1] 1.301641
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 8
+[1] "***Total questions in this topic***"
+[1] 3436
+[1] "***Programmers involved in questions***"
+[1] 2003
+[1] "===Unique programmer per question==="
+[1] 0.5829453
+[1] "===Question per unique programmer==="
+[1] 1.715427
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 9
+[1] "***Total questions in this topic***"
+[1] 3535
+[1] "***Programmers involved in questions***"
+[1] 2674
+[1] "===Unique programmer per question==="
+[1] 0.7564356
+[1] "===Question per unique programmer==="
+[1] 1.32199
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 10
+[1] "***Total questions in this topic***"
+[1] 2155
+[1] "***Programmers involved in questions***"
+[1] 1414
+[1] "===Unique programmer per question==="
+[1] 0.6561485
+[1] "===Question per unique programmer==="
+[1] 1.524045
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 11
+[1] "***Total questions in this topic***"
+[1] 3344
+[1] "***Programmers involved in questions***"
+[1] 1956
+[1] "===Unique programmer per question==="
+[1] 0.5849282
+[1] "===Question per unique programmer==="
+[1] 1.709611
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 12
+[1] "***Total questions in this topic***"
+[1] 1624
+[1] "***Programmers involved in questions***"
+[1] 1018
+[1] "===Unique programmer per question==="
+[1] 0.6268473
+[1] "===Question per unique programmer==="
+[1] 1.595285
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 13
+[1] "***Total questions in this topic***"
+[1] 2885
+[1] "***Programmers involved in questions***"
+[1] 1380
+[1] "===Unique programmer per question==="
+[1] 0.4783362
+[1] "===Question per unique programmer==="
+[1] 2.09058
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 14
+[1] "***Total questions in this topic***"
+[1] 2514
+[1] "***Programmers involved in questions***"
+[1] 1753
+[1] "===Unique programmer per question==="
+[1] 0.6972951
+[1] "===Question per unique programmer==="
+[1] 1.434113
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 15
+[1] "***Total questions in this topic***"
+[1] 1454
+[1] "***Programmers involved in questions***"
+[1] 1099
+[1] "===Unique programmer per question==="
+[1] 0.7558459
+[1] "===Question per unique programmer==="
+[1] 1.323021
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 16
+[1] "***Total questions in this topic***"
+[1] 1263
+[1] "***Programmers involved in questions***"
+[1] 913
+[1] "===Unique programmer per question==="
+[1] 0.722882
+[1] "===Question per unique programmer==="
+[1] 1.383352
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 17
+[1] "***Total questions in this topic***"
+[1] 3110
+[1] "***Programmers involved in questions***"
+[1] 2257
+[1] "===Unique programmer per question==="
+[1] 0.7257235
+[1] "===Question per unique programmer==="
+[1] 1.377935
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 18
+[1] "***Total questions in this topic***"
+[1] 2494
+[1] "***Programmers involved in questions***"
+[1] 1661
+[1] "===Unique programmer per question==="
+[1] 0.6659984
+[1] "===Question per unique programmer==="
+[1] 1.501505
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 19
+[1] "***Total questions in this topic***"
+[1] 2702
+[1] "***Programmers involved in questions***"
+[1] 2002
+[1] "===Unique programmer per question==="
+[1] 0.7409326
+[1] "===Question per unique programmer==="
+[1] 1.34965
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 20
+[1] "***Total questions in this topic***"
+[1] 2523
+[1] "***Programmers involved in questions***"
+[1] 1878
+[1] "===Unique programmer per question==="
+[1] 0.744352
+[1] "===Question per unique programmer==="
+[1] 1.34345
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 21
+[1] "***Total questions in this topic***"
+[1] 7544
+[1] "***Programmers involved in questions***"
+[1] 4170
+[1] "===Unique programmer per question==="
+[1] 0.5527572
+[1] "===Question per unique programmer==="
+[1] 1.809113
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 22
+[1] "***Total questions in this topic***"
+[1] 2169
+[1] "***Programmers involved in questions***"
+[1] 1660
+[1] "===Unique programmer per question==="
+[1] 0.7653296
+[1] "===Question per unique programmer==="
+[1] 1.306627
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 23
+[1] "***Total questions in this topic***"
+[1] 4399
+[1] "***Programmers involved in questions***"
+[1] 2912
+[1] "===Unique programmer per question==="
+[1] 0.6619686
+[1] "===Question per unique programmer==="
+[1] 1.510646
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 24
+[1] "***Total questions in this topic***"
+[1] 3496
+[1] "***Programmers involved in questions***"
+[1] 2810
+[1] "===Unique programmer per question==="
+[1] 0.8037757
+[1] "===Question per unique programmer==="
+[1] 1.244128
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 25
+[1] "***Total questions in this topic***"
+[1] 5447
+[1] "***Programmers involved in questions***"
+[1] 3504
+[1] "===Unique programmer per question==="
+[1] 0.6432899
+[1] "===Question per unique programmer==="
+[1] 1.554509
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 26
+[1] "***Total questions in this topic***"
+[1] 2907
+[1] "***Programmers involved in questions***"
+[1] 2211
+[1] "===Unique programmer per question==="
+[1] 0.7605779
+[1] "===Question per unique programmer==="
+[1] 1.31479
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 27
+[1] "***Total questions in this topic***"
+[1] 2773
+[1] "***Programmers involved in questions***"
+[1] 2188
+[1] "===Unique programmer per question==="
+[1] 0.7890371
+[1] "===Question per unique programmer==="
+[1] 1.267367
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 28
+[1] "***Total questions in this topic***"
+[1] 5621
+[1] "***Programmers involved in questions***"
+[1] 4143
+[1] "===Unique programmer per question==="
+[1] 0.7370575
+[1] "===Question per unique programmer==="
+[1] 1.356746
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 29
+[1] "***Total questions in this topic***"
+[1] 2749
+[1] "***Programmers involved in questions***"
+[1] 1903
+[1] "===Unique programmer per question==="
+[1] 0.6922517
+[1] "===Question per unique programmer==="
+[1] 1.444561
+[1] "#########################"
+[1] "#########################"
+[1] "Topic #"
+[1] 30
+[1] "***Total questions in this topic***"
+[1] 2605
+[1] "***Programmers involved in questions***"
+[1] 1992
+[1] "===Unique programmer per question==="
+[1] 0.7646833
+[1] "===Question per unique programmer==="
+[1] 1.307731
+[1] "#########################"
+> t2 <- Sys.time()
+> print(t2 - t1)  # 
+Time difference of 1.647441 mins
