@@ -45,6 +45,25 @@ def getDateWiseDict(fileNameParam):
   return dateWiseDict
 
 
+
+
+def getTopicWiseDict(fileNameParam):
+  topicWiseDict={}
+  with open(fileNameParam, 'rU') as f:
+    reader = csv.reader(f)
+    next(reader)
+    for row in reader:
+      date_         = row[1]
+      dateOfQues    = formatQues(date_)
+      topicIDOfQues = int(row[2])
+      
+      if topicIDOfQues not in topicWiseDict:
+        topicWiseDict[topicIDOfQues]= [dateOfQues]
+      else:
+        tmp_ = topicWiseDict[topicIDOfQues]
+        topicWiseDict[topicIDOfQues]  = tmp_ + [dateOfQues]
+  return topicWiseDict
+
 f_ = '/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/DevOpsInSO/output/rq2/RQ2_QAA_TrendInp.csv'
 dateDict=getDateWiseDict(f_)
 #print dateDict
@@ -56,3 +75,12 @@ for date_, elems in odd.iteritems():
    trendList.append(len(elems))
    print '*'*75
 #print "For stat test:", trendList
+
+
+topicDict = getTopicWiseDict(f_)
+odt = collections.OrderedDict(sorted(topicDict.items()))
+for topic_, dates_ in odt.iteritems():
+   print "Topic:", topic_
+   dist_ques = collections.Counter(dates_)
+   print dist_ques
+   print '*'*75
