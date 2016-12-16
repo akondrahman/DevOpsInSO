@@ -2,18 +2,22 @@ cat("\014")
 options(max.print=1000000)
 t1 <- Sys.time()
 
-content_file <-  "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/all_aa_content.csv"
-#content_file <-  "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/all_naa_contents.csv"
-#content_file <-  "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/all_needed_content.csv"
+#content_file <-  "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/all_aa_content.csv"
+#content_file <-  "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/all_naa_content.csv"
+content_file <-  "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/all_needed_content.csv"
 content_data <- read.csv(content_file)
 
 print("------------Head of content------------------")
 print(head(content_data))
 
-topic_prob_file <- "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/DevOpsInSO/output/rq2/with_title_aa_corpus_10_topics/_TopicProb.csv"
+#topic_prob_file <- "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/DevOpsInSO/output/rq2/with_title_aa_corpus_10_topics/_TopicProb.csv"
 #topic_prob_file <- "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/DevOpsInSO/output/rq2/with_title_naa_corpus_30_topics/_TopicProb.csv"
-#topic_prob_file <- "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/DevOpsInSO/output/rq1/with_title_all_corpus_20_topics/_TopicProb.csv"
+topic_prob_file <- "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/DevOpsInSO/output/rq1/with_title_all_corpus_20_topics/_TopicProb.csv"
 topic_prob_data <- read.csv(topic_prob_file)
+
+#trendInputData <- "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/DevOpsInSO/output/rq2/with_title_aa_corpus_10_topics/_TrendInp.csv"
+#trendInputData <- "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/DevOpsInSO/output/rq2/with_title_naa_corpus_30_topics/_TrendInp.csv"
+trendInputData <- "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/DevOpsInSO/output/rq1/with_title_all_corpus_20_topics/_TrendInp.csv"
 
 topic_names <- colnames(topic_prob_data, do.NULL = TRUE, prefix = "col")
 doc_names <- rownames(topic_prob_data, do.NULL = TRUE, prefix = "row")
@@ -82,8 +86,12 @@ for(top_inex in 1:len_top_names+1)
       quesID            <- doc_index - 1
       topicNumber       <- top_inex - 1
       #print(createDateForQues)
+      splittedDate <- strsplit(createDateForQues, " ") 
+      date2work    <- splittedDate[[1]][1]                      # the first element fo the splitted vector is date
+      #print(length(date2work))
+      ##Appending 
       idContent         <-c(idContent, quesID)
-      dateContent       <-c(dateContent, createDateForQues)
+      dateContent       <-c(dateContent, date2work)
       topIndCont        <-c(topIndCont, topicNumber)
       origIDCont        <-c(origIDCont, origIDForQues)
     }
@@ -91,10 +99,13 @@ for(top_inex in 1:len_top_names+1)
 
   print("#########################")
 }
+## make inconsistent dates consistent 
+##dateContent <- as.Date(dateContent, "%d%b%y")
+
 print("----- The final string to dump -----")
 fullContent  <- data.frame(idContent, dateContent, topIndCont, origIDCont)
 print(head(fullContent))
-
+write.csv(fullContent, file=trendInputData, row.names=FALSE, na='0') 
 t2 <- Sys.time()
 print(t2 - t1)  
 rm(list = setdiff(ls(), lsf.str()))
