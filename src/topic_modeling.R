@@ -7,7 +7,7 @@ library(SnowballC)
 library(topicmodels)
 library(Rmpfr)
 library(slam)
-t1 <- Sys.time()
+
 
 t1 <- Sys.time()
 stop_words <- stopwords("SMART")
@@ -18,8 +18,8 @@ extra_stop_words = stop_words_data$stop_
 #extra_stop_words <- c("like", "can", "one", "way", "use", "want", "will", "need", "know", "do", "dont", "possible", "just")
 #stop_words <- c("the", "and", "you", "that", "for", "your", "are", "have", "with", "this")
 
-file_to_read ="/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/all_needed_content.csv"
-title_file_all_corp ="/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/all.corp.title.only.txt"
+file_to_read ="/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/ForReproc/all_needed_content.csv"
+#title_file_all_corp ="/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/all.corp.title.only.txt"
 all_posts_data <- read.csv(file_to_read)
 body_of_posts_data  = all_posts_data$Body
 title_of_posts_data = all_posts_data$Title
@@ -161,15 +161,15 @@ write.csv(topicProbabilities,file=paste("final_formatted_", k, "_TopicProb.csv")
 
 sequ <- seq(10, 100, 10)
 keep_ <- 50
-
-# fitted_many <- lapply(sequ,
-#                       function(topicCnt) LDA(dtm, k=topicCnt, method="Gibbs", 
-#                       control=list(burnin=burnin_, iter=iter_,keep=keep_)))
-# extract logliks from each topic
-# logLiks_many <- lapply(fitted_many, function(L)  L@logLiks[-c(1:(burnin_/keep_))])
 # 
-# # compute harmonic means, harmonic mean of log likelihodd is perplexity
-# hm_many <- sapply(logLiks_many, function(h) harmonicMean(h))
+# # fitted_many <- lapply(sequ,
+# #                       function(topicCnt) LDA(dtm, k=topicCnt, method="Gibbs", 
+# #                       control=list(burnin=burnin_, iter=iter_,keep=keep_)))
+# # extract logliks from each topic
+# # logLiks_many <- lapply(fitted_many, function(L)  L@logLiks[-c(1:(burnin_/keep_))])
+# # 
+# # # compute harmonic means, harmonic mean of log likelihodd is perplexity
+# # hm_many <- sapply(logLiks_many, function(h) harmonicMean(h))
 
 t2 <- Sys.time()
 print(t2 - t1)  # 

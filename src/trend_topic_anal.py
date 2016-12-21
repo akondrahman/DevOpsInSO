@@ -1,5 +1,5 @@
 '''
-Akond, trends of topics
+Akond, trends of topics, Dec 15
 '''
 
 import csv, collections
@@ -9,10 +9,11 @@ import csv, collections
 
 def formatQues(dateStr):
    dstr=''
+   year_=''
    if ('Deletion' in dateStr) :
         dstr='2016-01'
    elif ('Creation' in dateStr):
-        dstr='2016-08'        
+        dstr='2016-08'
    else:
         splitted_  = dateStr.split('/')
         tmp_month_     = splitted_[0]
@@ -73,9 +74,9 @@ def getTopicWiseDict(fileNameParam):
         topicWiseDict[topicIDOfQues]  = tmp_ + [dateOfQues]
   return topicWiseDict
 
-#f_ = '/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/DevOpsInSO/output/rq1/RQ1_ALL_TrendInp.csv'
+f_ = '/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/DevOpsInSO/output/rq1/you_are_never_done/_TrendInp.csv'
 #f_ = '/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/DevOpsInSO/output/rq2/RQ2_QAA_TrendInp.csv'
-f_ = '/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/DevOpsInSO/output/rq2/RQ2_QNAA_TrendInp.csv'
+#f_ = '/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/DevOpsInSO/output/rq2/RQ2_QNAA_TrendInp.csv'
 dateDict=getDateWiseDict(f_)
 #print dateDict
 odd = collections.OrderedDict(sorted(dateDict.items()))
