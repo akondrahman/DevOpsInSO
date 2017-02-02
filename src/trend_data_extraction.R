@@ -2,22 +2,22 @@ cat("\014")
 options(max.print=1000000)
 t1 <- Sys.time()
 
-#content_file <-  "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/all_aa_content.csv"
+content_file <-  "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/all_aa_content.csv"
 #content_file <-  "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/all_naa_content.csv"
-content_file <-  "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/ForReproc/FullQAndAContent.csv"
+#content_file <-  "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/ForReproc/FullQAndAContent.csv"
 content_data <- read.csv(content_file)
 
 print("------------Head of content------------------")
 print(head(content_data))
 
 #topic_prob_file <- "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/DevOpsInSO/output/rq3/you_are_never_done/_TopicProb.csv"
-#topic_prob_file <- "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/DevOpsInSO/output/rq2/you_are_never_done/_TopicProb.csv"
-topic_prob_file <- "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/DevOpsInSO/output/rq1/you_are_never_done/_TopicProb.csv"
+topic_prob_file <- "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/DevOpsInSO/output/rq2/you_are_never_done/_TopicProb.csv"
+#topic_prob_file <- "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/DevOpsInSO/output/rq1/you_are_never_done/_TopicProb.csv"
 topic_prob_data <- read.csv(topic_prob_file)
 
 #trendInputData <- "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/DevOpsInSO/output/rq3/you_are_never_done/_TrendInp.csv"
-#trendInputData <- "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/DevOpsInSO/output/rq2/you_are_never_done/_TrendInp.csv"
-trendInputData <- "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/DevOpsInSO/output/rq1/you_are_never_done/_TrendInp.csv"
+trendInputData <- "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/DevOpsInSO/output/rq2/you_are_never_done/_TrendInp.csv"
+#trendInputData <- "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/DevOpsInSO/output/rq1/you_are_never_done/_TrendInp.csv"
 
 topic_names <- colnames(topic_prob_data, do.NULL = TRUE, prefix = "col")
 doc_names <- rownames(topic_prob_data, do.NULL = TRUE, prefix = "row")

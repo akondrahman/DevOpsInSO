@@ -23,25 +23,27 @@ all_naa_id_ <- all_naa_id_data$NAA_ID
 
 id_in_all_content <- all_posts_data$Id
 #######NAA Topic Modeling Zone Started #######
-# print("NAA Matrix Topic Modeling")
-# naa_matching_indecies <- match(all_naa_id_, id_in_all_content)
-# #print((naa_matching_indecies))
-# naa_matrix_ <- all_posts_data[naa_matching_indecies, ]
-# body_of_posts_data  = naa_matrix_$Body
-# title_of_posts_data = naa_matrix_$Title
-# all_text_from_posts <- paste(body_of_posts_data, title_of_posts_data, sep=" ")
-# print("NAA Matrix Topic Modeling")
-# print(length(all_text_from_posts))
-
-print("AA Matrix Topic Modeling")
-aa_matching_indecies <- match(all_aa_id_, id_in_all_content)
-#print((aa_matching_indecies))
-aa_matrix_ <- all_posts_data[aa_matching_indecies, ]
-body_of_posts_data  = aa_matrix_$Body
-title_of_posts_data = aa_matrix_$Title
+k <- 30  ## for naa_corpus 
+print("NAA Matrix Topic Modeling")
+naa_matching_indecies <- match(all_naa_id_, id_in_all_content)
+#print((naa_matching_indecies))
+naa_matrix_ <- all_posts_data[naa_matching_indecies, ]
+body_of_posts_data  = naa_matrix_$Body
+title_of_posts_data = naa_matrix_$Title
 all_text_from_posts <- paste(body_of_posts_data, title_of_posts_data, sep=" ")
-print("AA Matrix Topic Modeling")
+print("NAA Matrix Topic Modeling")
 print(length(all_text_from_posts))
+
+# print("AA Matrix Topic Modeling")
+# k <- 10  ## for aa_corpus 
+# aa_matching_indecies <- match(all_aa_id_, id_in_all_content)
+# #print((aa_matching_indecies))
+# aa_matrix_ <- all_posts_data[aa_matching_indecies, ]
+# body_of_posts_data  = aa_matrix_$Body
+# title_of_posts_data = aa_matrix_$Title
+# all_text_from_posts <- paste(body_of_posts_data, title_of_posts_data, sep=" ")
+# print("AA Matrix Topic Modeling")
+# print(length(all_text_from_posts))
 
 
 ## Topic Modeling Stuff
@@ -159,8 +161,7 @@ seed <-list(2003, 5, 63, 100001, 765)
 nstart <- 5
 best <- TRUE
 ##Number of topics
-# k <- 10  ## for aa_corpus 
-k <- 30  ## for naa_corpus 
+
 
 #That done, we can now do the actual work – run the topic modelling algorithm on our corpus.
 #Here is the code:

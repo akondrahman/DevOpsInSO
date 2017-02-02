@@ -18,8 +18,8 @@ extra_stop_words = stop_words_data$stop_
 #extra_stop_words <- c("like", "can", "one", "way", "use", "want", "will", "need", "know", "do", "dont", "possible", "just")
 #stop_words <- c("the", "and", "you", "that", "for", "your", "are", "have", "with", "this")
 
-file_to_read ="/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/ForReproc/all_needed_content.csv"
-#title_file_all_corp ="/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/all.corp.title.only.txt"
+file_to_read ="/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/ForReproc/FullQAndAContent.csv"
+
 all_posts_data <- read.csv(file_to_read)
 body_of_posts_data  = all_posts_data$Body
 title_of_posts_data = all_posts_data$Title
@@ -137,8 +137,7 @@ best <- TRUE
 
 ##Number of topics
 k <- 20
-# k <- 30
-#k <- 10  
+
 #That done, we can now do the actual work – run the topic modelling algorithm on our corpus. 
 #Here is the code:
 #Run LDA using Gibbs sampling
@@ -150,8 +149,8 @@ ldaOut <-LDA( dtm, k, method="Gibbs", control=list(nstart=nstart, seed = seed, b
 ldaOut.topics <- as.matrix(topics(ldaOut))
 write.csv(ldaOut.topics,file=paste("final_formatted_", k, "_DocsToTopics.csv"))
 
-#top 15 terms in each topic
-terms2out <- 15
+#top 30 terms in each topic
+terms2out <- 30
 ldaOut.terms <- as.matrix(terms(ldaOut, terms2out))
 write.csv(ldaOut.terms,file=paste("final_formatted_", k, "_TopicsToTerms.csv"))
 

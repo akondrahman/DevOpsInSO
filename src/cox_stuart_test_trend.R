@@ -33,7 +33,7 @@ cox.stuart.test = function(x) {
   }
 }
 ####customers <- c(5, 9, 12, 18, 17, 16, 19, 20, 4, 3, 18, 16, 17, 15, 14)
-##customers <- c()
+#customers <- c()
 cox.stuart.test(customers)
 
 
