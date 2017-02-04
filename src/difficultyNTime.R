@@ -27,6 +27,77 @@ names(dic_topics) <- doc_names
 topic_prob_cutoff <- 0.10
 
 
+for(doc_ind in 2:len_doc_names)
+{
+  
+  topics_for_this_doc <- vector()
+  dom_topic_for_this_doc <- rep(0, len_top_names+1)
+  for(topic_ind in 1:len_top_names+1)
+  {
+    topic_prob_for_doc <- topic_prob_data[doc_ind, topic_ind]
+    topics_for_this_doc[topic_ind] <- topic_prob_for_doc
+  }
+  #max_topic_prob <-  max(topics_for_this_doc)
+  #print(max_topic_prob)
+  index_with_max_prob <- which(topics_for_this_doc >= topic_prob_cutoff)
+  #print("-----")
+  #print(index_with_max_prob)
+  dom_topic_for_this_doc[index_with_max_prob] <- 1
+  #print(dom_topic_for_this_doc)
+  dic_topics[[doc_ind]] <- dom_topic_for_this_doc
+  #print("-----")  
+}
+len_dic_topic           <-  length(dic_topics)          ## get the count of all questions in the corpus 
+createDate_vector       <-  content_data$CreationDate   ## get creation date from content file 
+origID_vector           <-  content_data$Id             ## get ID from content file 
+
+print("------------Summary of creation date------------------")
+print(summary(createDate_vector))
+
+###the vector that holds verything 
+fullContent <- c()
+### temp vector for holdind indi. stuff 
+idContent   <- c()
+dateContent <- c()
+topIndCont  <- c()
+origIDCont  <- c() 
+
+for(top_inex in 1:len_top_names+1)
+{
+  ### counter for questions for this topic   
+  counter_ <- 0 
+  ###  for holding the contents for each topic 
+  q_count_topic <- 0 
+  print("#########################")
+  print("Topic #")
+  print(top_inex-1)
+  for(doc_index in 2:len_dic_topic)
+  {
+    counter_ <- counter_ + 1 
+    tmp_ <-  dic_topics[[doc_index]][top_inex]
+    if(tmp_==1)
+    {
+      #q_count_topic     <- q_count_topic + 1
+      createDateForQues <- as.character(createDate_vector[counter_])
+      origIDForQues     <- origID_vector[counter_]
+      quesID            <- doc_index - 1
+      topicNumber       <- top_inex - 1
+      #print(createDateForQues)
+      splittedDate <- strsplit(createDateForQues, " ") 
+      date2work    <- splittedDate[[1]][1]                      # the first element fo the splitted vector is date
+      #print(length(date2work))
+      ##Appending 
+      idContent         <-c(idContent, quesID)
+      dateContent       <-c(dateContent, date2work)
+      topIndCont        <-c(topIndCont, topicNumber)
+      origIDCont        <-c(origIDCont, origIDForQues)
+    }
+  }
+  
+  print("#########################")
+}
+
+
 # print("----- The final string to dump -----")
 # fullContent  <- data.frame(idContent, dateContent, topIndCont, origIDCont)
 # print(head(fullContent))
