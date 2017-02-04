@@ -5,14 +5,14 @@ t1 <- Sys.time()
 content_file <-  "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/ForReproc/FullQAndAContent.csv"
 content_data <- read.csv(content_file)
 
-print("------------Head of content------------------")
-print(head(content_data))
+#print("------------Head of content------------------")
+#print(head(content_data))
 
 
 topic_prob_file <- "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/DevOpsInSO/output/rq1/you_are_never_done/_TopicProb.csv"
 topic_prob_data <- read.csv(topic_prob_file)
 
-trendInputData <- "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/DevOpsInSO/output/rq1/you_are_never_done/_TrendInp.csv"
+trendInputData <- "/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/DevOpsInSO/output/rq1/you_are_never_done/DiffNTrend.csv"
 
 topic_names <- colnames(topic_prob_data, do.NULL = TRUE, prefix = "col")
 doc_names <- rownames(topic_prob_data, do.NULL = TRUE, prefix = "row")
@@ -23,6 +23,9 @@ len_doc_names <- length(doc_names)
 len_top_names <- length(topic_names)
 dic_topics <- vector(mode="list", length=len_doc_names)
 names(dic_topics) <- doc_names
+
+
+
 ###threshold 
 topic_prob_cutoff <- 0.10
 
@@ -54,6 +57,9 @@ origID_vector           <-  content_data$Id             ## get ID from content f
 print("------------Summary of creation date------------------")
 print(summary(createDate_vector))
 
+aa_vector    <-  content_data$AcceptedAnswerId   ## get accepted answer IDs from content file 
+#print(aa_vector)
+
 ###the vector that holds verything 
 fullContent <- c()
 ### temp vector for holdind indi. stuff 
@@ -61,6 +67,7 @@ idContent   <- c()
 dateContent <- c()
 topIndCont  <- c()
 origIDCont  <- c() 
+accAnsCont  <- c()
 
 for(top_inex in 1:len_top_names+1)
 {
@@ -68,6 +75,7 @@ for(top_inex in 1:len_top_names+1)
   counter_ <- 0 
   ###  for holding the contents for each topic 
   q_count_topic <- 0 
+  
   print("#########################")
   print("Topic #")
   print(top_inex-1)
@@ -86,11 +94,15 @@ for(top_inex in 1:len_top_names+1)
       splittedDate <- strsplit(createDateForQues, " ") 
       date2work    <- splittedDate[[1]][1]                      # the first element fo the splitted vector is date
       #print(length(date2work))
+
+      aa_value <- aa_vector[counter_]
+      
       ##Appending 
       idContent         <-c(idContent, quesID)
       dateContent       <-c(dateContent, date2work)
       topIndCont        <-c(topIndCont, topicNumber)
       origIDCont        <-c(origIDCont, origIDForQues)
+      accAnsCont        <-c(accAnsCont, aa_value)
     }
   }
   
@@ -98,10 +110,10 @@ for(top_inex in 1:len_top_names+1)
 }
 
 
-# print("----- The final string to dump -----")
-# fullContent  <- data.frame(idContent, dateContent, topIndCont, origIDCont)
-# print(head(fullContent))
-# write.csv(fullContent, file=trendInputData, row.names=FALSE, na='0') 
+print("----- The final string to dump -----")
+fullContent  <- data.frame(idContent, dateContent, topIndCont, origIDCont, accAnsCont)
+print(head(fullContent))
+write.csv(fullContent, file=trendInputData, row.names=FALSE, na='0') 
 t2 <- Sys.time()
 print(t2 - t1)  
 rm(list = setdiff(ls(), lsf.str()))

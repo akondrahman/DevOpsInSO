@@ -34,3 +34,15 @@ USE DevOpsInSO;
 
 -- SELECT Id AS AA_ID FROM no_txt_all_au_ WHERE 
 --    AcceptedAnswerId > 0 LIMIT 0, 100000;
+
+
+-- Sep 16, 2016 ----
+-- SELECT AcceptedAnswerId, CreationDate, Score, ViewCount, AnswerCount, CommentCount, FavoriteCount 
+-- FROM no_txt_all_au_ WHERE `AcceptedAnswerId` > 0;
+-- SELECT COUNT(*) 
+-- FROM no_txt_all_au_ ;
+
+-- Sep 22, 2016 ----
+-- SELECT AcceptedAnswerId, CreationDate, Score, ViewCount, AnswerCount, CommentCount, FavoriteCount 
+-- FROM no_txt_all_so_ WHERE `AcceptedAnswerId` > 0 LIMIT 0, 50000;
+-- SELECT COUNT(DISTINCT(AcceptedAnswerId)) FROM no_txt_all_so_ WHERE `AcceptedAnswerId` > 0;
