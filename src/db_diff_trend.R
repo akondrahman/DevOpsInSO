@@ -21,7 +21,8 @@ diffCultCount  <- c()
 
 for(topicCnt in 1:20)
 {
-  sprintf("This is topic-%f", topicCnt)
+  topicMsg <-paste0("This is topic-", topicCnt, sep="")
+  print(topicMsg)
   for(index_ in 1:len_month)
   {
     thisMonth <- allMonths[index_]
@@ -92,10 +93,10 @@ for(topicCnt in 1:20)
     
     ##Appending 
     topIndCont        <-c(topIndCont, topicCnt)    
-    montContent       <-c(montContent, dateQuery1)
+    montContent       <-c(montContent, thisMonth)
     diffCultCount     <-c(diffCultCount, difficult_permon)
     
-    print("=====Are we done yet?=====")
+    #print("=====Are we done yet?=====")
   }  
 }
 
