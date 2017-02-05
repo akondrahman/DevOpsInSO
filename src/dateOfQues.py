@@ -1,7 +1,16 @@
 '''
 Akond Rahman: Dec 01, 2016
 '''
-import os, csv, xlrd, collections
+import os, csv, numpy as np, collections
+def dumpContentIntoFile(strP, fileP):
+  fileToWrite = open( fileP, 'w');
+  fileToWrite.write(strP );
+  fileToWrite.close()
+  return str(os.stat(fileP).st_size)
+
+file2write="/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/DevOpsInSO/output/QCOuntAndDate.csv"
+str2dump=""
+file2read="/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/DevOpsInSO/output/rq1/you_are_never_done/_TrendInp.csv"
 
 def extractMonthWiseQCount(fileP):
   dateAndQHolder={}
@@ -11,7 +20,7 @@ def extractMonthWiseQCount(fileP):
     for row_ in reader1:
       dateOfQues = row_[1]
       #print dateOfQues
-      IDOfQues   = row_[3]
+      IDOfQues   = row_[0]
       if ('/' in dateOfQues):
         splittedDate = dateOfQues.split('/')
         monthOfQues  = splittedDate[0]
@@ -29,8 +38,23 @@ def extractMonthWiseQCount(fileP):
         dateAndQHolder[date2Use] = [ IDOfQues ]
       else:
         dateAndQHolder[date2Use] = dateAndQHolder[date2Use] + [ IDOfQues ]
-  print "dates:", len(dateAndQHolder)
+  #print "dates:", len(dateAndQHolder)
+  return dateAndQHolder
 
 
-file2read="/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/DevOpsInSO/output/rq1/you_are_never_done/_TrendInp.csv"
-extractMonthWiseQCount(file2read)
+dates_ = extractMonthWiseQCount(file2read)
+datesWithUniqueQs={}
+for k_, v_ in dates_.iteritems():
+   uniqueQs = np.unique(v_)
+   datesWithUniqueQs[k_] = uniqueQs
+#print "="*100
+
+
+
+datesWithUniqueQs = collections.OrderedDict(sorted(datesWithUniqueQs.items()))
+for uniqueDate, uniqueQ in datesWithUniqueQs.iteritems():
+   print "unique date:{}, unique qCount:{}".format(uniqueDate, len(uniqueQ))
+   str2dump = str2dump + uniqueDate + "," + str(len(uniqueQ)) + "\n"
+
+st_ = dumpContentIntoFile(str2dump, file2write)
+print "Dumped a file of {} bytes".format(st_)
