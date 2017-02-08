@@ -5,9 +5,9 @@
 def giveConnection():
     import pymysql.cursors
     _host = "localhost"
-    _user = "root"
+    _user = "devopsinso"
     #password = "root"
-    _password = "SrcML#2016"
+    _password = "NIRLIPTo@$99"
     _database = "DevOpsInSO"
     # Connect to the database
     codealike_connection = pymysql.connect(host=_host,
@@ -17,11 +17,11 @@ def giveConnection():
                                  cursorclass=pymysql.cursors.DictCursor)
     return codealike_connection
 
-def getQuestionCount(window_size_param, switch_type_param):
+def getQuestionCount(dateParam1, dateParam2, topicCntParam):
  connection = giveConnection()
  try:
     with connection.cursor() as cursor:
-     sql = "SELECT COUNT(`type`) FROM `FSE_window_context_switch`  WHERE `threshold`=%s AND `type`=%s GROUP BY `fileName`, `sessionID`, `windowID` ;"
+     sql = "SELECT COUNT(*) FROM `diffntrend` WHERE (`dateContent` LIKE" + dateParam1 + "or `dateContent` LIKE " + dateParam2 + " ) and `topIndCont`=" + topicCntParam + " ;"
      dataTuple=(window_size_param, switch_type_param)
      cursor.execute(sql, dataTuple)
      result = cursor.fetchall()
@@ -29,3 +29,8 @@ def getQuestionCount(window_size_param, switch_type_param):
  finally:
    connection.close()
  return result
+
+
+
+lol = getQuestionCount('2016-06-%', '6/%/16', 20)
+print lol
