@@ -3,7 +3,7 @@ ESEM RQ5 Preparation
 Akond Rahman
 March 25, 2017
 '''
-from collections import Counter
+from collections import Counter, OrderedDict
 import csv, os, numpy as np, utility
 
 
@@ -39,16 +39,17 @@ def getDatesOfChallenges(datasetFile):
 
 def getChallengeWiseTemporalValues(dateDict, challengeDict):
     temporalDict={}
-    sortedDateDict = collections.OrderedDict(sorted(dateDict.items()))
-    print sortedDateDict
+    sortedDateKeysAsList = sorted(dateDict)
     for challenge_, date_list in challengeDict.items():
         temporal_list = []
-        for month, cnt_per_month in sortedDateDict.items():
-            tmp_dict = dict(Counter(date_list))
+        for month in sortedDateKeysAsList:
+            cnt_per_month = dateDict[month]  ### get the count of all Puppet questions per month
+            tmp_dict = dict(Counter(date_list)) ### get the count of question count for challenges
             if month in tmp_dict:
                 ques_per_month = int(tmp_dict[month])
             else:
                 ques_per_month = 0
+            #print "month:{}, ques-per-month:{}, all-cnt-per-month:{}".format(month, ques_per_month, cnt_per_month)
             temporal_metric = round(float(ques_per_month)/float(cnt_per_month), 5)
             temporal_list.append(temporal_metric)
             temporal_metric = float(0)
@@ -60,6 +61,10 @@ rq5Dict = loadDatasetByDate(datasetFile)
 print "We have data of {} months ... ".format(len(rq5Dict))
 print "="*100
 challenge_date_dict = getDatesOfChallenges(datasetFile)
-print "We are looking at {} challenges ...".format((challenge_date_dict))
+print "We are looking at {} challenges ...".format(len(challenge_date_dict))
 print "="*100
-getChallengeWiseTemporalValues(rq5Dict, challenge_date_dict)
+per_month_challenge_dict = getChallengeWiseTemporalValues(rq5Dict, challenge_date_dict)
+#print per_month_challenge_dict
+for k_, v_ in per_month_challenge_dict.items():
+    print "challenge:{}, temporal_trend values:{}".format(k_, len(v_))
+print "="*100
