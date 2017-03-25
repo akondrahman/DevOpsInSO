@@ -3,7 +3,7 @@ March 24, 2017
 esem dataset preparation
 big and small
 '''
-import csv, os, numpy as np
+import csv, os, numpy as np, utility
 
 
 
@@ -93,7 +93,7 @@ def constructFinalDataset(fullInfoDict, bigDict, smallDict):
         for ques_ in questions_:
             if (ques_ in fullInfoDict):
                 ques_details = fullInfoDict[ques_]
-                ques_details =  [categ_] + ques_details
+                ques_details =  ques_details + [categ_]
                 fullContentDict[ques_] = ques_details
    return fullContentDict
 
