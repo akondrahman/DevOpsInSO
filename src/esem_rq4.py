@@ -52,13 +52,18 @@ def getSummationOfProgrammers(prog_dict):
 
 
 
-def provideAnswerToRQ4(p_dict_, q_dict):
+def provideAnswerToRQ4(p_dict_, q_dict, total_p_count):
     for challenge_, qs in q_dict.items():
         q_count = len(qs)
         p_count = len(np.unique(p_dict_[challenge_]))
-        print "Challenge: {}, programmer count:{}, ques count:{}".format(challenge_, p_count, q_count)
-        #print "Challenge:{}, percenatge:{}".format(challenge_, perc_)
+        #print "Challenge: {}, programmer count:{}, ques count:{}".format(challenge_, p_count, q_count)
+
+        programmer_per_ques     = round(float(p_count)/float(q_count), 3)
+        programmer_per_tot_prog = round(float(p_count)/float(total_p_count), 5)*100
+        print "Challenge:{}, prog-per-ques:{}, prog-%:{}".format(challenge_, programmer_per_ques, programmer_per_tot_prog)
         print "*"*50
+
+
 
 
 
