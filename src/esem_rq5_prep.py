@@ -56,6 +56,14 @@ def getChallengeWiseTemporalValues(dateDict, challengeDict):
         temporalDict[challenge_] =  temporal_list
     return temporalDict
 
+
+def dumpAllPuppetQuesDates(dict_, file2dump):
+    str2dump=''
+    for month_, q_per_month in dict_.items():
+        str2dump = str2dump + month_ + ',' + str(q_per_month) + ',' + '\n'
+    val = utility.dumpContentIntoFile(str2dump, file2dump)
+    return val
+
 datasetFile='/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/ESEM/COMPLETE_DATASET_FOR_PAPER.csv'
 rq5Dict = loadDatasetByDate(datasetFile)
 print "We have data of {} months ... ".format(len(rq5Dict))
@@ -68,3 +76,9 @@ for k_, v_ in per_month_challenge_dict.items():
     print "challenge:{}, temporal_trend values:{}".format(k_, v_)
     print "-"*50
 print "="*100
+'''
+first dump all Puppet question count fo reach month
+'''
+ques_dump_file='/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/ESEM/ALL_QUES_PER_MONTH.csv'
+dump_status = dumpAllPuppetQuesDates(rq5Dict)
+print "Dumped the 'date for all question' file of {} bytes".format(dump_status)
