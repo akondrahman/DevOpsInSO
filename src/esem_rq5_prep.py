@@ -64,7 +64,7 @@ challenge_date_dict = getDatesOfChallenges(datasetFile)
 print "We are looking at {} challenges ...".format(len(challenge_date_dict))
 print "="*100
 per_month_challenge_dict = getChallengeWiseTemporalValues(rq5Dict, challenge_date_dict)
-#print per_month_challenge_dict
 for k_, v_ in per_month_challenge_dict.items():
-    print "challenge:{}, temporal_trend values:{}".format(k_, len(v_))
+    print "challenge:{}, temporal_trend values:{}".format(k_, v_)
+    print "-"*50
 print "="*100
