@@ -57,6 +57,18 @@ def loadDatasetByChallenge(path_to_file):
   return qDict
 
 
+def provideAnswerToRQ2(sat_, unsat_, q_, count):
+    for challenge_, sat_elems_list in sat_.items():
+        sat_count   = len(sat_elems_list)
+        unsat_count = len(unsat_[challenge_])
+        ques_count  = len(q_[challenge_])
+        #print "Q:{}, S:{}, U:{}".format(ques_count, sat_count, unsat_count)
+        sat_perc    = round(float(sat_count)/float(ques_count), 5)*100
+        unsat_perc  = round(float(unsat_count)/float(ques_count), 5)*100
+        print "Challenge:{}, Q-Count:{}, Sat(%):{}, Unsat(%):{}".format(challenge_, ques_count, sat_perc, unsat_perc)
+        print "*"*50
+
+
 datasetFile='/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/ESEM/COMPLETE_DATASET_FOR_PAPER.csv'
 rq2SatDict, countOfQs = loadDatasetBySatisfaction(datasetFile)
 print "We will be analyzing {} questions".format(countOfQs)
@@ -66,4 +78,6 @@ print "Loaded unsatosfactory dict"
 print "="*100
 rq2QCountDict = loadDatasetByChallenge(datasetFile)
 print "Loaded question count dict"
+print "="*100
+provideAnswerToRQ2(rq2SatDict, rq2UnsatDict, rq2QCountDict, countOfQs)
 print "="*100
