@@ -38,9 +38,10 @@ def provideAnswerToRQ3(dict_, view_count, ques_dict):
         sum_view_count       = sum(views_)
         #print "challenge:{}, sum_view:{}".format(challenge_, sum_view_count)
         ques_per_challenge   = len(ques_dict[challenge_])
-        print "challenge:{}, question count:{}".format(challenge_, ques_per_challenge)
-        view_per_total_views = round(float(sum_view_count)/float(view_count), 5)*100
-        #print "Challenge:{}, view-based percenatge:{}".format(challenge_, view_per_total_views)
+        #print "challenge:{}, question count:{}".format(challenge_, ques_per_challenge)
+        view_per_total_views = round(float(sum_view_count)/float(view_count), 3)*100
+        view_per_questions   = round(float(sum_view_count)/float(ques_per_challenge), 2)
+        print "Challenge:{}, view-based percenatge:{}, question-based percentage:{}".format(challenge_, view_per_total_views, view_per_questions)
         print "*"*50
 
 
