@@ -42,6 +42,16 @@ def loadDatasetByProgrammerCount(path_to_file):
 
 
 
+def getSummationOfProgrammers(prog_dict):
+    holder = []
+    for k_, v_ in prog_dict.items():
+       for prog_ in v_:
+            holder.append(prog_)
+    holder = np.unique(holder)
+    return len(holder)
+
+
+
 def provideAnswerToRQ4(p_dict_, q_dict):
     for challenge_, qs in q_dict.items():
         q_count = len(qs)
@@ -59,5 +69,8 @@ print "="*100
 programmer_dict, qcount =loadDatasetByProgrammerCount(datasetFile)
 print "We will be analyzing {} questions".format(qcount)
 print "="*100
-provideAnswerToRQ4(programmer_dict, ques_challenge_dict)
+total_programmer_count = getSummationOfProgrammers(programmer_dict)
+print "In total, {} unique programmers were involved in Puppet".format(total_programmer_count)
+print "="*100
+provideAnswerToRQ4(programmer_dict, ques_challenge_dict, total_programmer_count)
 print "="*100
