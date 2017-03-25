@@ -32,17 +32,31 @@ def getSummationViews(dict_):
 
 
 
-def provideAnswerToRQ3(dict_, view_count):
+def provideAnswerToRQ3(dict_, view_count, ques_dict):
     for challenge_, views_ in dict_.items():
         views_               = [int(view) for view in views_]
         sum_view_count       = sum(views_)
         #print "challenge:{}, sum_view:{}".format(challenge_, sum_view_count)
+        ques_per_challenge   = len(ques_dict[challenge_])
+        print "challenge:{}, question count:{}".format(challenge_, ques_per_challenge)
         view_per_total_views = round(float(sum_view_count)/float(view_count), 5)*100
-        print "Challenge:{}, view-based percenatge:{}".format(challenge_, view_per_total_views)
+        #print "Challenge:{}, view-based percenatge:{}".format(challenge_, view_per_total_views)
         print "*"*50
 
 
-
+def loadDatasetByChallenge(path_to_file):
+  rq1Dict={}
+  with open(path_to_file, 'rU') as f:
+     reader_ = csv.reader(f)
+     next(reader_)
+     for row_ in reader_:
+       qID              = row_[0]
+       challenge        = row_[5]
+       if challenge not in rq1Dict:
+           rq1Dict[challenge] = [qID]
+       else:
+           rq1Dict[challenge] =  rq1Dict[challenge] + [qID]
+  return rq1Dict
 
 datasetFile='/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/ESEM/COMPLETE_DATASET_FOR_PAPER.csv'
 rq3Dict, countOfQs = loadDatasetByView(datasetFile)
@@ -51,4 +65,7 @@ print "="*100
 totalViewCount = getSummationViews(rq3Dict)
 print "Total view count of all challenges:", totalViewCount
 print "="*100
-provideAnswerToRQ3(rq3Dict, totalViewCount)
+ques_dict = loadDatasetByChallenge(datasetFile)
+print "="*100
+provideAnswerToRQ3(rq3Dict, totalViewCount, ques_dict)
+print "="*100
