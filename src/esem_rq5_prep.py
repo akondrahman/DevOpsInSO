@@ -64,6 +64,19 @@ def dumpAllPuppetQuesDates(dict_, file2dump):
     val = utility.dumpContentIntoFile(str2dump, file2dump)
     return val
 
+
+
+
+def dumpPerChallengeQues(challengeDict, output_file_prefix):
+    for challenge, per_month_list in challengeDict.items():
+        str_per_challenge =''
+        for values in per_month_list:
+            str_per_challenge = str_per_challenge + str(value) + ',' + '\n'
+        file2save = output_file_prefix + challenge + '.csv'
+        status_per_challenge = utility.dumpContentIntoFile(str_per_challenge, file2save)
+        print "Dumped a file of {} bytes for {}".format(status_per_challenge, challenge)
+        print "*"*50
+
 datasetFile='/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/ESEM/COMPLETE_DATASET_FOR_PAPER.csv'
 rq5Dict = loadDatasetByDate(datasetFile)
 print "We have data of {} months ... ".format(len(rq5Dict))
@@ -80,5 +93,11 @@ print "="*100
 first dump all Puppet question count fo reach month
 '''
 ques_dump_file='/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/ESEM/ALL_QUES_PER_MONTH.csv'
-dump_status = dumpAllPuppetQuesDates(rq5Dict)
+dump_status = dumpAllPuppetQuesDates(rq5Dict, ques_dump_file)
 print "Dumped the 'date for all question' file of {} bytes".format(dump_status)
+print "="*100
+'''
+next dump per month question count for each challenge
+'''
+per_challenge_dump_file='/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/ESEM/per_month_'
+dumpPerChallengeQues(per_month_challenge_dict, per_challenge_dump_file)
