@@ -42,10 +42,28 @@ def loadDatasetByUnsatisfaction(path_to_file):
              rq2Dict[challenge] =  rq2Dict[challenge] + [satisfactionStatus]
   return rq2Dict
 
+def loadDatasetByChallenge(path_to_file):
+  qDict={}
+  with open(path_to_file, 'rU') as f:
+     reader_ = csv.reader(f)
+     next(reader_)
+     for row_ in reader_:
+       qID              = row_[0]
+       challenge        = row_[5]
+       if challenge not in qDict:
+           qDict[challenge] = [qID]
+       else:
+           qDict[challenge] =  qDict[challenge] + [qID]
+  return qDict
+
 
 datasetFile='/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/ESEM/COMPLETE_DATASET_FOR_PAPER.csv'
 rq2SatDict, countOfQs = loadDatasetBySatisfaction(datasetFile)
 print "We will be analyzing {} questions".format(countOfQs)
 print "="*100
 rq2UnsatDict = loadDatasetByUnsatisfaction(datasetFile)
+print "Loaded unsatosfactory dict"
+print "="*100
+rq2QCountDict = loadDatasetByChallenge(datasetFile)
+print "Loaded question count dict"
 print "="*100
