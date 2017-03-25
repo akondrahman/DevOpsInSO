@@ -3,7 +3,7 @@ Akond Rahman
 ESEM:RQ4
 March 25, 2017
 '''
-
+import csv, os, numpy as np, utility
 
 
 
@@ -44,4 +44,8 @@ def loadDatasetByProgrammerCount(path_to_file):
 
 datasetFile='/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/ESEM/COMPLETE_DATASET_FOR_PAPER.csv'
 ques_challenge_dict = loadDatasetByChallenge(datasetFile)
+print "Loaded the questions for each challenge"
+print "="*100
+programmer_dict, qcount =loadDatasetByProgrammerCount(datasetFile)
+print "We will be analyzing {} questions".format(qcount)
 print "="*100
