@@ -93,11 +93,20 @@ def constructFinalDataset(fullInfoDict, bigDict, smallDict):
         for ques_ in questions_:
             if (ques_ in fullInfoDict):
                 ques_details = fullInfoDict[ques_]
-                ques_details = ques_details + [categ_]
+                ques_details =  [categ_] + ques_details
                 fullContentDict[ques_] = ques_details
    return fullContentDict
 
-
+def dumpDataset(datasetDict, output_file_):
+   str2ret=''
+   str2write = ''
+   for ques, ques_details in datasetDict.items():
+        str2write = str2write + ques + ','
+        for val_ in ques_details:
+            str2write = str2write + val_ + ','
+        str2write = str2write + '\n'
+   str2ret = utility.dumpContentIntoFile(str2write, output_file_)
+   return str2ret
 
 
 fullThing='/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/ESEM/FullData_PuppetMarch21.csv'
@@ -121,5 +130,10 @@ that will check for duplicates
 and get the final dataset as dict
 '''
 completeDataset = constructFinalDataset(fullThingDict, theBigCategDict, theSmallCategDict)
-print len(completeDataset)
+print "In total we will be analyzing {} questions".format(len(completeDataset))
+print "="*100
+### dump dataset
+file2save='/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/ESEM/COMPLETE_DATASET_FOR_PAPER.csv'
+dump_status = dumpDataset(completeDataset, file2save)
+print "Dumped a file of {} bytes".format(dump_status)
 print "="*100
