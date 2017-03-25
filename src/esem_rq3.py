@@ -17,8 +17,17 @@ def loadDatasetByView(path_to_file):
        totalLineCount = totalLineCount + 1
        viewCount        = row_[3]
        challenge        = row_[5]
-       if challenge not in rq1Dict:
-           rq1Dict[challenge] = [viewCount]
+       if challenge not in rq3Dict:
+           rq3Dict[challenge] = [viewCount]
        else:
-           rq1Dict[challenge] =  rq1Dict[challenge] + [viewCount]
+           rq3Dict[challenge] =  rq3Dict[challenge] + [viewCount]
   return rq3Dict, totalLineCount
+
+
+
+
+
+datasetFile='/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/ESEM/COMPLETE_DATASET_FOR_PAPER.csv'
+rq3Dict, countOfQs = loadDatasetByView(datasetFile)
+print "We will be analyzing {} questions".format(countOfQs)
+print "="*100
