@@ -51,7 +51,7 @@ def getChallengeWiseTemporalValues(dateDict, challengeDict):
                 ques_per_year = int(tmp_dict[year])
             else:
                 ques_per_year = 0
-            print "year:{}, ques-per-year:{}, all-cnt-per-year:{}".format(year, ques_per_year, cnt_per_year)
+            #print "year:{}, ques-per-year:{}, all-cnt-per-year:{}".format(year, ques_per_year, cnt_per_year)
             temporal_metric = round(float(ques_per_year)/float(cnt_per_year), 5)
             temporal_list.append(temporal_metric)
             temporal_metric = float(0)
@@ -87,19 +87,19 @@ challenge_date_dict = getYearsOfChallenges(datasetFile)
 print "We are looking at {} challenges ...".format(len(challenge_date_dict))
 print "="*100
 per_month_challenge_dict = getChallengeWiseTemporalValues(rq5Dict, challenge_date_dict)
-# for k_, v_ in per_month_challenge_dict.items():
-#     print "challenge:{}, temporal_trend values:{}".format(k_, v_)
-#     print "-"*50
-# print "="*100
-# '''
-# first dump all Puppet question count fo reach month
-# '''
-# ques_dump_file='/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/ESEM/PER_MONTH_ALL_QUES.csv'
-# dump_status = dumpAllPuppetQuesDates(rq5Dict, ques_dump_file)
-# print "Dumped the 'date for all question' file of {} bytes".format(dump_status)
-# print "="*100
-# '''
-# next dump per month question count for each challenge
-# '''
-# per_challenge_dump_file='/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/ESEM/per_year_'
-# dumpPerChallengeQues(per_month_challenge_dict, per_challenge_dump_file)
+for k_, v_ in per_month_challenge_dict.items():
+    print "challenge:{}, temporal_trend values:{}".format(k_, v_)
+    print "-"*50
+print "="*100
+'''
+first dump all Puppet question count fo reach year
+'''
+ques_dump_file='/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/ESEM/PER_YEAR_ALL_QUES.csv'
+dump_status = dumpAllPuppetQuesDates(rq5Dict, ques_dump_file)
+print "Dumped the 'date for all question' file of {} bytes".format(dump_status)
+print "="*100
+'''
+next dump per year question count for each challenge
+'''
+per_challenge_dump_file='/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/ESEM/per_year_'
+dumpPerChallengeQues(per_month_challenge_dict, per_challenge_dump_file)
