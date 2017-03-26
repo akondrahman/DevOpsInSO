@@ -80,10 +80,10 @@ def dumpPerChallengeQues(challengeDict, output_file_prefix):
         print "*"*50
 
 datasetFile='/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/ESEM/COMPLETE_DATASET_FOR_PAPER.csv'
-rq5Dict = loadDatasetByDate(datasetFile)
-print "We have data of {} months ... ".format(len(rq5Dict))
+rq5Dict = loadDatasetByYear(datasetFile)
+print "We have data of {} years ... ".format(len(rq5Dict))
 print "="*100
-challenge_date_dict = getDatesOfChallenges(datasetFile)
+challenge_date_dict = getYearsOfChallenges(datasetFile)
 print "We are looking at {} challenges ...".format(len(challenge_date_dict))
 print "="*100
 per_month_challenge_dict = getChallengeWiseTemporalValues(rq5Dict, challenge_date_dict)
