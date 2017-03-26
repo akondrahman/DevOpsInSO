@@ -52,6 +52,15 @@ def getSummationOfProgrammers(prog_dict):
 
 
 
+def findIntersectingProgrammers(p_dict_):
+    for challenge, progr_list in p_dict_.items():
+       print "The challenge is:", challenge
+       rest_of_the_dict = my_dict.pop(challenge, None)
+       for rest_challenge, rest_prog_list in rest_of_the_dict.items():
+           common_programmers = list(set(progr_list) and set(rest_prog_list))
+           print "----->another challenge:{}, common programmers:{}".format(rest_challenge, len(common_programmers))
+
+
 datasetFile='/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/ESEM/COMPLETE_DATASET_FOR_PAPER.csv'
 ques_challenge_dict = loadDatasetByChallenge(datasetFile)
 print "Loaded the questions for each challenge"
@@ -61,4 +70,6 @@ print "We will be analyzing {} questions".format(qcount)
 print "="*100
 total_programmer_count = getSummationOfProgrammers(programmer_dict)
 print "In total, {} unique programmers were involved in Puppet".format(total_programmer_count)
+print "="*100
+findIntersectingProgrammers(programmer_dict)
 print "="*100
