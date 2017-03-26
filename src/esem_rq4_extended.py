@@ -52,13 +52,25 @@ def getSummationOfProgrammers(prog_dict):
 
 
 
+def removekey(d, key):
+    r = dict(d)
+    del r[key]
+    return r
+
 def findIntersectingProgrammers(p_dict_):
     for challenge, progr_list in p_dict_.items():
-       print "The challenge is:", challenge
-       rest_of_the_dict = my_dict.pop(challenge, None)
+       progr_list = np.unique(progr_list)
+       print "The challenge is:{}, unique programmer count:{}".format(challenge, len(progr_list))
+       rest_of_the_dict =  removekey(p_dict_, challenge)
        for rest_challenge, rest_prog_list in rest_of_the_dict.items():
-           common_programmers = list(set(progr_list) and set(rest_prog_list))
-           print "----->another challenge:{}, common programmers:{}".format(rest_challenge, len(common_programmers))
+           rest_prog_list = np.unique(rest_prog_list)
+           common_programmers = list(set(progr_list) & set(rest_prog_list))
+           denominator        = len(progr_list) + len(rest_prog_list)
+           comm_prog_         = float(len(common_programmers))/float(denominator)
+           comm_prog_perc     = round(comm_prog_, 5)*100
+           ###print "a:{}, b:{}, a+b:{}".format(progr_list, rest_prog_list, common_programmers)
+           print "--->other challenge:{}, common programmers:{}, common prog (%):{}".format(rest_challenge, len(common_programmers), comm_prog_perc)
+       print "*"*50
 
 
 datasetFile='/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/ESEM/COMPLETE_DATASET_FOR_PAPER.csv'
