@@ -44,15 +44,15 @@ def getChallengeWiseTemporalValues(dateDict, challengeDict):
     sortedDateKeysAsList = sorted(dateDict)
     for challenge_, date_list in challengeDict.items():
         temporal_list = []
-        for month in sortedDateKeysAsList:
-            cnt_per_month = dateDict[month]  ### get the count of all Puppet questions per month
+        for year in sortedDateKeysAsList:
+            cnt_per_year = dateDict[year]  ### get the count of all Puppet questions per year
             tmp_dict = dict(Counter(date_list)) ### get the count of question count for challenges
-            if month in tmp_dict:
-                ques_per_month = int(tmp_dict[month])
+            if year in tmp_dict:
+                ques_per_year = int(tmp_dict[year])
             else:
-                ques_per_month = 0
-            #print "month:{}, ques-per-month:{}, all-cnt-per-month:{}".format(month, ques_per_month, cnt_per_month)
-            temporal_metric = round(float(ques_per_month)/float(cnt_per_month), 5)
+                ques_per_year = 0
+            print "year:{}, ques-per-year:{}, all-cnt-per-year:{}".format(year, ques_per_year, cnt_per_year)
+            temporal_metric = round(float(ques_per_year)/float(cnt_per_year), 5)
             temporal_list.append(temporal_metric)
             temporal_metric = float(0)
         temporalDict[challenge_] =  temporal_list
@@ -87,19 +87,19 @@ challenge_date_dict = getDatesOfChallenges(datasetFile)
 print "We are looking at {} challenges ...".format(len(challenge_date_dict))
 print "="*100
 per_month_challenge_dict = getChallengeWiseTemporalValues(rq5Dict, challenge_date_dict)
-for k_, v_ in per_month_challenge_dict.items():
-    print "challenge:{}, temporal_trend values:{}".format(k_, v_)
-    print "-"*50
-print "="*100
-'''
-first dump all Puppet question count fo reach month
-'''
-ques_dump_file='/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/ESEM/PER_MONTH_ALL_QUES.csv'
-dump_status = dumpAllPuppetQuesDates(rq5Dict, ques_dump_file)
-print "Dumped the 'date for all question' file of {} bytes".format(dump_status)
-print "="*100
-'''
-next dump per month question count for each challenge
-'''
-per_challenge_dump_file='/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/ESEM/per_month_'
-dumpPerChallengeQues(per_month_challenge_dict, per_challenge_dump_file)
+# for k_, v_ in per_month_challenge_dict.items():
+#     print "challenge:{}, temporal_trend values:{}".format(k_, v_)
+#     print "-"*50
+# print "="*100
+# '''
+# first dump all Puppet question count fo reach month
+# '''
+# ques_dump_file='/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/ESEM/PER_MONTH_ALL_QUES.csv'
+# dump_status = dumpAllPuppetQuesDates(rq5Dict, ques_dump_file)
+# print "Dumped the 'date for all question' file of {} bytes".format(dump_status)
+# print "="*100
+# '''
+# next dump per month question count for each challenge
+# '''
+# per_challenge_dump_file='/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/ESEM/per_year_'
+# dumpPerChallengeQues(per_month_challenge_dict, per_challenge_dump_file)
