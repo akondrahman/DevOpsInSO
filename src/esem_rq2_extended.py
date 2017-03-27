@@ -45,7 +45,9 @@ def provideAnswerToRQ2Extended(a_, q_):
             if qID in a_:
                 ans_count_of_ques = int(a_[qID])
                 ans_count = ans_count + ans_count_of_ques
-        print "Q:{}, A:{}".format(ques_count, ans_count)
+        #print "Q:{}, A:{}".format(ques_count, ans_count)
+        ans_metric = round(float(ans_count)/float(ques_count), 3)
+        print "Challenge:{}, Q:{}, A:{}, A/Q:{}".format(challenge_, ques_count, ans_count, ans_metric)
         print "*"*50
 
 ans_count_file='/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/ESEM/FullData_PuppetMarch21.csv'
