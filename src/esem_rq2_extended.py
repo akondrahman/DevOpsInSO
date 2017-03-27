@@ -36,6 +36,18 @@ def loadDatasetByChallenge(path_to_file):
            qDict[challenge] =  qDict[challenge] + [qID]
   return qDict
 
+
+def provideAnswerToRQ2Extended(a_, q_):
+    for challenge_, q_list in q_.items():
+        ques_count  = len(q_[challenge_])
+        ans_count   = 0
+        for qID in q_list:
+            if qID in a_:
+                ans_count_of_ques = int(a_[qID])
+                ans_count = ans_count + ans_count_of_ques
+        print "Q:{}, A:{}".format(ques_count, ans_count)
+        print "*"*50
+
 ans_count_file='/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/ESEM/FullData_PuppetMarch21.csv'
 ans_count_dict=getAnswerCount(ans_count_file)
 # print ans_count_dict
@@ -44,3 +56,4 @@ rq2QCountDict = loadDatasetByChallenge(datasetFile)
 # print rq2QCountDict
 print "Loaded question count dict"
 print "="*100
+provideAnswerToRQ2Extended(ans_count_dict, rq2QCountDict)
