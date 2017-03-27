@@ -69,7 +69,8 @@ def provideAnswerToRQ2(sat_, unsat_, q_, count):
         print "*"*50
 
 
-datasetFile='/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/ESEM/COMPLETE_DATASET_FOR_PAPER.csv'
+# datasetFile='/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/ESEM/COMPLETE_DATASET_FOR_PAPER.csv'
+datasetFile='/Users/akond/Documents/AkondOneDrive/OneDrive/StackOverflowProject/data/ESEM/Upto2016/COMPLETE_DATASET_FOR_PAPER.csv'
 rq2SatDict, countOfQs = loadDatasetBySatisfaction(datasetFile)
 print "We will be analyzing {} questions".format(countOfQs)
 print "="*100
